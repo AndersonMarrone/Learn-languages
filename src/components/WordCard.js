@@ -134,7 +134,7 @@ const WordCard = ({ word }) => {
               }}
               aria-label="Pronunciar palavra em espanhol"
             >
-              🔊
+              📢
             </button>
           </div>
           
@@ -165,7 +165,7 @@ const WordCard = ({ word }) => {
                   }}
                   aria-label="Pronunciar tradução em português"
                 >
-                  🔊
+                  📢
                 </button>
               </div>
             </div>
@@ -182,7 +182,7 @@ const WordCard = ({ word }) => {
                   }}
                   aria-label="Pronunciar tradução em inglês"
                 >
-                  🔊
+                  📢
                 </button>
               </div>
             </div>
@@ -200,7 +200,7 @@ const WordCard = ({ word }) => {
                   }}
                   aria-label="Pronunciar exemplo em espanhol"
                 >
-                  🔊
+                  📢
                 </button>
               </div>
               {word.exampleTranslation && (
@@ -214,7 +214,7 @@ const WordCard = ({ word }) => {
                     }}
                     aria-label="Pronunciar tradução do exemplo"
                   >
-                    🔊
+                    📢
                   </button>
                 </div>
               )}
@@ -229,7 +229,7 @@ const WordCard = ({ word }) => {
                     }}
                     aria-label="Pronunciar exemplo em inglês"
                   >
-                    🔊
+                    📢
                   </button>
                 </div>
               )}

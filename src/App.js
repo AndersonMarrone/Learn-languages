@@ -101,7 +101,7 @@ function App() {
             <div className="logo-section">
               <div className="logo">
                 <span className="logo-icon">🌟</span>
-                <h1>Spanish Words</h1>
+                <h1>Buscar Palavras em Espanhol</h1>
               </div>
               <p className="tagline">Aprenda espanhol de forma inteligente com IA</p>
             </div>

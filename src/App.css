@@ -421,7 +421,50 @@
   padding: 20px;
   margin-bottom: 25px;
   box-shadow: 0 4px 20px rgba(34, 197, 94, 0.1);
-}\n\n.notice-content {\n  display: flex;\n  align-items: flex-start;\n  gap: 15px;\n}\n\n.notice-icon {\n  font-size: 1.5rem;\n  flex-shrink: 0;\n  margin-top: 2px;\n}\n\n.notice-text strong {\n  color: #166534;\n  font-size: 1rem;\n  font-weight: 700;\n  display: block;\n  margin-bottom: 5px;\n}\n\n.notice-text p {\n  color: #15803d;\n  font-size: 0.9rem;\n  margin: 0;\n  line-height: 1.5;\n}\n\n.ai-section {\n  position: relative;\n}\n\n.ai-section::before {\n  content: '';\n  position: absolute;\n  top: -10px;\n  left: -10px;\n  right: -10px;\n  bottom: -10px;\n  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%);\n  border-radius: 20px;\n  z-index: -1;\n}
+}
+
+.notice-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.notice-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.notice-text strong {
+  color: #166534;
+  font-size: 1rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.notice-text p {
+  color: #15803d;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ai-section {
+  position: relative;
+}
+
+.ai-section::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%);
+  border-radius: 20px;
+  z-index: -1;
+}
 
 /* Separador visual entre seções */
 .section-divider {
