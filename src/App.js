@@ -97,8 +97,21 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="header">
-          <h1>🇪🇸 Buscador de Palabras</h1>
-          <p>Encontre palavras em espanhol para seus estudos com IA integrada</p>
+          <div className="header-content">
+            <div className="logo-section">
+              <div className="logo">
+                <span className="logo-icon">🌟</span>
+                <h1>Spanish Words</h1>
+              </div>
+              <p className="tagline">Aprenda espanhol de forma inteligente com IA</p>
+            </div>
+            <div className="header-stats">
+              <div className="stat-item">
+                <span className="stat-number">{searchResults.length + geminiResults.length}</span>
+                <span className="stat-label">Palavras encontradas</span>
+              </div>
+            </div>
+          </div>
         </header>
 
         <div className="search-section">
@@ -114,7 +127,16 @@ function App() {
 
         {!isLoading && searchResults.length > 0 && (
           <div className="results-section">
-            <h2>📚 Resultados da base de dados: {searchResults.length}</h2>
+            <div className="section-header">
+              <div className="section-title">
+                <span className="section-icon">📚</span>
+                <h2>Base de Dados</h2>
+                <span className="result-count">{searchResults.length} palavras</span>
+              </div>
+              <div className="section-description">
+                Palavras encontradas em nossa base de dados curada
+              </div>
+            </div>
             <div className="words-grid">
               {searchResults.map((word, index) => (
                 <WordCard key={`local-${index}`} word={word} />
@@ -128,10 +150,25 @@ function App() {
         )}
 
         {!isLoading && geminiResults.length > 0 && (
-          <div className="results-section">
-            <h2>🤖 Traduções via Gemini AI: {geminiResults.length}</h2>
-            <div className="gemini-notice">
-              <strong>💡 Traduções geradas por IA:</strong> Estas palavras não estavam na nossa base de dados e foram traduzidas automaticamente pelo Google Gemini.
+          <div className="results-section ai-section">
+            <div className="section-header">
+              <div className="section-title">
+                <span className="section-icon">🤖</span>
+                <h2>Traduções IA</h2>
+                <span className="result-count ai-badge">{geminiResults.length} palavras</span>
+              </div>
+              <div className="section-description">
+                Traduções inteligentes geradas pelo Google Gemini
+              </div>
+            </div>
+            <div className="ai-notice">
+              <div className="notice-content">
+                <span className="notice-icon">✨</span>
+                <div className="notice-text">
+                  <strong>Powered by AI</strong>
+                  <p>Estas traduções foram geradas automaticamente quando não encontramos a palavra em nossa base de dados.</p>
+                </div>
+              </div>
             </div>
             <div className="words-grid">
               {geminiResults.map((word, index) => (

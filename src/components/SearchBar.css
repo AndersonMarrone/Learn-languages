@@ -1,9 +1,11 @@
 .search-bar {
-  margin-bottom: 15px;
-  padding: 15px;
-  background: rgba(248, 250, 252, 0.6);
-  border-radius: 16px;
-  border: 1px solid rgba(203, 213, 224, 0.5);
+  margin-bottom: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
+  border-radius: 20px;
+  border: 1px solid rgba(203, 213, 224, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 .search-input-container {
@@ -44,16 +46,18 @@
 }
 
 .search-btn, .clear-btn {
-  padding: 12px 20px;
+  padding: 14px 24px;
   border: none;
-  border-radius: 12px;
-  font-size: 0.9rem;
+  border-radius: 14px;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: 'Inter', sans-serif;
   white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
 .search-btn {
