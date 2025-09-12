@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/BuscadorPalavras/static/css/main.3ba3ed04.css",
-    "main.js": "/BuscadorPalavras/static/js/main.1b1734eb.js",
-    "index.html": "/BuscadorPalavras/index.html",
-    "main.3ba3ed04.css.map": "/BuscadorPalavras/static/css/main.3ba3ed04.css.map",
-    "main.1b1734eb.js.map": "/BuscadorPalavras/static/js/main.1b1734eb.js.map"
+    "main.css": "/spanish-words/static/css/main.3ba3ed04.css",
+    "main.js": "/spanish-words/static/js/main.c7f202c7.js",
+    "index.html": "/spanish-words/index.html",
+    "main.3ba3ed04.css.map": "/spanish-words/static/css/main.3ba3ed04.css.map",
+    "main.c7f202c7.js.map": "/spanish-words/static/js/main.c7f202c7.js.map"
   },
   "entrypoints": [
     "static/css/main.3ba3ed04.css",
-    "static/js/main.1b1734eb.js"
+    "static/js/main.c7f202c7.js"
   ]
 }
