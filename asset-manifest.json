@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BuscadorPalavras/static/css/main.3ba3ed04.css",
+    "main.js": "/BuscadorPalavras/static/js/main.1b1734eb.js",
+    "index.html": "/BuscadorPalavras/index.html",
+    "main.3ba3ed04.css.map": "/BuscadorPalavras/static/css/main.3ba3ed04.css.map",
+    "main.1b1734eb.js.map": "/BuscadorPalavras/static/js/main.1b1734eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ba3ed04.css",
+    "static/js/main.1b1734eb.js"
+  ]
+}
