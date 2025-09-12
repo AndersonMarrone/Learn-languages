@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/spanish-words/static/css/main.3ba3ed04.css",
-    "main.js": "/spanish-words/static/js/main.c7f202c7.js",
+    "main.css": "/spanish-words/static/css/main.2827dd2d.css",
+    "main.js": "/spanish-words/static/js/main.708b3e3e.js",
     "index.html": "/spanish-words/index.html",
-    "main.3ba3ed04.css.map": "/spanish-words/static/css/main.3ba3ed04.css.map",
-    "main.c7f202c7.js.map": "/spanish-words/static/js/main.c7f202c7.js.map"
+    "main.2827dd2d.css.map": "/spanish-words/static/css/main.2827dd2d.css.map",
+    "main.708b3e3e.js.map": "/spanish-words/static/js/main.708b3e3e.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ba3ed04.css",
-    "static/js/main.c7f202c7.js"
+    "static/css/main.2827dd2d.css",
+    "static/js/main.708b3e3e.js"
   ]
 }
