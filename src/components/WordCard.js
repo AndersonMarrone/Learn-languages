@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './WordCard.css';
+import Modal from './Modal';
 
 const WordCard = ({ word }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [voices, setVoices] = useState([]);
 
   // Carregar vozes disponíveis
@@ -23,8 +24,12 @@ const WordCard = ({ word }) => {
     };
   }, []);
 
-  const handleFlip = () => {
-    setIsFlipped(!isFlipped);
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   const playAudio = (text, lang = 'es') => {
@@ -121,79 +126,61 @@ const WordCard = ({ word }) => {
   };
 
   return (
-    <div className={`word-card ${isFlipped ? 'flipped' : ''}`} onClick={handleFlip}>
-      <div className="word-card-inner">
-        <div className="word-card-front">
-          <div className="word-header">
-            <h3 className="spanish-word">{word.spanish}</h3>
-            <button 
-              className="audio-btn"
-              onClick={(e) => {
-                e.stopPropagation();
-                playAudio(word.spanish, 'es');
-              }}
-              aria-label="Pronunciar palavra em espanhol"
-            >
-              📢
-            </button>
-          </div>
-          
-          {word.phonetic && (
-            <p className="phonetic">/{word.phonetic}/</p>
-          )}
-          
-          {word.category && (
-            <span className="category">{word.category}</span>
-          )}
-          
-          <div className="click-hint">
-            <span>👆 Clique para ver a tradução</span>
-          </div>
+    <>
+      <div className="word-card-compact" onClick={handleOpenModal}>
+        <div className="word-header">
+          <h3 className="spanish-word">{word.spanish}</h3>
+          <button 
+            className="audio-btn"
+            onClick={(e) => {
+              e.stopPropagation();
+              playAudio(word.spanish, 'es');
+            }}
+            aria-label="Pronunciar palavra em espanhol"
+          >
+            📢
+          </button>
         </div>
         
-        <div className="word-card-back">
-          <div className="translations">
-            <div className="translation-item">
-              <span className="flag">🇧🇷</span>
-              <div className="translation-content">
-                <p className="translation">{word.portuguese}</p>
-                <button 
-                  className="audio-btn small"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    playAudio(word.portuguese, 'pt');
-                  }}
-                  aria-label="Pronunciar tradução em português"
-                >
-                  📢
-                </button>
-              </div>
+        {word.phonetic && (
+          <p className="phonetic">/{word.phonetic}/</p>
+        )}
+        
+        {word.category && (
+          <span className="category">{word.category}</span>
+        )}
+        
+        <div className="click-hint">
+          <span>👆 Clique para ver a tradução</span>
+        </div>
+      </div>
+
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal}
+        title={`📖 ${word.spanish}`}
+      >
+        <div className="modal-translations">
+          <div className="translation-item">
+            <span className="flag">🇪🇸</span>
+            <div className="translation-content">
+              <p className="translation">{word.spanish}</p>
+              <button 
+                className="audio-btn small"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  playAudio(word.spanish, 'es');
+                }}
+                aria-label="Pronunciar palavra em espanhol"
+              >
+                📢
+              </button>
             </div>
-            
-            <div className="translation-item">
-              <span className="flag">🇺🇸</span>
-              <div className="translation-content">
-                <p className="translation">{word.english}</p>
+            {word.example && (
+              <div className="flag-example">
+                <p className="example-sentence">"{word.example}"</p>
                 <button 
-                  className="audio-btn small"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    playAudio(word.english, 'en');
-                  }}
-                  aria-label="Pronunciar tradução em inglês"
-                >
-                  📢
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          {word.example && (
-            <div className="example">
-              <div className="example-item">
-                <p className="example-text">"{word.example}"</p>
-                <button 
-                  className="audio-btn example-audio"
+                  className="audio-btn example-small"
                   onClick={(e) => {
                     e.stopPropagation();
                     playAudio(word.example, 'es');
@@ -203,45 +190,99 @@ const WordCard = ({ word }) => {
                   📢
                 </button>
               </div>
-              {word.exampleTranslation && (
-                <div className="example-item">
-                  <p className="example-translation">"{word.exampleTranslation}"</p>
-                  <button 
-                    className="audio-btn example-audio"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      playAudio(word.exampleTranslation, 'pt');
-                    }}
-                    aria-label="Pronunciar tradução do exemplo"
-                  >
-                    📢
-                  </button>
-                </div>
-              )}
-              {word.exampleEnglish && (
-                <div className="example-item">
-                  <p className="example-english">"{word.exampleEnglish}"</p>
-                  <button 
-                    className="audio-btn example-audio"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      playAudio(word.exampleEnglish, 'en');
-                    }}
-                    aria-label="Pronunciar exemplo em inglês"
-                  >
-                    📢
-                  </button>
-                </div>
-              )}
-            </div>
-          )}
+            )}
+          </div>
           
-          <div className="click-hint">
-            <span>👆 Clique para voltar</span>
+          <div className="translation-item">
+            <span className="flag">🇧🇷</span>
+            <div className="translation-content">
+              <p className="translation">{word.portuguese}</p>
+              <button 
+                className="audio-btn small"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  playAudio(word.portuguese, 'pt');
+                }}
+                aria-label="Pronunciar tradução em português"
+              >
+                📢
+              </button>
+            </div>
+            {word.exampleTranslation && (
+              <div className="flag-example">
+                <p className="example-sentence">"{word.exampleTranslation}"</p>
+                <button 
+                  className="audio-btn example-small"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    playAudio(word.exampleTranslation, 'pt');
+                  }}
+                  aria-label="Pronunciar exemplo em português"
+                >
+                  📢
+                </button>
+              </div>
+            )}
+          </div>
+          
+          <div className="translation-item">
+            <span className="flag">🇺🇸</span>
+            <div className="translation-content">
+              <p className="translation">{word.english}</p>
+              <button 
+                className="audio-btn small"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  playAudio(word.english, 'en');
+                }}
+                aria-label="Pronunciar tradução em inglês"
+              >
+                📢
+              </button>
+            </div>
+            {word.exampleEnglish && (
+              <div className="flag-example">
+                <p className="example-sentence">"{word.exampleEnglish}"</p>
+                <button 
+                  className="audio-btn example-small"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    playAudio(word.exampleEnglish, 'en');
+                  }}
+                  aria-label="Pronunciar exemplo em inglês"
+                >
+                  📢
+                </button>
+              </div>
+            )}
           </div>
         </div>
-      </div>
-    </div>
+        
+        {word.analysis && (
+          <div className="linguistic-analysis">
+            <div className="analysis-header">
+              <span className="analysis-icon">🧠</span>
+              <span className="analysis-label">Análise Linguística</span>
+              {word.commonness && (
+                <span className={`commonness-badge ${word.commonness.replace(' ', '-')}`}>
+                  {word.commonness}
+                </span>
+              )}
+            </div>
+            <p className="analysis-text">{word.analysis}</p>
+            {word.tips && (
+              <div className="tips-section">
+                <div className="tips-header">
+                  <span className="tips-icon">💡</span>
+                  <span className="tips-label">Dicas de uso:</span>
+                </div>
+                <p className="tips-text">{word.tips}</p>
+              </div>
+            )}
+          </div>
+        )}
+      </Modal>
+    </>
   );
 };
 

@@ -38,7 +38,26 @@ class TranslationService {
     try {
       console.log('📤 Enviando prompt para Gemini...');
       
-      const prompt = `Você é um tradutor especializado em espanhol. Traduza a palavra "${word}" e forneça as informações no formato JSON exato abaixo.
+      // Detectar se é palavra ou frase
+      const isPhrase = word.includes(' ') || word.length > 20;
+      
+      const prompt = isPhrase ? 
+        `Você é um linguista especializado em espanhol. Analise a frase "${word}" e forneça as informações no formato JSON exato abaixo.
+
+IMPORTANTE: Responda APENAS com o JSON válido, sem explicações ou texto adicional.
+
+{
+  "spanish": "${word}",
+  "portuguese": "tradução em português brasileiro",
+  "english": "tradução em inglês americano",
+  "type": "phrase",
+  "context": "contexto ou situação de uso",
+  "analysis": "análise detalhada explicando se é uma expressão comum, literal, idiomática, ou se há peculiaridades. Mencione se faz sentido gramaticalmente, se é usado no dia a dia, ou se pode ser um mal-entendido",
+  "commonness": "muito comum|comum|pouco comum|raro|não é uma expressão padrão",
+  "tips": "dicas práticas sobre uso, variações regionais ou expressões similares mais comuns",
+  "source": "gemini_ai"
+}`
+        : `Você é um linguista especializado em espanhol. Analise a palavra "${word}" e forneça as informações no formato JSON exato abaixo.
 
 IMPORTANTE: Responda APENAS com o JSON válido, sem explicações ou texto adicional.
 
@@ -51,7 +70,11 @@ IMPORTANTE: Responda APENAS com o JSON válido, sem explicações ou texto adici
   "example": "exemplo de uso em espanhol",
   "exampleTranslation": "tradução do exemplo em português",
   "exampleEnglish": "tradução do exemplo em inglês",
-  "confidence": "alta"
+  "analysis": "análise linguística explicando peculiaridades, uso regional, formalidade, ou se há algo interessante sobre esta palavra",
+  "commonness": "muito comum|comum|pouco comum|raro|arcaico",
+  "tips": "dicas sobre uso correto, sinônimos mais comuns, ou variações regionais",
+  "confidence": "alta",
+  "source": "gemini_ai"
 }`;
 
       const result = await this.model.generateContent(prompt);

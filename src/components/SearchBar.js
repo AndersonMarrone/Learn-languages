@@ -51,12 +51,12 @@ const SearchBar = ({ onSearch, onClear }) => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}
-          placeholder="Digite uma ou mais palavras separadas por vírgula..."
+          placeholder="Digite palavras ou frases em espanhol, português ou inglês..."
           className="search-input"
         />
         <div className="search-buttons">
           <button onClick={handleSearch} className="search-btn">
-            🔍 Buscar
+            🔍 Traduzir
           </button>
           {(inputValue || searchTerms.length > 0) && (
             <button onClick={handleClear} className="clear-btn">
