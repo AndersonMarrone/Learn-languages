@@ -3,11 +3,21 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { useTranslation } from '../hooks/useTranslation';
 import './LanguageSelector.css';
 
-const LanguageSelector = () => {
+const LanguageSelector = ({ 
+  selectedLanguage, 
+  onLanguageChange, 
+  type = 'global',
+  disabled = false,
+  className = ''
+}) => {
   const { language, changeLanguage } = useLanguage();
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
+
+  // Se recebeu props, usar elas; senão usar contexto global
+  const currentLanguageCode = selectedLanguage !== undefined ? selectedLanguage : language;
+  const handleLanguageChange = onLanguageChange || changeLanguage;
 
   const languages = [
     { code: 'pt', name: t('languages.pt'), flag: '🇧🇷' },
@@ -15,7 +25,12 @@ const LanguageSelector = () => {
     { code: 'es', name: t('languages.es'), flag: '🇪🇸' }
   ];
 
-  const currentLanguage = languages.find(lang => lang.code === language);
+  // Para selects de tradução, adicionar opção "auto" no from
+  const availableLanguages = type === 'from' 
+    ? [{ code: 'auto', name: t('languages.auto'), flag: '🌐' }, ...languages]
+    : languages;
+
+  const currentLanguage = availableLanguages.find(lang => lang.code === currentLanguageCode);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -30,16 +45,17 @@ const LanguageSelector = () => {
     };
   }, []);
 
-  const handleLanguageChange = (langCode) => {
-    changeLanguage(langCode);
+  const handleLanguageSelect = (langCode) => {
+    handleLanguageChange(langCode);
     setIsOpen(false);
   };
 
   return (
-    <div className="language-selector" ref={dropdownRef}>
+    <div className={`language-selector ${className}`} ref={dropdownRef}>
       <button
-        className="language-button"
-        onClick={() => setIsOpen(!isOpen)}
+        className={`language-button ${disabled ? 'disabled' : ''}`}
+        onClick={() => !disabled && setIsOpen(!isOpen)}
+        disabled={disabled}
         aria-label={t('selectors.language')}
       >
         <span className="language-flag">{currentLanguage?.flag}</span>
@@ -49,15 +65,15 @@ const LanguageSelector = () => {
 
       {isOpen && (
         <div className="language-dropdown">
-          {languages.map((lang) => (
+          {availableLanguages.map((lang) => (
             <button
               key={lang.code}
-              className={`language-option ${language === lang.code ? 'active' : ''}`}
-              onClick={() => handleLanguageChange(lang.code)}
+              className={`language-option ${currentLanguageCode === lang.code ? 'active' : ''}`}
+              onClick={() => handleLanguageSelect(lang.code)}
             >
               <span className="language-flag">{lang.flag}</span>
               <span className="language-name">{lang.name}</span>
-              {language === lang.code && <span className="checkmark">✓</span>}
+              {currentLanguageCode === lang.code && <span className="checkmark">✓</span>}
             </button>
           ))}
         </div>

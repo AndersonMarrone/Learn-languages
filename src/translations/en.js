@@ -104,7 +104,8 @@ export const en = {
   languages: {
     pt: "Português",
     en: "English",
-    es: "Español"
+    es: "Español",
+    auto: "Detect language"
   },
   
   // Categorias
