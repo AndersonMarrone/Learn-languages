@@ -15,7 +15,7 @@ function App() {
   const [searchResults, setSearchResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [geminiResults, setGeminiResults] = useState([]);
-  const [lastValidHistory, setLastValidHistory] = useState([]);
+  // const [lastValidHistory, setLastValidHistory] = useState([]);
   const [fromLanguage, setFromLanguage] = useState('auto');
   const [toLanguage, setToLanguage] = useState('pt');
   const apiConfigRef = useRef();
@@ -32,7 +32,7 @@ function App() {
     // Inicializar cache persistente do histórico
     historyService.initializeCache();
     const initialHistory = historyService.getHistoryOrCache();
-    setLastValidHistory(initialHistory);
+    // setLastValidHistory(initialHistory);
     console.log('🚀 Cache persistente inicializado:', initialHistory.length, 'itens');
   }, []);
 
@@ -97,7 +97,7 @@ function App() {
 
       // Atualizar cache do último histórico válido
       const currentHistory = historyService.getHistory();
-      setLastValidHistory(currentHistory);
+      // setLastValidHistory(currentHistory);
       console.log('💾 Cache do histórico atualizado:', currentHistory.length, 'itens');
 
       // 3. Buscar termos ainda não encontrados no Gemini
@@ -136,7 +136,7 @@ function App() {
             
             // Atualizar cache do histórico após IA
             const updatedHistory = historyService.getHistory();
-            setLastValidHistory(updatedHistory);
+            // setLastValidHistory(updatedHistory);
             console.log('💾 Cache atualizado após IA:', updatedHistory.length, 'itens');
           }
         } catch (error) {

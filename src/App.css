@@ -1,32 +1,29 @@
 .App {
   width: 100%;
-  height: 100vh;
-  max-width: 1400px;
+  min-height: 100vh;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
+  background: #f8fafc;
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
   width: 100%;
-  height: 95vh;
+  min-height: calc(100vh - 40px);
   margin: 0;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .header {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(102, 126, 234, 0.15);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
   flex-shrink: 0;
 }
 
@@ -54,20 +51,18 @@
 }
 
 .logo h1 {
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 1.75rem;
+  font-weight: 700;
   margin: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #1e40af;
   background-clip: text;
   line-height: 1.1;
 }
 
 .tagline {
-  font-size: 1rem;
-  color: #64748b;
-  font-weight: 500;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -104,7 +99,7 @@
 }
 
 .search-section {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   flex-shrink: 0;
 }
 
@@ -147,11 +142,11 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 .section-header {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   flex-shrink: 0;
 }
 
@@ -195,9 +190,9 @@
 
 .words-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 15px;
-  padding: 0 5px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  padding: 0;
   overflow-y: auto;
   flex: 1;
   max-height: 100%;
