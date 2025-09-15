@@ -5,7 +5,13 @@ import PhraseCard from './PhraseCard';
 import ConfirmModal from './ConfirmModal';
 import './SearchHistory.css';
 
-const SearchHistory = ({ onWordSelect, instanceId = 'default', expandedLimit = 10 }) => {
+const SearchHistory = ({ 
+  onWordSelect, 
+  instanceId = 'default', 
+  expandedLimit = 10,
+  fromLanguage = 'auto',
+  toLanguage = 'pt'
+}) => {
   const [history, setHistory] = useState([]);
   const [filteredHistory, setFilteredHistory] = useState([]);
   const [searchFilter, setSearchFilter] = useState('');
@@ -282,9 +288,17 @@ const SearchHistory = ({ onWordSelect, instanceId = 'default', expandedLimit = 1
                     
                     <div className="history-card-wrapper">
                       {item.type === 'phrase' ? (
-                        <PhraseCard phrase={item} />
+                        <PhraseCard 
+                          phrase={item} 
+                          fromLanguage={fromLanguage}
+                          toLanguage={toLanguage}
+                        />
                       ) : (
-                        <WordCard word={item} />
+                        <WordCard 
+                          word={item} 
+                          fromLanguage={fromLanguage}
+                          toLanguage={toLanguage}
+                        />
                       )}
                     </div>
                   </div>

@@ -314,6 +314,8 @@ function App() {
             onWordSelect={handleWordFromHistory} 
             instanceId="found-results"
             expandedLimit={8}
+            fromLanguage={fromLanguage}
+            toLanguage={toLanguage}
           />
         )}
 
@@ -378,6 +380,8 @@ function App() {
               onWordSelect={handleWordFromHistory} 
               instanceId="no-results"
               expandedLimit={50}
+              fromLanguage={fromLanguage}
+              toLanguage={toLanguage}
             />
           </>
         )}
@@ -401,6 +405,8 @@ function App() {
             onWordSelect={handleWordFromHistory} 
             instanceId="welcome-screen"
             expandedLimit={10}
+            fromLanguage={fromLanguage}
+            toLanguage={toLanguage}
           />
         )}
       </div>
