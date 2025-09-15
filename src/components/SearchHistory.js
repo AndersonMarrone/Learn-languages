@@ -259,9 +259,6 @@ const SearchHistory = ({
                   <div key={item.id} className="history-item-wrapper">
                     <div className="history-item-header">
                       <div className="item-meta">
-                        <span className="search-count">
-                          {item.searchCount > 1 && `${item.searchCount}x`}
-                        </span>
                         <span className="search-date">
                           {new Date(item.searchedAt).toLocaleDateString('pt-BR')}
                         </span>
