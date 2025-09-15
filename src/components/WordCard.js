@@ -216,6 +216,13 @@ const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt' }) => {
           <span className="category">{word.category}</span>
         )}
         
+        {/* Mostrar exemplo se disponível */}
+        {word.example && (
+          <div className="example-preview">
+            <p className="example-text">"{word.example}"</p>
+          </div>
+        )}
+        
         <div className="click-hint">
           <span>👆 Clique para ver detalhes</span>
         </div>

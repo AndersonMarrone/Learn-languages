@@ -166,6 +166,13 @@ const PhraseCard = ({ phrase, fromLanguage = 'auto', toLanguage = 'pt' }) => {
         
         <span className="category">Frase</span>
         
+        {/* Mostrar contexto se disponível */}
+        {phrase.context && (
+          <div className="example-preview">
+            <p className="example-text">💡 {phrase.context}</p>
+          </div>
+        )}
+        
         <div className="click-hint">
           <span>👆 Clique para ver detalhes</span>
         </div>

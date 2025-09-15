@@ -1,5 +1,5 @@
 .phrase-card-compact {
-  height: 180px;
+  height: 200px;
   cursor: pointer;
   transition: all 0.2s ease;
   margin-bottom: 16px;
@@ -503,6 +503,15 @@
   line-height: 1.3;
 }
 
+.phrase-card-compact .example-preview {
+  background: #fffbeb;
+  border-left: 3px solid #f59e0b;
+}
+
+.phrase-card-compact .example-text {
+  color: #92400e;
+}
+
 /* Responsividade para PhraseCard */
 @media (max-width: 768px) {
   .phrase-card-compact .original-phrase {
@@ -512,7 +521,16 @@
 
 @media (max-width: 480px) {
   .phrase-card-compact {
-    height: 220px !important;
+    height: 200px !important;
+  }
+  
+  .phrase-card-compact .example-preview {
+    margin: 6px 0;
+    padding: 6px;
+  }
+  
+  .phrase-card-compact .example-text {
+    font-size: 11px;
   }
   
   .phrase-card-compact .original-phrase {
