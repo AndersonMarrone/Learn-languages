@@ -1,5 +1,5 @@
 .word-card-compact {
-  height: 220px;
+  height: 240px;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 3px;
@@ -592,5 +592,92 @@
   .example-translation,
   .example-english {
     font-size: 0.7rem;
+  }
+}
+
+/* Novos estilos para indicadores de idioma */
+.language-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  align-self: flex-start;
+}
+
+.lang-code {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.translation-preview {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.translation-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.translation-text {
+  flex: 1;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.95);
+  text-align: left;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.original-word {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 8px 0;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+}
+
+/* Responsividade para os novos elementos */
+@media (max-width: 768px) {
+  .language-indicator {
+    font-size: 9px;
+    padding: 3px 6px;
+  }
+  
+  .translation-text {
+    font-size: 12px;
+  }
+  
+  .original-word {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .word-card-compact {
+    height: 220px !important;
+  }
+  
+  .language-indicator {
+    margin-bottom: 6px;
+  }
+  
+  .translation-preview {
+    margin: 6px 0;
+    padding: 6px;
+  }
+  
+  .original-word {
+    font-size: 16px;
+    margin: 6px 0;
   }
 }

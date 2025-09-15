@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './WordCard.css';
 import Modal from './Modal';
 
-const WordCard = ({ word }) => {
+const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt' }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [voices, setVoices] = useState([]);
 
@@ -30,6 +30,51 @@ const WordCard = ({ word }) => {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+  };
+
+  // Funções para determinar o texto e idioma corretos
+  const getOriginalText = () => {
+    // Determinar o texto original baseado no idioma de origem
+    if (word.original) return word.original; // Para traduções novas do Gemini
+    
+    // Para compatibilidade com dados antigos
+    if (fromLanguage === 'es' || fromLanguage === 'auto') return word.spanish;
+    if (fromLanguage === 'pt') return word.portuguese;
+    if (fromLanguage === 'en') return word.english;
+    return word.spanish; // Fallback
+  };
+
+  const getTranslationText = () => {
+    // Determinar a tradução baseada no idioma de destino
+    if (word.translation && word.targetLanguage === toLanguage) {
+      return word.translation; // Para traduções novas do Gemini
+    }
+    
+    // Para compatibilidade com dados antigos
+    if (toLanguage === 'pt') return word.portuguese;
+    if (toLanguage === 'es') return word.spanish;
+    if (toLanguage === 'en') return word.english;
+    return word.portuguese; // Fallback
+  };
+
+  const getLanguageFlag = (langCode) => {
+    const flags = {
+      'es': '🇪🇸',
+      'pt': '🇧🇷', 
+      'en': '🇺🇸',
+      'auto': '🔍'
+    };
+    return flags[langCode] || '🌐';
+  };
+
+  const getLanguageName = (langCode) => {
+    const names = {
+      'es': 'Espanhol',
+      'pt': 'Português',
+      'en': 'Inglês',
+      'auto': 'Detectado'
+    };
+    return names[langCode] || 'Idioma';
   };
 
   const playAudio = (text, lang = 'es') => {
@@ -129,17 +174,38 @@ const WordCard = ({ word }) => {
     <>
       <div className="word-card-compact" onClick={handleOpenModal}>
         <div className="word-header">
-          <h3 className="spanish-word">{word.spanish}</h3>
+          <div className="language-indicator">
+            <span className="flag">{getLanguageFlag(fromLanguage)}</span>
+            <span className="lang-code">{fromLanguage === 'auto' ? 'AUTO' : fromLanguage.toUpperCase()}</span>
+          </div>
+          <h3 className="original-word">{getOriginalText()}</h3>
           <button 
             className="audio-btn"
             onClick={(e) => {
               e.stopPropagation();
-              playAudio(word.spanish, 'es');
+              playAudio(getOriginalText(), fromLanguage === 'auto' ? 'es' : fromLanguage);
             }}
-            aria-label="Pronunciar palavra em espanhol"
+            aria-label={`Pronunciar palavra em ${getLanguageName(fromLanguage)}`}
           >
             📢
           </button>
+        </div>
+        
+        <div className="translation-preview">
+          <div className="translation-header">
+            <span className="flag">{getLanguageFlag(toLanguage)}</span>
+            <span className="translation-text">{getTranslationText()}</span>
+            <button 
+              className="audio-btn small"
+              onClick={(e) => {
+                e.stopPropagation();
+                playAudio(getTranslationText(), toLanguage);
+              }}
+              aria-label={`Pronunciar tradução em ${getLanguageName(toLanguage)}`}
+            >
+              📢
+            </button>
+          </div>
         </div>
         
         {word.phonetic && (
@@ -151,27 +217,28 @@ const WordCard = ({ word }) => {
         )}
         
         <div className="click-hint">
-          <span>👆 Clique para ver a tradução</span>
+          <span>👆 Clique para ver detalhes</span>
         </div>
       </div>
 
       <Modal 
         isOpen={isModalOpen} 
         onClose={handleCloseModal}
-        title={`📖 ${word.spanish}`}
+        title={`📖 ${getOriginalText()}`}
       >
         <div className="modal-translations">
+          {/* Palavra/frase original */}
           <div className="translation-item">
-            <span className="flag">🇪🇸</span>
+            <span className="flag">{getLanguageFlag(fromLanguage)}</span>
             <div className="translation-content">
-              <p className="translation">{word.spanish}</p>
+              <p className="translation">{getOriginalText()}</p>
               <button 
                 className="audio-btn small"
                 onClick={(e) => {
                   e.stopPropagation();
-                  playAudio(word.spanish, 'es');
+                  playAudio(getOriginalText(), fromLanguage === 'auto' ? 'es' : fromLanguage);
                 }}
-                aria-label="Pronunciar palavra em espanhol"
+                aria-label={`Pronunciar palavra em ${getLanguageName(fromLanguage)}`}
               >
                 📢
               </button>
@@ -183,9 +250,9 @@ const WordCard = ({ word }) => {
                   className="audio-btn example-small"
                   onClick={(e) => {
                     e.stopPropagation();
-                    playAudio(word.example, 'es');
+                    playAudio(word.example, fromLanguage === 'auto' ? 'es' : fromLanguage);
                   }}
-                  aria-label="Pronunciar exemplo em espanhol"
+                  aria-label={`Pronunciar exemplo em ${getLanguageName(fromLanguage)}`}
                 >
                   📢
                 </button>
@@ -193,63 +260,42 @@ const WordCard = ({ word }) => {
             )}
           </div>
           
+          {/* Tradução no idioma selecionado */}
           <div className="translation-item">
-            <span className="flag">🇧🇷</span>
+            <span className="flag">{getLanguageFlag(toLanguage)}</span>
             <div className="translation-content">
-              <p className="translation">{word.portuguese}</p>
+              <p className="translation">{getTranslationText()}</p>
               <button 
                 className="audio-btn small"
                 onClick={(e) => {
                   e.stopPropagation();
-                  playAudio(word.portuguese, 'pt');
+                  playAudio(getTranslationText(), toLanguage);
                 }}
-                aria-label="Pronunciar tradução em português"
+                aria-label={`Pronunciar tradução em ${getLanguageName(toLanguage)}`}
               >
                 📢
               </button>
             </div>
-            {word.exampleTranslation && (
+            {/* Mostrar exemplo traduzido se disponível */}
+            {((toLanguage === 'pt' && word.exampleTranslation) || 
+              (toLanguage === 'en' && word.exampleEnglish) || 
+              (toLanguage === 'es' && word.example)) && (
               <div className="flag-example">
-                <p className="example-sentence">"{word.exampleTranslation}"</p>
+                <p className="example-sentence">"{
+                  toLanguage === 'pt' ? word.exampleTranslation :
+                  toLanguage === 'en' ? word.exampleEnglish :
+                  word.example
+                }"</p>
                 <button 
                   className="audio-btn example-small"
                   onClick={(e) => {
                     e.stopPropagation();
-                    playAudio(word.exampleTranslation, 'pt');
+                    const exampleText = toLanguage === 'pt' ? word.exampleTranslation :
+                                       toLanguage === 'en' ? word.exampleEnglish :
+                                       word.example;
+                    playAudio(exampleText, toLanguage);
                   }}
-                  aria-label="Pronunciar exemplo em português"
-                >
-                  📢
-                </button>
-              </div>
-            )}
-          </div>
-          
-          <div className="translation-item">
-            <span className="flag">🇺🇸</span>
-            <div className="translation-content">
-              <p className="translation">{word.english}</p>
-              <button 
-                className="audio-btn small"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  playAudio(word.english, 'en');
-                }}
-                aria-label="Pronunciar tradução em inglês"
-              >
-                📢
-              </button>
-            </div>
-            {word.exampleEnglish && (
-              <div className="flag-example">
-                <p className="example-sentence">"{word.exampleEnglish}"</p>
-                <button 
-                  className="audio-btn example-small"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    playAudio(word.exampleEnglish, 'en');
-                  }}
-                  aria-label="Pronunciar exemplo em inglês"
+                  aria-label={`Pronunciar exemplo em ${getLanguageName(toLanguage)}`}
                 >
                   📢
                 </button>

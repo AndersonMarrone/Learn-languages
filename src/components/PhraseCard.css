@@ -1,5 +1,5 @@
 .phrase-card-compact {
-  height: 220px;
+  height: 240px;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 3px;
@@ -471,4 +471,50 @@
   background: rgba(245, 158, 11, 0.3);
   color: #92400e;
   transform: scale(1.02);
+}
+
+/* Estilos específicos para PhraseCard com indicadores de idioma */
+.phrase-card-compact .language-indicator {
+  background: rgba(120, 53, 15, 0.2);
+  border: 1px solid rgba(120, 53, 15, 0.3);
+}
+
+.phrase-card-compact .lang-code {
+  color: #78350f;
+}
+
+.phrase-card-compact .translation-preview {
+  background: rgba(120, 53, 15, 0.1);
+  border: 1px solid rgba(120, 53, 15, 0.2);
+}
+
+.phrase-card-compact .translation-text {
+  color: #78350f;
+}
+
+.phrase-card-compact .original-phrase {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 8px 0;
+  color: #78350f;
+  text-shadow: 0 2px 4px rgba(120, 53, 15, 0.1);
+  line-height: 1.2;
+}
+
+/* Responsividade para PhraseCard */
+@media (max-width: 768px) {
+  .phrase-card-compact .original-phrase {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .phrase-card-compact {
+    height: 220px !important;
+  }
+  
+  .phrase-card-compact .original-phrase {
+    font-size: 16px;
+    margin: 6px 0;
+  }
 }

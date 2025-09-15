@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './PhraseCard.css';
 import Modal from './Modal';
 
-const PhraseCard = ({ phrase }) => {
+const PhraseCard = ({ phrase, fromLanguage = 'auto', toLanguage = 'pt' }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [voices, setVoices] = useState([]);
 
@@ -27,6 +27,45 @@ const PhraseCard = ({ phrase }) => {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+  };
+
+  // Funções para determinar o texto e idioma corretos
+  const getOriginalText = () => {
+    if (phrase.original) return phrase.original;
+    if (fromLanguage === 'es' || fromLanguage === 'auto') return phrase.spanish;
+    if (fromLanguage === 'pt') return phrase.portuguese;
+    if (fromLanguage === 'en') return phrase.english;
+    return phrase.spanish;
+  };
+
+  const getTranslationText = () => {
+    if (phrase.translation && phrase.targetLanguage === toLanguage) {
+      return phrase.translation;
+    }
+    if (toLanguage === 'pt') return phrase.portuguese;
+    if (toLanguage === 'es') return phrase.spanish;
+    if (toLanguage === 'en') return phrase.english;
+    return phrase.portuguese;
+  };
+
+  const getLanguageFlag = (langCode) => {
+    const flags = {
+      'es': '🇪🇸',
+      'pt': '🇧🇷', 
+      'en': '🇺🇸',
+      'auto': '🔍'
+    };
+    return flags[langCode] || '🌐';
+  };
+
+  const getLanguageName = (langCode) => {
+    const names = {
+      'es': 'Espanhol',
+      'pt': 'Português',
+      'en': 'Inglês',
+      'auto': 'Detectado'
+    };
+    return names[langCode] || 'Idioma';
   };
 
   const playAudio = (text, lang = 'es') => {
@@ -87,17 +126,38 @@ const PhraseCard = ({ phrase }) => {
     <>
       <div className="phrase-card-compact" onClick={handleOpenModal}>
         <div className="word-header">
-          <h3 className="spanish-word">{phrase.spanish}</h3>
+          <div className="language-indicator">
+            <span className="flag">{getLanguageFlag(fromLanguage)}</span>
+            <span className="lang-code">{fromLanguage === 'auto' ? 'AUTO' : fromLanguage.toUpperCase()}</span>
+          </div>
+          <h3 className="original-phrase">{getOriginalText()}</h3>
           <button 
             className="audio-btn"
             onClick={(e) => {
               e.stopPropagation();
-              playAudio(phrase.spanish, 'es');
+              playAudio(getOriginalText(), fromLanguage === 'auto' ? 'es' : fromLanguage);
             }}
-            aria-label="Pronunciar frase em espanhol"
+            aria-label={`Pronunciar frase em ${getLanguageName(fromLanguage)}`}
           >
             📢
           </button>
+        </div>
+        
+        <div className="translation-preview">
+          <div className="translation-header">
+            <span className="flag">{getLanguageFlag(toLanguage)}</span>
+            <span className="translation-text">{getTranslationText()}</span>
+            <button 
+              className="audio-btn small"
+              onClick={(e) => {
+                e.stopPropagation();
+                playAudio(getTranslationText(), toLanguage);
+              }}
+              aria-label={`Pronunciar tradução em ${getLanguageName(toLanguage)}`}
+            >
+              📢
+            </button>
+          </div>
         </div>
         
         {phrase.phonetic && (
@@ -107,53 +167,41 @@ const PhraseCard = ({ phrase }) => {
         <span className="category">Frase</span>
         
         <div className="click-hint">
-          <span>👆 Clique para ver a tradução</span>
+          <span>👆 Clique para ver detalhes</span>
         </div>
       </div>
 
       <Modal 
         isOpen={isModalOpen} 
         onClose={handleCloseModal}
-        title={`💬 ${phrase.spanish}`}
+        title={`💬 ${getOriginalText()}`}
       >
         <div className="modal-phrase-content">
           <div className="phrase-translations">
+            {/* Frase original */}
             <div className="translation-row">
-              <span className="flag">🇪🇸</span>
+              <span className="flag">{getLanguageFlag(fromLanguage)}</span>
               <div className="translation-content">
-                <p className="translation-text">{phrase.spanish}</p>
+                <p className="translation-text">{getOriginalText()}</p>
                 <button 
                   className="audio-btn small"
-                  onClick={() => playAudio(phrase.spanish, 'es')}
-                  aria-label="Pronunciar frase em espanhol"
+                  onClick={() => playAudio(getOriginalText(), fromLanguage === 'auto' ? 'es' : fromLanguage)}
+                  aria-label={`Pronunciar frase em ${getLanguageName(fromLanguage)}`}
                 >
                   📢
                 </button>
               </div>
             </div>
             
+            {/* Tradução no idioma selecionado */}
             <div className="translation-row">
-              <span className="flag">🇧🇷</span>
+              <span className="flag">{getLanguageFlag(toLanguage)}</span>
               <div className="translation-content">
-                <p className="translation-text">{phrase.portuguese}</p>
+                <p className="translation-text">{getTranslationText()}</p>
                 <button 
                   className="audio-btn small"
-                  onClick={() => playAudio(phrase.portuguese, 'pt')}
-                  aria-label="Pronunciar tradução em português"
-                >
-                  📢
-                </button>
-              </div>
-            </div>
-            
-            <div className="translation-row">
-              <span className="flag">🇺🇸</span>
-              <div className="translation-content">
-                <p className="translation-text">{phrase.english}</p>
-                <button 
-                  className="audio-btn small"
-                  onClick={() => playAudio(phrase.english, 'en')}
-                  aria-label="Pronunciar tradução em inglês"
+                  onClick={() => playAudio(getTranslationText(), toLanguage)}
+                  aria-label={`Pronunciar tradução em ${getLanguageName(toLanguage)}`}
                 >
                   📢
                 </button>

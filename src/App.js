@@ -16,6 +16,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [geminiResults, setGeminiResults] = useState([]);
   const [lastValidHistory, setLastValidHistory] = useState([]);
+  const [fromLanguage, setFromLanguage] = useState('auto');
+  const [toLanguage, setToLanguage] = useState('pt');
   const apiConfigRef = useRef();
 
   useEffect(() => {
@@ -116,7 +118,7 @@ function App() {
           // Buscar apenas termos não encontrados com Gemini
           for (const term of termsNotFoundAnywhere) {
             console.log('🔄 Traduzindo com Gemini:', term);
-            const translation = await translationService.translateWord(term);
+            const translation = await translationService.translateWord(term, fromLanguage, toLanguage);
             console.log('📝 Resultado do Gemini:', translation);
             
             if (translation && translation.source !== 'not_found') {
@@ -146,11 +148,13 @@ function App() {
     };
 
     performSearch();
-  }, [searchTerms]);
+  }, [searchTerms, fromLanguage, toLanguage]);
 
 
-  const handleSearch = (terms) => {
+  const handleSearch = (terms, fromLang, toLang) => {
     setSearchTerms(terms);
+    if (fromLang !== undefined) setFromLanguage(fromLang);
+    if (toLang !== undefined) setToLanguage(toLang);
   };
 
   const clearSearch = () => {
@@ -166,6 +170,38 @@ function App() {
   const handleWordFromHistory = (word) => {
     // Quando uma palavra é selecionada do histórico, fazer nova busca
     setSearchTerms([word.spanish]);
+  };
+
+  const handleFromLanguageChange = (langCode) => {
+    setFromLanguage(langCode);
+    // Se há termos de busca, refazer a busca com o novo idioma
+    if (searchTerms.length > 0) {
+      // Trigger re-search by updating the dependency
+      setSearchTerms([...searchTerms]);
+    }
+  };
+
+  const handleToLanguageChange = (langCode) => {
+    setToLanguage(langCode);
+    // Se há termos de busca, refazer a busca com o novo idioma
+    if (searchTerms.length > 0) {
+      // Trigger re-search by updating the dependency
+      setSearchTerms([...searchTerms]);
+    }
+  };
+
+  const handleSwapLanguages = () => {
+    if (fromLanguage !== 'auto' && toLanguage !== 'auto') {
+      const tempFrom = fromLanguage;
+      setFromLanguage(toLanguage);
+      setToLanguage(tempFrom);
+      
+      // Se há termos de busca, refazer a busca com idiomas trocados
+      if (searchTerms.length > 0) {
+        // Trigger re-search by updating the dependency
+        setSearchTerms([...searchTerms]);
+      }
+    }
   };
 
   return (
@@ -190,7 +226,15 @@ function App() {
         </header>
 
         <div className="search-section">
-          <SearchBar onSearch={handleSearch} onClear={clearSearch} />
+          <SearchBar 
+            onSearch={handleSearch} 
+            onClear={clearSearch}
+            fromLanguage={fromLanguage}
+            toLanguage={toLanguage}
+            onFromLanguageChange={handleFromLanguageChange}
+            onToLanguageChange={handleToLanguageChange}
+            onSwapLanguages={handleSwapLanguages}
+          />
         </div>
 
         {isLoading && (
@@ -214,7 +258,12 @@ function App() {
             </div>
             <div className="words-grid">
               {searchResults.map((word, index) => (
-                <WordCard key={`found-${index}`} word={word} />
+                <WordCard 
+                  key={`found-${index}`} 
+                  word={word} 
+                  fromLanguage={fromLanguage}
+                  toLanguage={toLanguage}
+                />
               ))}
             </div>
           </div>
@@ -239,9 +288,19 @@ function App() {
             <div className="words-grid">
               {geminiResults.map((item, index) => (
                 item.type === 'phrase' ? (
-                  <PhraseCard key={`phrase-${index}`} phrase={item} />
+                  <PhraseCard 
+                    key={`phrase-${index}`} 
+                    phrase={item} 
+                    fromLanguage={fromLanguage}
+                    toLanguage={toLanguage}
+                  />
                 ) : (
-                  <WordCard key={`gemini-${index}`} word={item} />
+                  <WordCard 
+                    key={`gemini-${index}`} 
+                    word={item} 
+                    fromLanguage={fromLanguage}
+                    toLanguage={toLanguage}
+                  />
                 )
               ))}
             </div>

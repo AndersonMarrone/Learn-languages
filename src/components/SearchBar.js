@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
+import TranslationControls from './TranslationControls';
 import './SearchBar.css';
 
-const SearchBar = ({ onSearch, onClear }) => {
+const SearchBar = ({ 
+  onSearch, 
+  onClear, 
+  fromLanguage = 'auto',
+  toLanguage = 'pt',
+  onFromLanguageChange,
+  onToLanguageChange,
+  onSwapLanguages 
+}) => {
   const [inputValue, setInputValue] = useState('');
   const [searchTerms, setSearchTerms] = useState([]);
 
@@ -23,7 +32,7 @@ const SearchBar = ({ onSearch, onClear }) => {
         .filter(term => term.length > 0);
       
       setSearchTerms(terms);
-      onSearch(terms);
+      onSearch(terms, fromLanguage, toLanguage);
     }
   };
 
@@ -36,7 +45,7 @@ const SearchBar = ({ onSearch, onClear }) => {
   const removeSearchTerm = (indexToRemove) => {
     const newTerms = searchTerms.filter((_, index) => index !== indexToRemove);
     setSearchTerms(newTerms);
-    onSearch(newTerms);
+    onSearch(newTerms, fromLanguage, toLanguage);
     
     if (newTerms.length === 0) {
       setInputValue('');
@@ -45,13 +54,31 @@ const SearchBar = ({ onSearch, onClear }) => {
 
   return (
     <div className="search-bar">
+      <TranslationControls
+        fromLanguage={fromLanguage}
+        toLanguage={toLanguage}
+        onFromLanguageChange={onFromLanguageChange}
+        onToLanguageChange={onToLanguageChange}
+        onSwapLanguages={onSwapLanguages}
+        disabled={false}
+      />
+      
       <div className="search-input-container">
         <input
           type="text"
           value={inputValue}
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}
-          placeholder="Digite palavras ou frases em espanhol, português ou inglês..."
+          placeholder={`Digite palavras ou frases para traduzir de ${
+            fromLanguage === 'auto' ? 'qualquer idioma' : 
+            fromLanguage === 'es' ? 'espanhol' :
+            fromLanguage === 'pt' ? 'português' :
+            fromLanguage === 'en' ? 'inglês' : 'idioma desconhecido'
+          } para ${
+            toLanguage === 'pt' ? 'português' :
+            toLanguage === 'es' ? 'espanhol' :
+            toLanguage === 'en' ? 'inglês' : 'idioma desconhecido'
+          }...`}
           className="search-input"
         />
         <div className="search-buttons">
