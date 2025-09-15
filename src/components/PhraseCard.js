@@ -48,6 +48,13 @@ const PhraseCard = ({ phrase, fromLanguage = 'auto', toLanguage = 'pt' }) => {
     return phrase.portuguese;
   };
 
+  const getContextText = () => {
+    // Para frases, o contexto geralmente está no mesmo idioma da frase original
+    // Mas podemos ter diferentes contextos baseados no idioma
+    if (phrase.context) return phrase.context;
+    return null;
+  };
+
   const getLanguageFlag = (langCode) => {
     const flags = {
       'es': '🇪🇸',
@@ -167,9 +174,9 @@ const PhraseCard = ({ phrase, fromLanguage = 'auto', toLanguage = 'pt' }) => {
         <span className="category">Frase</span>
         
         {/* Mostrar contexto se disponível */}
-        {phrase.context && (
+        {getContextText() && (
           <div className="example-preview">
-            <p className="example-text">💡 {phrase.context}</p>
+            <p className="example-text">💡 {getContextText()}</p>
           </div>
         )}
         

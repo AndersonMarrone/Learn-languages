@@ -57,6 +57,22 @@ const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt' }) => {
     return word.portuguese; // Fallback
   };
 
+  const getExampleText = () => {
+    // Retornar exemplo no idioma de origem
+    if (fromLanguage === 'es' || fromLanguage === 'auto') return word.example;
+    if (fromLanguage === 'pt') return word.exampleTranslation;
+    if (fromLanguage === 'en') return word.exampleEnglish;
+    return word.example; // Fallback
+  };
+
+  const getExampleTranslation = () => {
+    // Retornar tradução do exemplo baseada no idioma de destino
+    if (toLanguage === 'pt') return word.exampleTranslation;
+    if (toLanguage === 'es') return word.example;
+    if (toLanguage === 'en') return word.exampleEnglish;
+    return word.exampleTranslation; // Fallback
+  };
+
   const getLanguageFlag = (langCode) => {
     const flags = {
       'es': '🇪🇸',
@@ -216,10 +232,10 @@ const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt' }) => {
           <span className="category">{word.category}</span>
         )}
         
-        {/* Mostrar exemplo se disponível */}
-        {word.example && (
+        {/* Mostrar exemplo traduzido se disponível */}
+        {getExampleTranslation() && (
           <div className="example-preview">
-            <p className="example-text">"{word.example}"</p>
+            <p className="example-text example-translated">"{getExampleTranslation()}"</p>
           </div>
         )}
         
