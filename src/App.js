@@ -484,12 +484,21 @@ function AppContent() {
             globalVoice={globalVoice}
           />
         )}
+
+        {/* Botão Ativar IA dentro do container principal */}
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          marginTop: '20px',
+          padding: '20px 0'
+        }}>
+          <ApiKeyConfig ref={apiConfigRef} onApiKeySet={handleApiKeySet} />
+        </div>
       </div>
       
       {/* Área de controles organizados */}
       <div className="controls-area">
         <VoiceInfo />
-        <ApiKeyConfig ref={apiConfigRef} onApiKeySet={handleApiKeySet} />
       </div>
     </div>
   );

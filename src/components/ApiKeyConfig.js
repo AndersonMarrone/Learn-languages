@@ -130,9 +130,6 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
       <button 
         onClick={() => setShowConfig(true)}
         style={{
-          position: 'fixed',
-          top: '80px',
-          right: '20px',
           padding: '10px 16px',
           backgroundColor: '#10b981',
           color: 'white',
@@ -141,12 +138,12 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
           cursor: 'pointer',
           fontSize: '13px',
           fontWeight: '600',
-          zIndex: 1000,
           boxShadow: '0 4px 12px rgba(16, 185, 129, 0.3)',
           transition: 'all 0.3s ease',
           display: 'flex',
           alignItems: 'center',
-          gap: '8px'
+          gap: '8px',
+          margin: '10px 0'
         }}
         onMouseOver={(e) => {
           e.target.style.transform = 'translateY(-2px)';
@@ -165,10 +162,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
   if (isConfigured && !showConfig) {
     return (
       <div style={{
-        position: 'fixed',
-        top: '80px',
-        right: '20px',
-        zIndex: 1000
+        margin: '10px 0'
       }}>
         <div style={{
           backgroundColor: '#10b981',
