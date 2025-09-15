@@ -32,28 +32,8 @@ const VoiceInfo = () => {
     }, 100);
   };
 
-  if (!showVoices) {
-    return (
-      <button 
-        onClick={() => setShowVoices(true)}
-        style={{
-          position: 'fixed',
-          bottom: '20px',
-          right: '20px',
-          padding: '10px',
-          backgroundColor: '#667eea',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer',
-          fontSize: '12px',
-          zIndex: 1000
-        }}
-      >
-        🔊 Ver Vozes
-      </button>
-    );
-  }
+  // Componente removido - botão "Ver Vozes" foi removido conforme solicitado
+  return null;
 
   return (
     <div style={{

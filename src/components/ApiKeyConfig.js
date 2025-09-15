@@ -1,7 +1,11 @@
 import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 import translationService from '../services/translationService';
+import { useToast } from '../contexts/ToastContext';
+import { useTranslation } from '../hooks/useTranslation';
 
 const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
+  const { t } = useTranslation();
+  const { showError, showSuccess, showWarning } = useToast();
   const [showConfig, setShowConfig] = useState(false);
   const [apiKey, setApiKey] = useState('');
   const [isConfigured, setIsConfigured] = useState(false);
@@ -35,7 +39,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
 
   const handleSaveApiKey = async () => {
     if (!apiKey.trim()) {
-      alert('Por favor, insira uma API key válida');
+      showError(t('settings.apiKeyRequired') || 'Por favor, insira uma API key válida');
       return;
     }
 
@@ -59,17 +63,11 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
       } else {
         // Verificar console para erro específico
         console.log('🔍 Verificando logs do console para detalhes do erro...');
-        alert('❌ Erro ao configurar API key.\n\n' +
-              '🔍 Possíveis causas:\n' +
-              '• API key incorreta ou inválida\n' +
-              '• Sem acesso ao Gemini AI\n' +
-              '• Quota da API excedida\n' +
-              '• Problema de conectividade\n\n' +
-              '💡 Verifique o console (F12) para detalhes específicos.');
+        showError(t('settings.apiKeyError') || 'Erro ao configurar API key. Verifique se a chave está correta.');
       }
     } catch (error) {
       console.error('❌ Erro ao configurar API key:', error);
-      alert(`❌ Erro ao configurar API key: ${error.message}`);
+      showError(t('settings.apiKeyError') || `Erro ao configurar API key: ${error.message}`);
     } finally {
       setIsLoading(false);
     }
@@ -156,7 +154,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
           e.target.style.boxShadow = '0 4px 12px rgba(16, 185, 129, 0.3)';
         }}
       >
-        🤖 Ativar Gemini AI
+        {t('interface.activateGemini')}
       </button>
     );
   }
@@ -180,7 +178,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
           alignItems: 'center',
           gap: '8px'
         }}>
-          <span>🤖 Gemini AI Ativo</span>
+          <span>{t('interface.geminiActive')}</span>
           <button
             onClick={() => setShowConfig(true)}
             style={{
@@ -229,7 +227,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
       />
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h3 style={{ margin: 0, color: '#2d3748' }}>🤖 Configurar Gemini AI</h3>
+        <h3 style={{ margin: 0, color: '#2d3748' }}>{t('interface.configureGemini')}</h3>
         <button 
           onClick={() => setShowConfig(false)}
           style={{ background: 'none', border: 'none', fontSize: '24px', cursor: 'pointer', color: '#666' }}
@@ -266,7 +264,11 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
             onClick={async () => {
               const testResult = await translationService.translateWord('madrugada');
               console.log('🧪 Teste do Gemini:', testResult);
-              alert(`🧪 Teste: ${testResult.source === 'gemini' ? '✅ Funcionando!' : '❌ Não funcionou'}`);
+              if (testResult.source === 'gemini') {
+                showSuccess(t('settings.apiKeyTestSuccess') || 'API key funcionando corretamente!');
+              } else {
+                showError(t('settings.apiKeyTestError') || 'API key não está funcionando corretamente.');
+              }
             }}
             style={{
               padding: '10px 20px',
@@ -278,7 +280,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
               fontSize: '14px'
             }}
           >
-            🧪 Testar
+            🧪 {t('buttons.test')}
           </button>
         )}
         {isConfigured && (
@@ -294,7 +296,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
               fontSize: '14px'
             }}
           >
-            🗑️ Remover
+            🗑️ {t('buttons.remove')}
           </button>
         )}
         <button
@@ -311,7 +313,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
             fontWeight: '600'
           }}
         >
-          {isLoading ? '⏳ Configurando...' : '✅ Salvar'}
+          {isLoading ? '⏳ Configurando...' : `✅ ${t('buttons.save')}`}
         </button>
       </div>
 
@@ -323,7 +325,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
         fontSize: '13px',
         color: '#92400e'
       }}>
-        <strong>🔒 Privacidade:</strong> Sua API key é armazenada apenas localmente no seu navegador e nunca é enviada para nossos servidores.
+        <strong>{t('interface.privacy')}</strong> {t('interface.privacyText')}
       </div>
 
       {/* Modal de sucesso elegante - mesmo estilo do Modal.js */}
@@ -371,14 +373,14 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
             >
               <div style={{ fontSize: '3rem', marginBottom: '10px' }}>🎉</div>
               <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: '700' }}>
-                Gemini AI Configurado!
+                {t('interface.geminiConfigured')}
               </h2>
             </div>
             
             <div className="modal-body" style={{ padding: '30px' }}>
               <div style={{ textAlign: 'center', marginBottom: '25px' }}>
                 <h3 style={{ color: '#059669', fontSize: '1.3rem', margin: '0 0 15px 0' }}>
-                  🚀 Tudo pronto para usar!
+                  {t('interface.readyToUse')}
                 </h3>
                 <p style={{ color: '#374151', fontSize: '1rem', lineHeight: '1.6', margin: '0 0 10px 0' }}>
                   Sua API key foi configurada e validada com sucesso.
@@ -397,7 +399,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
                 }}
               >
                 <h4 style={{ color: '#166534', fontSize: '1.1rem', margin: '0 0 15px 0' }}>
-                  ✨ Funcionalidades disponíveis:
+                  {t('interface.availableFeatures')}
                 </h4>
                 <ul style={{ color: '#15803d', margin: 0, paddingLeft: '20px' }}>
                   <li style={{ marginBottom: '8px' }}>🔤 Tradução de palavras individuais</li>
@@ -441,7 +443,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
                   e.target.style.boxShadow = '0 4px 12px rgba(16, 185, 129, 0.3)';
                 }}
               >
-                🎯 Começar a Traduzir
+{t('interface.startTranslating')}
               </button>
             </div>
           </div>

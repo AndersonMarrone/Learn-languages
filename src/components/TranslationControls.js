@@ -1,5 +1,6 @@
 import React from 'react';
 import LanguageSelector from './LanguageSelector';
+import { useTranslation } from '../hooks/useTranslation';
 import './TranslationControls.css';
 
 const TranslationControls = ({
@@ -10,6 +11,7 @@ const TranslationControls = ({
   onSwapLanguages,
   disabled = false
 }) => {
+  const { t } = useTranslation();
   const handleSwap = () => {
     if (!disabled && fromLanguage !== 'auto' && toLanguage !== 'auto') {
       onSwapLanguages();
@@ -22,7 +24,7 @@ const TranslationControls = ({
     <div className="translation-controls">
       <div className="language-selectors">
         <div className="selector-container">
-          <label className="selector-label">De:</label>
+          <label className="selector-label">{t('interface.from')}</label>
           <LanguageSelector
             selectedLanguage={fromLanguage}
             onLanguageChange={onFromLanguageChange}
@@ -37,11 +39,11 @@ const TranslationControls = ({
             className={`swap-button ${canSwap && !disabled ? 'enabled' : 'disabled'}`}
             onClick={handleSwap}
             disabled={!canSwap || disabled}
-            aria-label="Trocar idiomas"
+            aria-label={t('interface.swapLanguages')}
             title={
               !canSwap 
-                ? 'Não é possível trocar com "Detectar idioma"' 
-                : 'Trocar idiomas de origem e destino'
+                ? t('interface.cannotSwapAuto')
+                : t('interface.swapLanguagesTooltip')
             }
           >
             <svg 
@@ -64,7 +66,7 @@ const TranslationControls = ({
         </div>
 
         <div className="selector-container">
-          <label className="selector-label">Para:</label>
+          <label className="selector-label">{t('interface.to')}</label>
           <LanguageSelector
             selectedLanguage={toLanguage}
             onLanguageChange={onToLanguageChange}

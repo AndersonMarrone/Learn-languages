@@ -1,0 +1,5372 @@
+[
+  {
+    "spanish": "pata",
+    "portuguese": "pata",
+    "english": "pata",
+    "phonetic": "pata",
+    "category": "substantivo",
+    "example": "El pata",
+    "exampleTranslation": "Exemplo com pata",
+    "exampleEnglish": "Example with pata"
+  },
+  {
+    "spanish": "patada",
+    "portuguese": "patada",
+    "english": "patada",
+    "phonetic": "patada",
+    "category": "substantivo",
+    "example": "El patada",
+    "exampleTranslation": "Exemplo com patada",
+    "exampleEnglish": "Example with patada"
+  },
+  {
+    "spanish": "patata",
+    "portuguese": "batata",
+    "english": "patata",
+    "phonetic": "patata",
+    "category": "substantivo",
+    "example": "El patata",
+    "exampleTranslation": "Exemplo com patata",
+    "exampleEnglish": "Example with patata"
+  },
+  {
+    "spanish": "patentar",
+    "portuguese": "patentear",
+    "english": "patentar",
+    "phonetic": "patentar",
+    "category": "verbo",
+    "example": "Voy a patentar",
+    "exampleTranslation": "Exemplo com patentar",
+    "exampleEnglish": "Example with patentar"
+  },
+  {
+    "spanish": "patente",
+    "portuguese": "patente",
+    "english": "patente",
+    "phonetic": "patente",
+    "category": "substantivo",
+    "example": "El patente",
+    "exampleTranslation": "Exemplo com patente",
+    "exampleEnglish": "Example with patente"
+  },
+  {
+    "spanish": "paternal",
+    "portuguese": "paternal",
+    "english": "paternal",
+    "phonetic": "paternal",
+    "category": "adjetivo",
+    "example": "Es muy paternal",
+    "exampleTranslation": "Exemplo com paternal",
+    "exampleEnglish": "Example with paternal"
+  },
+  {
+    "spanish": "paternidad",
+    "portuguese": "paternidade",
+    "english": "paternidad",
+    "phonetic": "paternidad",
+    "category": "substantivo",
+    "example": "El paternidad",
+    "exampleTranslation": "Exemplo com paternidad",
+    "exampleEnglish": "Example with paternidad"
+  },
+  {
+    "spanish": "paterno",
+    "portuguese": "paterno",
+    "english": "paterno",
+    "phonetic": "paterno",
+    "category": "adjetivo",
+    "example": "Es muy paterno",
+    "exampleTranslation": "Exemplo com paterno",
+    "exampleEnglish": "Example with paterno"
+  },
+  {
+    "spanish": "patíbulo",
+    "portuguese": "patíbulo",
+    "english": "patíbulo",
+    "phonetic": "patíbulo",
+    "category": "substantivo",
+    "example": "El patíbulo",
+    "exampleTranslation": "Exemplo com patíbulo",
+    "exampleEnglish": "Example with patíbulo"
+  },
+  {
+    "spanish": "patilla",
+    "portuguese": "costeleta",
+    "english": "patilla",
+    "phonetic": "patiʎa",
+    "category": "substantivo",
+    "example": "El patilla",
+    "exampleTranslation": "Exemplo com patilla",
+    "exampleEnglish": "Example with patilla"
+  },
+  {
+    "spanish": "patinar",
+    "portuguese": "patinar",
+    "english": "patinar",
+    "phonetic": "patinar",
+    "category": "verbo",
+    "example": "Voy a patinar",
+    "exampleTranslation": "Exemplo com patinar",
+    "exampleEnglish": "Example with patinar"
+  },
+  {
+    "spanish": "patio",
+    "portuguese": "pátio",
+    "english": "patio",
+    "phonetic": "patio",
+    "category": "substantivo",
+    "example": "El patio",
+    "exampleTranslation": "Exemplo com patio",
+    "exampleEnglish": "Example with patio"
+  },
+  {
+    "spanish": "pato",
+    "portuguese": "pato",
+    "english": "pato",
+    "phonetic": "pato",
+    "category": "substantivo",
+    "example": "El pato",
+    "exampleTranslation": "Exemplo com pato",
+    "exampleEnglish": "Example with pato"
+  },
+  {
+    "spanish": "patraña",
+    "portuguese": "patranha",
+    "english": "patraña",
+    "phonetic": "patraɲa",
+    "category": "substantivo",
+    "example": "El patraña",
+    "exampleTranslation": "Exemplo com patraña",
+    "exampleEnglish": "Example with patraña"
+  },
+  {
+    "spanish": "patria",
+    "portuguese": "pátria",
+    "english": "patria",
+    "phonetic": "patria",
+    "category": "substantivo",
+    "example": "El patria",
+    "exampleTranslation": "Exemplo com patria",
+    "exampleEnglish": "Example with patria"
+  },
+  {
+    "spanish": "patriarca",
+    "portuguese": "patriarca",
+    "english": "patriarca",
+    "phonetic": "patriarca",
+    "category": "substantivo",
+    "example": "El patriarca",
+    "exampleTranslation": "Exemplo com patriarca",
+    "exampleEnglish": "Example with patriarca"
+  },
+  {
+    "spanish": "patriarcado",
+    "portuguese": "patriarcado",
+    "english": "patriarcado",
+    "phonetic": "patriarcado",
+    "category": "substantivo",
+    "example": "El patriarcado",
+    "exampleTranslation": "Exemplo com patriarcado",
+    "exampleEnglish": "Example with patriarcado"
+  },
+  {
+    "spanish": "patriarcal",
+    "portuguese": "patriarcal",
+    "english": "patriarcal",
+    "phonetic": "patriarcal",
+    "category": "adjetivo",
+    "example": "Es muy patriarcal",
+    "exampleTranslation": "Exemplo com patriarcal",
+    "exampleEnglish": "Example with patriarcal"
+  },
+  {
+    "spanish": "patricio",
+    "portuguese": "e m. patrício",
+    "english": "patricio",
+    "phonetic": "patricio",
+    "category": "adjetivo",
+    "example": "Es muy patricio",
+    "exampleTranslation": "Exemplo com patricio",
+    "exampleEnglish": "Example with patricio"
+  },
+  {
+    "spanish": "patrimonial",
+    "portuguese": "patrimonial",
+    "english": "patrimonial",
+    "phonetic": "patrimonial",
+    "category": "adjetivo",
+    "example": "Es muy patrimonial",
+    "exampleTranslation": "Exemplo com patrimonial",
+    "exampleEnglish": "Example with patrimonial"
+  },
+  {
+    "spanish": "patrimonio",
+    "portuguese": "patrimônio",
+    "english": "patrimonio",
+    "phonetic": "patrimonio",
+    "category": "substantivo",
+    "example": "El patrimonio",
+    "exampleTranslation": "Exemplo com patrimonio",
+    "exampleEnglish": "Example with patrimonio"
+  },
+  {
+    "spanish": "patrio",
+    "portuguese": "pátrio",
+    "english": "patrio",
+    "phonetic": "patrio",
+    "category": "adjetivo",
+    "example": "Es muy patrio",
+    "exampleTranslation": "Exemplo com patrio",
+    "exampleEnglish": "Example with patrio"
+  },
+  {
+    "spanish": "patriota",
+    "portuguese": "e f. patriota",
+    "english": "patriota",
+    "phonetic": "patriota",
+    "category": "substantivo",
+    "example": "El patriota",
+    "exampleTranslation": "Exemplo com patriota",
+    "exampleEnglish": "Example with patriota"
+  },
+  {
+    "spanish": "patriótico",
+    "portuguese": "patriótico",
+    "english": "patriótico",
+    "phonetic": "patriótico",
+    "category": "adjetivo",
+    "example": "Es muy patriótico",
+    "exampleTranslation": "Exemplo com patriótico",
+    "exampleEnglish": "Example with patriótico"
+  },
+  {
+    "spanish": "patriotismo",
+    "portuguese": "patriotismo",
+    "english": "patriotismo",
+    "phonetic": "patriotismo",
+    "category": "substantivo",
+    "example": "El patriotismo",
+    "exampleTranslation": "Exemplo com patriotismo",
+    "exampleEnglish": "Example with patriotismo"
+  },
+  {
+    "spanish": "patrocinar",
+    "portuguese": "patrocinar",
+    "english": "patrocinar",
+    "phonetic": "patrocinar",
+    "category": "verbo",
+    "example": "Voy a patrocinar",
+    "exampleTranslation": "Exemplo com patrocinar",
+    "exampleEnglish": "Example with patrocinar"
+  },
+  {
+    "spanish": "patrocinio",
+    "portuguese": "patrocínio",
+    "english": "patrocinio",
+    "phonetic": "patrocinio",
+    "category": "substantivo",
+    "example": "El patrocinio",
+    "exampleTranslation": "Exemplo com patrocinio",
+    "exampleEnglish": "Example with patrocinio"
+  },
+  {
+    "spanish": "patrón",
+    "portuguese": "patrão",
+    "english": "patrón",
+    "phonetic": "patrón",
+    "category": "substantivo",
+    "example": "El patrón",
+    "exampleTranslation": "Exemplo com patrón",
+    "exampleEnglish": "Example with patrón"
+  },
+  {
+    "spanish": "patrulla",
+    "portuguese": "patrulha",
+    "english": "patrulla",
+    "phonetic": "patruʎa",
+    "category": "substantivo",
+    "example": "El patrulla",
+    "exampleTranslation": "Exemplo com patrulla",
+    "exampleEnglish": "Example with patrulla"
+  },
+  {
+    "spanish": "patrullar",
+    "portuguese": "patrulhar",
+    "english": "patrullar",
+    "phonetic": "patruʎar",
+    "category": "verbo",
+    "example": "Voy a patrullar",
+    "exampleTranslation": "Exemplo com patrullar",
+    "exampleEnglish": "Example with patrullar"
+  },
+  {
+    "spanish": "patrullero",
+    "portuguese": "patrulheiro",
+    "english": "patrullero",
+    "phonetic": "patruʎero",
+    "category": "substantivo",
+    "example": "El patrullero",
+    "exampleTranslation": "Exemplo com patrullero",
+    "exampleEnglish": "Example with patrullero"
+  },
+  {
+    "spanish": "paulatino",
+    "portuguese": "paulatino",
+    "english": "paulatino",
+    "phonetic": "paulatino",
+    "category": "adjetivo",
+    "example": "Es muy paulatino",
+    "exampleTranslation": "Exemplo com paulatino",
+    "exampleEnglish": "Example with paulatino"
+  },
+  {
+    "spanish": "pausa",
+    "portuguese": "pausa",
+    "english": "pausa",
+    "phonetic": "pausa",
+    "category": "substantivo",
+    "example": "El pausa",
+    "exampleTranslation": "Exemplo com pausa",
+    "exampleEnglish": "Example with pausa"
+  },
+  {
+    "spanish": "pausar",
+    "portuguese": "pausar",
+    "english": "pausar",
+    "phonetic": "pausar",
+    "category": "verbo",
+    "example": "Voy a pausar",
+    "exampleTranslation": "Exemplo com pausar",
+    "exampleEnglish": "Example with pausar"
+  },
+  {
+    "spanish": "pauta",
+    "portuguese": "pauta",
+    "english": "pauta",
+    "phonetic": "pauta",
+    "category": "substantivo",
+    "example": "El pauta",
+    "exampleTranslation": "Exemplo com pauta",
+    "exampleEnglish": "Example with pauta"
+  },
+  {
+    "spanish": "pautar",
+    "portuguese": "pauta",
+    "english": "pautar",
+    "phonetic": "pautar",
+    "category": "verbo",
+    "example": "Voy a pautar",
+    "exampleTranslation": "Exemplo com pautar",
+    "exampleEnglish": "Example with pautar"
+  },
+  {
+    "spanish": "pava",
+    "portuguese": "perua",
+    "english": "pava",
+    "phonetic": "pava",
+    "category": "substantivo",
+    "example": "El pava",
+    "exampleTranslation": "Exemplo com pava",
+    "exampleEnglish": "Example with pava"
+  },
+  {
+    "spanish": "pavimentación",
+    "portuguese": "pavimentação",
+    "english": "pavimentación",
+    "phonetic": "pavimentación",
+    "category": "substantivo",
+    "example": "El pavimentación",
+    "exampleTranslation": "Exemplo com pavimentación",
+    "exampleEnglish": "Example with pavimentación"
+  },
+  {
+    "spanish": "pavimentar",
+    "portuguese": "pavimentar",
+    "english": "pavimentar",
+    "phonetic": "pavimentar",
+    "category": "verbo",
+    "example": "Voy a pavimentar",
+    "exampleTranslation": "Exemplo com pavimentar",
+    "exampleEnglish": "Example with pavimentar"
+  },
+  {
+    "spanish": "pavimento",
+    "portuguese": "pavimento",
+    "english": "pavimento",
+    "phonetic": "pavimento",
+    "category": "substantivo",
+    "example": "El pavimento",
+    "exampleTranslation": "Exemplo com pavimento",
+    "exampleEnglish": "Example with pavimento"
+  },
+  {
+    "spanish": "pavo",
+    "portuguese": "peru",
+    "english": "pavo",
+    "phonetic": "pavo",
+    "category": "substantivo",
+    "example": "El pavo",
+    "exampleTranslation": "Exemplo com pavo",
+    "exampleEnglish": "Example with pavo"
+  },
+  {
+    "spanish": "pavón",
+    "portuguese": "pavão",
+    "english": "pavón",
+    "phonetic": "pavón",
+    "category": "substantivo",
+    "example": "El pavón",
+    "exampleTranslation": "Exemplo com pavón",
+    "exampleEnglish": "Example with pavón"
+  },
+  {
+    "spanish": "pavor",
+    "portuguese": "pavor",
+    "english": "pavor",
+    "phonetic": "pavor",
+    "category": "substantivo",
+    "example": "El pavor",
+    "exampleTranslation": "Exemplo com pavor",
+    "exampleEnglish": "Example with pavor"
+  },
+  {
+    "spanish": "pavoroso",
+    "portuguese": "pavoroso",
+    "english": "pavoroso",
+    "phonetic": "pavoroso",
+    "category": "adjetivo",
+    "example": "Es muy pavoroso",
+    "exampleTranslation": "Exemplo com pavoroso",
+    "exampleEnglish": "Example with pavoroso"
+  },
+  {
+    "spanish": "payasada",
+    "portuguese": "palhaçada",
+    "english": "payasada",
+    "phonetic": "payasada",
+    "category": "substantivo",
+    "example": "El payasada",
+    "exampleTranslation": "Exemplo com payasada",
+    "exampleEnglish": "Example with payasada"
+  },
+  {
+    "spanish": "payaso",
+    "portuguese": "palhaço",
+    "english": "payaso",
+    "phonetic": "payaso",
+    "category": "substantivo",
+    "example": "El payaso",
+    "exampleTranslation": "Exemplo com payaso",
+    "exampleEnglish": "Example with payaso"
+  },
+  {
+    "spanish": "paz",
+    "portuguese": "paz",
+    "english": "paz",
+    "phonetic": "paz",
+    "category": "substantivo",
+    "example": "El paz",
+    "exampleTranslation": "Exemplo com paz",
+    "exampleEnglish": "Example with paz"
+  },
+  {
+    "spanish": "peaje",
+    "portuguese": "pedágio",
+    "english": "peaje",
+    "phonetic": "peaje",
+    "category": "substantivo",
+    "example": "El peaje",
+    "exampleTranslation": "Exemplo com peaje",
+    "exampleEnglish": "Example with peaje"
+  },
+  {
+    "spanish": "peatón",
+    "portuguese": "pedestre",
+    "english": "peatón",
+    "phonetic": "peatón",
+    "category": "substantivo",
+    "example": "El peatón",
+    "exampleTranslation": "Exemplo com peatón",
+    "exampleEnglish": "Example with peatón"
+  },
+  {
+    "spanish": "pecado",
+    "portuguese": "pecado",
+    "english": "pecado",
+    "phonetic": "pecado",
+    "category": "substantivo",
+    "example": "El pecado",
+    "exampleTranslation": "Exemplo com pecado",
+    "exampleEnglish": "Example with pecado"
+  },
+  {
+    "spanish": "pecador",
+    "portuguese": "e m. pecador",
+    "english": "pecador",
+    "phonetic": "pecador",
+    "category": "adjetivo",
+    "example": "Es muy pecador",
+    "exampleTranslation": "Exemplo com pecador",
+    "exampleEnglish": "Example with pecador"
+  },
+  {
+    "spanish": "pecaminoso",
+    "portuguese": "pecaminoso",
+    "english": "pecaminoso",
+    "phonetic": "pecaminoso",
+    "category": "adjetivo",
+    "example": "Es muy pecaminoso",
+    "exampleTranslation": "Exemplo com pecaminoso",
+    "exampleEnglish": "Example with pecaminoso"
+  },
+  {
+    "spanish": "pecar",
+    "portuguese": "pecar",
+    "english": "pecar",
+    "phonetic": "pecar",
+    "category": "verbo",
+    "example": "Voy a pecar",
+    "exampleTranslation": "Exemplo com pecar",
+    "exampleEnglish": "Example with pecar"
+  },
+  {
+    "spanish": "pecho",
+    "portuguese": "peito",
+    "english": "pecho",
+    "phonetic": "pecho",
+    "category": "substantivo",
+    "example": "El pecho",
+    "exampleTranslation": "Exemplo com pecho",
+    "exampleEnglish": "Example with pecho"
+  },
+  {
+    "spanish": "pechuga",
+    "portuguese": "peito",
+    "english": "pechuga",
+    "phonetic": "pechuga",
+    "category": "substantivo",
+    "example": "El pechuga",
+    "exampleTranslation": "Exemplo com pechuga",
+    "exampleEnglish": "Example with pechuga"
+  },
+  {
+    "spanish": "peculiar",
+    "portuguese": "peculiar",
+    "english": "peculiar",
+    "phonetic": "peculiar",
+    "category": "adjetivo",
+    "example": "Es muy peculiar",
+    "exampleTranslation": "Exemplo com peculiar",
+    "exampleEnglish": "Example with peculiar"
+  },
+  {
+    "spanish": "peculiaridad",
+    "portuguese": "peculiaridade",
+    "english": "peculiaridad",
+    "phonetic": "peculiaridad",
+    "category": "substantivo",
+    "example": "El peculiaridad",
+    "exampleTranslation": "Exemplo com peculiaridad",
+    "exampleEnglish": "Example with peculiaridad"
+  },
+  {
+    "spanish": "peculio",
+    "portuguese": "pecúlio",
+    "english": "peculio",
+    "phonetic": "peculio",
+    "category": "substantivo",
+    "example": "El peculio",
+    "exampleTranslation": "Exemplo com peculio",
+    "exampleEnglish": "Example with peculio"
+  },
+  {
+    "spanish": "pecunia",
+    "portuguese": "pecúnia",
+    "english": "pecunia",
+    "phonetic": "pecunia",
+    "category": "substantivo",
+    "example": "El pecunia",
+    "exampleTranslation": "Exemplo com pecunia",
+    "exampleEnglish": "Example with pecunia"
+  },
+  {
+    "spanish": "pedagogía",
+    "portuguese": "pedagogia",
+    "english": "pedagogía",
+    "phonetic": "pedagogía",
+    "category": "substantivo",
+    "example": "El pedagogía",
+    "exampleTranslation": "Exemplo com pedagogía",
+    "exampleEnglish": "Example with pedagogía"
+  },
+  {
+    "spanish": "pedagógico",
+    "portuguese": "pedagógico",
+    "english": "pedagógico",
+    "phonetic": "pedagógico",
+    "category": "adjetivo",
+    "example": "Es muy pedagógico",
+    "exampleTranslation": "Exemplo com pedagógico",
+    "exampleEnglish": "Example with pedagógico"
+  },
+  {
+    "spanish": "pedagogo",
+    "portuguese": "pedagogo",
+    "english": "pedagogo",
+    "phonetic": "pedagogo",
+    "category": "substantivo",
+    "example": "El pedagogo",
+    "exampleTranslation": "Exemplo com pedagogo",
+    "exampleEnglish": "Example with pedagogo"
+  },
+  {
+    "spanish": "pedante",
+    "portuguese": "pedante",
+    "english": "pedante",
+    "phonetic": "pedante",
+    "category": "adjetivo",
+    "example": "Es muy pedante",
+    "exampleTranslation": "Exemplo com pedante",
+    "exampleEnglish": "Example with pedante"
+  },
+  {
+    "spanish": "pedazo",
+    "portuguese": "pedaço",
+    "english": "pedazo",
+    "phonetic": "pedazo",
+    "category": "substantivo",
+    "example": "El pedazo",
+    "exampleTranslation": "Exemplo com pedazo",
+    "exampleEnglish": "Example with pedazo"
+  },
+  {
+    "spanish": "pederasta",
+    "portuguese": "e m. e f. pederasta",
+    "english": "pederasta",
+    "phonetic": "pederasta",
+    "category": "adjetivo",
+    "example": "Es muy pederasta",
+    "exampleTranslation": "Exemplo com pederasta",
+    "exampleEnglish": "Example with pederasta"
+  },
+  {
+    "spanish": "pederastia",
+    "portuguese": "pederastia",
+    "english": "pederastia",
+    "phonetic": "pederastia",
+    "category": "substantivo",
+    "example": "El pederastia",
+    "exampleTranslation": "Exemplo com pederastia",
+    "exampleEnglish": "Example with pederastia"
+  },
+  {
+    "spanish": "pedestal",
+    "portuguese": "pedestal",
+    "english": "pedestal",
+    "phonetic": "pedestal",
+    "category": "substantivo",
+    "example": "El pedestal",
+    "exampleTranslation": "Exemplo com pedestal",
+    "exampleEnglish": "Example with pedestal"
+  },
+  {
+    "spanish": "pediatra",
+    "portuguese": "e f. pediatra",
+    "english": "pediatra",
+    "phonetic": "pediatra",
+    "category": "substantivo",
+    "example": "El pediatra",
+    "exampleTranslation": "Exemplo com pediatra",
+    "exampleEnglish": "Example with pediatra"
+  },
+  {
+    "spanish": "pediatría",
+    "portuguese": "pediatria",
+    "english": "pediatría",
+    "phonetic": "pediatría",
+    "category": "substantivo",
+    "example": "El pediatría",
+    "exampleTranslation": "Exemplo com pediatría",
+    "exampleEnglish": "Example with pediatría"
+  },
+  {
+    "spanish": "pedido",
+    "portuguese": "pedido",
+    "english": "pedido",
+    "phonetic": "pedido",
+    "category": "substantivo",
+    "example": "El pedido",
+    "exampleTranslation": "Exemplo com pedido",
+    "exampleEnglish": "Example with pedido"
+  },
+  {
+    "spanish": "pedir",
+    "portuguese": "pedir",
+    "english": "pedir",
+    "phonetic": "pedir",
+    "category": "verbo",
+    "example": "Voy a pedir",
+    "exampleTranslation": "Exemplo com pedir",
+    "exampleEnglish": "Example with pedir"
+  },
+  {
+    "spanish": "pedo",
+    "portuguese": "peido",
+    "english": "pedo",
+    "phonetic": "pedo",
+    "category": "substantivo",
+    "example": "El pedo",
+    "exampleTranslation": "Exemplo com pedo",
+    "exampleEnglish": "Example with pedo"
+  },
+  {
+    "spanish": "pedrada",
+    "portuguese": "pedrada",
+    "english": "pedrada",
+    "phonetic": "pedrada",
+    "category": "substantivo",
+    "example": "El pedrada",
+    "exampleTranslation": "Exemplo com pedrada",
+    "exampleEnglish": "Example with pedrada"
+  },
+  {
+    "spanish": "pedregoso",
+    "portuguese": "pedregoso",
+    "english": "pedregoso",
+    "phonetic": "pedregoso",
+    "category": "adjetivo",
+    "example": "Es muy pedregoso",
+    "exampleTranslation": "Exemplo com pedregoso",
+    "exampleEnglish": "Example with pedregoso"
+  },
+  {
+    "spanish": "pedúnculo",
+    "portuguese": "pedúnculo",
+    "english": "pedúnculo",
+    "phonetic": "pedúnculo",
+    "category": "substantivo",
+    "example": "El pedúnculo",
+    "exampleTranslation": "Exemplo com pedúnculo",
+    "exampleEnglish": "Example with pedúnculo"
+  },
+  {
+    "spanish": "pegadizo",
+    "portuguese": "pegajoso",
+    "english": "pegadizo",
+    "phonetic": "pegadizo",
+    "category": "adjetivo",
+    "example": "Es muy pegadizo",
+    "exampleTranslation": "Exemplo com pegadizo",
+    "exampleEnglish": "Example with pegadizo"
+  },
+  {
+    "spanish": "pegajoso",
+    "portuguese": "pegajoso",
+    "english": "pegajoso",
+    "phonetic": "pegajoso",
+    "category": "adjetivo",
+    "example": "Es muy pegajoso",
+    "exampleTranslation": "Exemplo com pegajoso",
+    "exampleEnglish": "Example with pegajoso"
+  },
+  {
+    "spanish": "pegar",
+    "portuguese": "pregar, grudar",
+    "english": "pegar",
+    "phonetic": "pegar",
+    "category": "verbo",
+    "example": "Voy a pegar",
+    "exampleTranslation": "Exemplo com pegar",
+    "exampleEnglish": "Example with pegar"
+  },
+  {
+    "spanish": "peinado",
+    "portuguese": "penteado",
+    "english": "peinado",
+    "phonetic": "peinado",
+    "category": "adjetivo",
+    "example": "Es muy peinado",
+    "exampleTranslation": "Exemplo com peinado",
+    "exampleEnglish": "Example with peinado"
+  },
+  {
+    "spanish": "peinar",
+    "portuguese": "pentear",
+    "english": "peinar",
+    "phonetic": "peinar",
+    "category": "verbo",
+    "example": "Voy a peinar",
+    "exampleTranslation": "Exemplo com peinar",
+    "exampleEnglish": "Example with peinar"
+  },
+  {
+    "spanish": "peine",
+    "portuguese": "pente",
+    "english": "peine",
+    "phonetic": "peine",
+    "category": "substantivo",
+    "example": "El peine",
+    "exampleTranslation": "Exemplo com peine",
+    "exampleEnglish": "Example with peine"
+  },
+  {
+    "spanish": "pelaje",
+    "portuguese": "pelagem",
+    "english": "pelaje",
+    "phonetic": "pelaje",
+    "category": "substantivo",
+    "example": "El pelaje",
+    "exampleTranslation": "Exemplo com pelaje",
+    "exampleEnglish": "Example with pelaje"
+  },
+  {
+    "spanish": "pelar",
+    "portuguese": "pelar",
+    "english": "pelar",
+    "phonetic": "pelar",
+    "category": "verbo",
+    "example": "Voy a pelar",
+    "exampleTranslation": "Exemplo com pelar",
+    "exampleEnglish": "Example with pelar"
+  },
+  {
+    "spanish": "pelea",
+    "portuguese": "peleja",
+    "english": "pelea",
+    "phonetic": "pelea",
+    "category": "substantivo",
+    "example": "El pelea",
+    "exampleTranslation": "Exemplo com pelea",
+    "exampleEnglish": "Example with pelea"
+  },
+  {
+    "spanish": "pelear",
+    "portuguese": "pelejar",
+    "english": "pelear",
+    "phonetic": "pelear",
+    "category": "verbo",
+    "example": "Voy a pelear",
+    "exampleTranslation": "Exemplo com pelear",
+    "exampleEnglish": "Example with pelear"
+  },
+  {
+    "spanish": "pelicano",
+    "portuguese": "boticão",
+    "english": "pelicano",
+    "phonetic": "pelicano",
+    "category": "substantivo",
+    "example": "El pelicano",
+    "exampleTranslation": "Exemplo com pelicano",
+    "exampleEnglish": "Example with pelicano"
+  },
+  {
+    "spanish": "pelícano",
+    "portuguese": "V. pelicano",
+    "english": "pelícano",
+    "phonetic": "pelícano",
+    "category": "substantivo",
+    "example": "El pelícano",
+    "exampleTranslation": "Exemplo com pelícano",
+    "exampleEnglish": "Example with pelícano"
+  },
+  {
+    "spanish": "película",
+    "portuguese": "película filme",
+    "english": "película",
+    "phonetic": "película",
+    "category": "substantivo",
+    "example": "El película",
+    "exampleTranslation": "Exemplo com película",
+    "exampleEnglish": "Example with película"
+  },
+  {
+    "spanish": "peligro",
+    "portuguese": "perigo",
+    "english": "peligro",
+    "phonetic": "peligro",
+    "category": "substantivo",
+    "example": "El peligro",
+    "exampleTranslation": "Exemplo com peligro",
+    "exampleEnglish": "Example with peligro"
+  },
+  {
+    "spanish": "peligroso",
+    "portuguese": "perigoso",
+    "english": "peligroso",
+    "phonetic": "peligroso",
+    "category": "adjetivo",
+    "example": "Es muy peligroso",
+    "exampleTranslation": "Exemplo com peligroso",
+    "exampleEnglish": "Example with peligroso"
+  },
+  {
+    "spanish": "pelirrojo",
+    "portuguese": "ruivo",
+    "english": "pelirrojo",
+    "phonetic": "pelirrojo",
+    "category": "adjetivo",
+    "example": "Es muy pelirrojo",
+    "exampleTranslation": "Exemplo com pelirrojo",
+    "exampleEnglish": "Example with pelirrojo"
+  },
+  {
+    "spanish": "pellizcar",
+    "portuguese": "beliscar",
+    "english": "pellizcar",
+    "phonetic": "peʎizcar",
+    "category": "verbo",
+    "example": "Voy a pellizcar",
+    "exampleTranslation": "Exemplo com pellizcar",
+    "exampleEnglish": "Example with pellizcar"
+  },
+  {
+    "spanish": "pellizco",
+    "portuguese": "beliscão",
+    "english": "pellizco",
+    "phonetic": "peʎizco",
+    "category": "substantivo",
+    "example": "El pellizco",
+    "exampleTranslation": "Exemplo com pellizco",
+    "exampleEnglish": "Example with pellizco"
+  },
+  {
+    "spanish": "pelo",
+    "portuguese": "pêlo, cabelo",
+    "english": "pelo",
+    "phonetic": "pelo",
+    "category": "substantivo",
+    "example": "El pelo",
+    "exampleTranslation": "Exemplo com pelo",
+    "exampleEnglish": "Example with pelo"
+  },
+  {
+    "spanish": "peluca",
+    "portuguese": "peruca",
+    "english": "peluca",
+    "phonetic": "peluca",
+    "category": "substantivo",
+    "example": "El peluca",
+    "exampleTranslation": "Exemplo com peluca",
+    "exampleEnglish": "Example with peluca"
+  },
+  {
+    "spanish": "peludo",
+    "portuguese": "peludo",
+    "english": "peludo",
+    "phonetic": "peludo",
+    "category": "adjetivo",
+    "example": "Es muy peludo",
+    "exampleTranslation": "Exemplo com peludo",
+    "exampleEnglish": "Example with peludo"
+  },
+  {
+    "spanish": "peluquería",
+    "portuguese": "barbearia salão de cabeleireiro",
+    "english": "peluquería",
+    "phonetic": "peluquería",
+    "category": "substantivo",
+    "example": "El peluquería",
+    "exampleTranslation": "Exemplo com peluquería",
+    "exampleEnglish": "Example with peluquería"
+  },
+  {
+    "spanish": "peluquero",
+    "portuguese": "cabeleireiro",
+    "english": "peluquero",
+    "phonetic": "peluquero",
+    "category": "substantivo",
+    "example": "El peluquero",
+    "exampleTranslation": "Exemplo com peluquero",
+    "exampleEnglish": "Example with peluquero"
+  },
+  {
+    "spanish": "pelvis",
+    "portuguese": "pélvis",
+    "english": "pelvis",
+    "phonetic": "pelvis",
+    "category": "substantivo",
+    "example": "El pelvis",
+    "exampleTranslation": "Exemplo com pelvis",
+    "exampleEnglish": "Example with pelvis"
+  },
+  {
+    "spanish": "pena",
+    "portuguese": "pena",
+    "english": "pena",
+    "phonetic": "pena",
+    "category": "substantivo",
+    "example": "El pena",
+    "exampleTranslation": "Exemplo com pena",
+    "exampleEnglish": "Example with pena"
+  },
+  {
+    "spanish": "peña",
+    "portuguese": "penha",
+    "english": "peña",
+    "phonetic": "peɲa",
+    "category": "substantivo",
+    "example": "El peña",
+    "exampleTranslation": "Exemplo com peña",
+    "exampleEnglish": "Example with peña"
+  },
+  {
+    "spanish": "penal",
+    "portuguese": "penal",
+    "english": "penal",
+    "phonetic": "penal",
+    "category": "adjetivo",
+    "example": "Es muy penal",
+    "exampleTranslation": "Exemplo com penal",
+    "exampleEnglish": "Example with penal"
+  },
+  {
+    "spanish": "penalidad",
+    "portuguese": "penalidade",
+    "english": "penalidad",
+    "phonetic": "penalidad",
+    "category": "substantivo",
+    "example": "El penalidad",
+    "exampleTranslation": "Exemplo com penalidad",
+    "exampleEnglish": "Example with penalidad"
+  },
+  {
+    "spanish": "peñasco",
+    "portuguese": "penhasco",
+    "english": "peñasco",
+    "phonetic": "peɲasco",
+    "category": "substantivo",
+    "example": "El peñasco",
+    "exampleTranslation": "Exemplo com peñasco",
+    "exampleEnglish": "Example with peñasco"
+  },
+  {
+    "spanish": "pendencia",
+    "portuguese": "pendência",
+    "english": "pendencia",
+    "phonetic": "pendencia",
+    "category": "substantivo",
+    "example": "El pendencia",
+    "exampleTranslation": "Exemplo com pendencia",
+    "exampleEnglish": "Example with pendencia"
+  },
+  {
+    "spanish": "pender",
+    "portuguese": "pender",
+    "english": "pender",
+    "phonetic": "pender",
+    "category": "verbo",
+    "example": "Voy a pender",
+    "exampleTranslation": "Exemplo com pender",
+    "exampleEnglish": "Example with pender"
+  },
+  {
+    "spanish": "pendiente",
+    "portuguese": "pendente m. brinco",
+    "english": "pendiente",
+    "phonetic": "pendiente",
+    "category": "adjetivo",
+    "example": "Es muy pendiente",
+    "exampleTranslation": "Exemplo com pendiente",
+    "exampleEnglish": "Example with pendiente"
+  },
+  {
+    "spanish": "pendular",
+    "portuguese": "pendular",
+    "english": "pendular",
+    "phonetic": "pendular",
+    "category": "adjetivo",
+    "example": "Es muy pendular",
+    "exampleTranslation": "Exemplo com pendular",
+    "exampleEnglish": "Example with pendular"
+  },
+  {
+    "spanish": "péndulo",
+    "portuguese": "pêndulo",
+    "english": "péndulo",
+    "phonetic": "péndulo",
+    "category": "adjetivo",
+    "example": "Es muy péndulo",
+    "exampleTranslation": "Exemplo com péndulo",
+    "exampleEnglish": "Example with péndulo"
+  },
+  {
+    "spanish": "pene",
+    "portuguese": "pênis",
+    "english": "pene",
+    "phonetic": "pene",
+    "category": "substantivo",
+    "example": "El pene",
+    "exampleTranslation": "Exemplo com pene",
+    "exampleEnglish": "Example with pene"
+  },
+  {
+    "spanish": "penetración",
+    "portuguese": "penetração",
+    "english": "penetración",
+    "phonetic": "penetración",
+    "category": "substantivo",
+    "example": "El penetración",
+    "exampleTranslation": "Exemplo com penetración",
+    "exampleEnglish": "Example with penetración"
+  },
+  {
+    "spanish": "penetrar",
+    "portuguese": "penetrar",
+    "english": "penetrar",
+    "phonetic": "penetrar",
+    "category": "verbo",
+    "example": "Voy a penetrar",
+    "exampleTranslation": "Exemplo com penetrar",
+    "exampleEnglish": "Example with penetrar"
+  },
+  {
+    "spanish": "penicilina",
+    "portuguese": "penicilina",
+    "english": "penicilina",
+    "phonetic": "penicilina",
+    "category": "substantivo",
+    "example": "El penicilina",
+    "exampleTranslation": "Exemplo com penicilina",
+    "exampleEnglish": "Example with penicilina"
+  },
+  {
+    "spanish": "península",
+    "portuguese": "península",
+    "english": "península",
+    "phonetic": "península",
+    "category": "substantivo",
+    "example": "El península",
+    "exampleTranslation": "Exemplo com península",
+    "exampleEnglish": "Example with península"
+  },
+  {
+    "spanish": "peninsular",
+    "portuguese": "peninsular",
+    "english": "peninsular",
+    "phonetic": "peninsular",
+    "category": "adjetivo",
+    "example": "Es muy peninsular",
+    "exampleTranslation": "Exemplo com peninsular",
+    "exampleEnglish": "Example with peninsular"
+  },
+  {
+    "spanish": "penitencia",
+    "portuguese": "penitência",
+    "english": "penitencia",
+    "phonetic": "penitencia",
+    "category": "substantivo",
+    "example": "El penitencia",
+    "exampleTranslation": "Exemplo com penitencia",
+    "exampleEnglish": "Example with penitencia"
+  },
+  {
+    "spanish": "penitente",
+    "portuguese": "e m. e f. penitente",
+    "english": "penitente",
+    "phonetic": "penitente",
+    "category": "adjetivo",
+    "example": "Es muy penitente",
+    "exampleTranslation": "Exemplo com penitente",
+    "exampleEnglish": "Example with penitente"
+  },
+  {
+    "spanish": "penoso",
+    "portuguese": "penoso",
+    "english": "penoso",
+    "phonetic": "penoso",
+    "category": "adjetivo",
+    "example": "Es muy penoso",
+    "exampleTranslation": "Exemplo com penoso",
+    "exampleEnglish": "Example with penoso"
+  },
+  {
+    "spanish": "pensador",
+    "portuguese": "e m. pensador",
+    "english": "pensador",
+    "phonetic": "pensador",
+    "category": "adjetivo",
+    "example": "Es muy pensador",
+    "exampleTranslation": "Exemplo com pensador",
+    "exampleEnglish": "Example with pensador"
+  },
+  {
+    "spanish": "pensamiento",
+    "portuguese": "pensamento",
+    "english": "pensamiento",
+    "phonetic": "pensamiento",
+    "category": "substantivo",
+    "example": "El pensamiento",
+    "exampleTranslation": "Exemplo com pensamiento",
+    "exampleEnglish": "Example with pensamiento"
+  },
+  {
+    "spanish": "pensar",
+    "portuguese": "pensar",
+    "english": "pensar",
+    "phonetic": "pensar",
+    "category": "verbo",
+    "example": "Voy a pensar",
+    "exampleTranslation": "Exemplo com pensar",
+    "exampleEnglish": "Example with pensar"
+  },
+  {
+    "spanish": "pensativo",
+    "portuguese": "pensativo",
+    "english": "pensativo",
+    "phonetic": "pensativo",
+    "category": "adjetivo",
+    "example": "Es muy pensativo",
+    "exampleTranslation": "Exemplo com pensativo",
+    "exampleEnglish": "Example with pensativo"
+  },
+  {
+    "spanish": "pensión",
+    "portuguese": "pensão",
+    "english": "pensión",
+    "phonetic": "pensión",
+    "category": "substantivo",
+    "example": "El pensión",
+    "exampleTranslation": "Exemplo com pensión",
+    "exampleEnglish": "Example with pensión"
+  },
+  {
+    "spanish": "pensionado",
+    "portuguese": "e m. pensionato",
+    "english": "pensionado",
+    "phonetic": "pensionado",
+    "category": "adjetivo",
+    "example": "Es muy pensionado",
+    "exampleTranslation": "Exemplo com pensionado",
+    "exampleEnglish": "Example with pensionado"
+  },
+  {
+    "spanish": "pensionista",
+    "portuguese": "e f. pensionista",
+    "english": "pensionista",
+    "phonetic": "pensionista",
+    "category": "substantivo",
+    "example": "El pensionista",
+    "exampleTranslation": "Exemplo com pensionista",
+    "exampleEnglish": "Example with pensionista"
+  },
+  {
+    "spanish": "penúltimo",
+    "portuguese": "e m. penúltimo",
+    "english": "penúltimo",
+    "phonetic": "penúltimo",
+    "category": "adjetivo",
+    "example": "Es muy penúltimo",
+    "exampleTranslation": "Exemplo com penúltimo",
+    "exampleEnglish": "Example with penúltimo"
+  },
+  {
+    "spanish": "penumbra",
+    "portuguese": "penumbra",
+    "english": "penumbra",
+    "phonetic": "penumbra",
+    "category": "substantivo",
+    "example": "El penumbra",
+    "exampleTranslation": "Exemplo com penumbra",
+    "exampleEnglish": "Example with penumbra"
+  },
+  {
+    "spanish": "penuria",
+    "portuguese": "penúria",
+    "english": "penuria",
+    "phonetic": "penuria",
+    "category": "substantivo",
+    "example": "El penuria",
+    "exampleTranslation": "Exemplo com penuria",
+    "exampleEnglish": "Example with penuria"
+  },
+  {
+    "spanish": "peón",
+    "portuguese": "peão",
+    "english": "peón",
+    "phonetic": "peón",
+    "category": "substantivo",
+    "example": "El peón",
+    "exampleTranslation": "Exemplo com peón",
+    "exampleEnglish": "Example with peón"
+  },
+  {
+    "spanish": "peor",
+    "portuguese": "e adv. pior",
+    "english": "peor",
+    "phonetic": "peor",
+    "category": "adjetivo",
+    "example": "Es muy peor",
+    "exampleTranslation": "Exemplo com peor",
+    "exampleEnglish": "Example with peor"
+  },
+  {
+    "spanish": "pepinar",
+    "portuguese": "pepinal",
+    "english": "pepinar",
+    "phonetic": "pepinar",
+    "category": "substantivo",
+    "example": "El pepinar",
+    "exampleTranslation": "Exemplo com pepinar",
+    "exampleEnglish": "Example with pepinar"
+  },
+  {
+    "spanish": "pepinillo",
+    "portuguese": "pepino em conserva",
+    "english": "pepinillo",
+    "phonetic": "pepiniʎo",
+    "category": "substantivo",
+    "example": "El pepinillo",
+    "exampleTranslation": "Exemplo com pepinillo",
+    "exampleEnglish": "Example with pepinillo"
+  },
+  {
+    "spanish": "pepino",
+    "portuguese": "pepino importar um pepino = não dar",
+    "english": "pepino",
+    "phonetic": "pepino",
+    "category": "substantivo",
+    "example": "El pepino",
+    "exampleTranslation": "Exemplo com pepino",
+    "exampleEnglish": "Example with pepino"
+  },
+  {
+    "spanish": "pequeñez",
+    "portuguese": "pequenez",
+    "english": "pequeñez",
+    "phonetic": "pequeɲez",
+    "category": "substantivo",
+    "example": "El pequeñez",
+    "exampleTranslation": "Exemplo com pequeñez",
+    "exampleEnglish": "Example with pequeñez"
+  },
+  {
+    "spanish": "pequeño",
+    "portuguese": "pequeno",
+    "english": "pequeño",
+    "phonetic": "pequeɲo",
+    "category": "adjetivo",
+    "example": "Es muy pequeño",
+    "exampleTranslation": "Exemplo com pequeño",
+    "exampleEnglish": "Example with pequeño"
+  },
+  {
+    "spanish": "pera",
+    "portuguese": "pêra",
+    "english": "pera",
+    "phonetic": "pera",
+    "category": "substantivo",
+    "example": "El pera",
+    "exampleTranslation": "Exemplo com pera",
+    "exampleEnglish": "Example with pera"
+  },
+  {
+    "spanish": "peral",
+    "portuguese": "pereira",
+    "english": "peral",
+    "phonetic": "peral",
+    "category": "substantivo",
+    "example": "El peral",
+    "exampleTranslation": "Exemplo com peral",
+    "exampleEnglish": "Example with peral"
+  },
+  {
+    "spanish": "percepción",
+    "portuguese": "percepção",
+    "english": "percepción",
+    "phonetic": "percepción",
+    "category": "substantivo",
+    "example": "El percepción",
+    "exampleTranslation": "Exemplo com percepción",
+    "exampleEnglish": "Example with percepción"
+  },
+  {
+    "spanish": "percibir",
+    "portuguese": "perceber",
+    "english": "percibir",
+    "phonetic": "percibir",
+    "category": "verbo",
+    "example": "Voy a percibir",
+    "exampleTranslation": "Exemplo com percibir",
+    "exampleEnglish": "Example with percibir"
+  },
+  {
+    "spanish": "percusión",
+    "portuguese": "percussão",
+    "english": "percusión",
+    "phonetic": "percusión",
+    "category": "substantivo",
+    "example": "El percusión",
+    "exampleTranslation": "Exemplo com percusión",
+    "exampleEnglish": "Example with percusión"
+  },
+  {
+    "spanish": "percutir",
+    "portuguese": "percutir",
+    "english": "percutir",
+    "phonetic": "percutir",
+    "category": "verbo",
+    "example": "Voy a percutir",
+    "exampleTranslation": "Exemplo com percutir",
+    "exampleEnglish": "Example with percutir"
+  },
+  {
+    "spanish": "perdedor",
+    "portuguese": "e m. perdedor",
+    "english": "perdedor",
+    "phonetic": "perdedor",
+    "category": "adjetivo",
+    "example": "Es muy perdedor",
+    "exampleTranslation": "Exemplo com perdedor",
+    "exampleEnglish": "Example with perdedor"
+  },
+  {
+    "spanish": "perder",
+    "portuguese": "perder",
+    "english": "perder",
+    "phonetic": "perder",
+    "category": "verbo",
+    "example": "Voy a perder",
+    "exampleTranslation": "Exemplo com perder",
+    "exampleEnglish": "Example with perder"
+  },
+  {
+    "spanish": "perdición",
+    "portuguese": "perdição",
+    "english": "perdición",
+    "phonetic": "perdición",
+    "category": "substantivo",
+    "example": "El perdición",
+    "exampleTranslation": "Exemplo com perdición",
+    "exampleEnglish": "Example with perdición"
+  },
+  {
+    "spanish": "pérdida",
+    "portuguese": "perda",
+    "english": "pérdida",
+    "phonetic": "pérdida",
+    "category": "substantivo",
+    "example": "El pérdida",
+    "exampleTranslation": "Exemplo com pérdida",
+    "exampleEnglish": "Example with pérdida"
+  },
+  {
+    "spanish": "perdiz",
+    "portuguese": "perdiz",
+    "english": "perdiz",
+    "phonetic": "perdiz",
+    "category": "substantivo",
+    "example": "El perdiz",
+    "exampleTranslation": "Exemplo com perdiz",
+    "exampleEnglish": "Example with perdiz"
+  },
+  {
+    "spanish": "perdón",
+    "portuguese": "perdão",
+    "english": "perdón",
+    "phonetic": "perdón",
+    "category": "substantivo",
+    "example": "El perdón",
+    "exampleTranslation": "Exemplo com perdón",
+    "exampleEnglish": "Example with perdón"
+  },
+  {
+    "spanish": "perdonar",
+    "portuguese": "perdoar",
+    "english": "perdonar",
+    "phonetic": "perdonar",
+    "category": "verbo",
+    "example": "Voy a perdonar",
+    "exampleTranslation": "Exemplo com perdonar",
+    "exampleEnglish": "Example with perdonar"
+  },
+  {
+    "spanish": "perdulario",
+    "portuguese": "e m. perdulário",
+    "english": "perdulario",
+    "phonetic": "perdulario",
+    "category": "adjetivo",
+    "example": "Es muy perdulario",
+    "exampleTranslation": "Exemplo com perdulario",
+    "exampleEnglish": "Example with perdulario"
+  },
+  {
+    "spanish": "perdurable",
+    "portuguese": "perdurável",
+    "english": "perdurable",
+    "phonetic": "perdurable",
+    "category": "adjetivo",
+    "example": "Es muy perdurable",
+    "exampleTranslation": "Exemplo com perdurable",
+    "exampleEnglish": "Example with perdurable"
+  },
+  {
+    "spanish": "perdurar",
+    "portuguese": "perdurar",
+    "english": "perdurar",
+    "phonetic": "perdurar",
+    "category": "verbo",
+    "example": "Voy a perdurar",
+    "exampleTranslation": "Exemplo com perdurar",
+    "exampleEnglish": "Example with perdurar"
+  },
+  {
+    "spanish": "perecedero",
+    "portuguese": "perecível",
+    "english": "perecedero",
+    "phonetic": "perecedero",
+    "category": "adjetivo",
+    "example": "Es muy perecedero",
+    "exampleTranslation": "Exemplo com perecedero",
+    "exampleEnglish": "Example with perecedero"
+  },
+  {
+    "spanish": "perecer",
+    "portuguese": "perecer",
+    "english": "perecer",
+    "phonetic": "perecer",
+    "category": "verbo",
+    "example": "Voy a perecer",
+    "exampleTranslation": "Exemplo com perecer",
+    "exampleEnglish": "Example with perecer"
+  },
+  {
+    "spanish": "peregrinación",
+    "portuguese": "peregrinação",
+    "english": "peregrinación",
+    "phonetic": "peregrinación",
+    "category": "substantivo",
+    "example": "El peregrinación",
+    "exampleTranslation": "Exemplo com peregrinación",
+    "exampleEnglish": "Example with peregrinación"
+  },
+  {
+    "spanish": "peregrinaje",
+    "portuguese": "peregrinação",
+    "english": "peregrinaje",
+    "phonetic": "peregrinaje",
+    "category": "substantivo",
+    "example": "El peregrinaje",
+    "exampleTranslation": "Exemplo com peregrinaje",
+    "exampleEnglish": "Example with peregrinaje"
+  },
+  {
+    "spanish": "peregrinar",
+    "portuguese": "peregrinar",
+    "english": "peregrinar",
+    "phonetic": "peregrinar",
+    "category": "verbo",
+    "example": "Voy a peregrinar",
+    "exampleTranslation": "Exemplo com peregrinar",
+    "exampleEnglish": "Example with peregrinar"
+  },
+  {
+    "spanish": "peregrino",
+    "portuguese": "e m. peregrino",
+    "english": "peregrino",
+    "phonetic": "peregrino",
+    "category": "adjetivo",
+    "example": "Es muy peregrino",
+    "exampleTranslation": "Exemplo com peregrino",
+    "exampleEnglish": "Example with peregrino"
+  },
+  {
+    "spanish": "perejil",
+    "portuguese": "perrexil, salsa",
+    "english": "perejil",
+    "phonetic": "perejil",
+    "category": "substantivo",
+    "example": "El perejil",
+    "exampleTranslation": "Exemplo com perejil",
+    "exampleEnglish": "Example with perejil"
+  },
+  {
+    "spanish": "perenne",
+    "portuguese": "perene",
+    "english": "perenne",
+    "phonetic": "perenne",
+    "category": "adjetivo",
+    "example": "Es muy perenne",
+    "exampleTranslation": "Exemplo com perenne",
+    "exampleEnglish": "Example with perenne"
+  },
+  {
+    "spanish": "pereza",
+    "portuguese": "preguiça",
+    "english": "pereza",
+    "phonetic": "pereza",
+    "category": "substantivo",
+    "example": "El pereza",
+    "exampleTranslation": "Exemplo com pereza",
+    "exampleEnglish": "Example with pereza"
+  },
+  {
+    "spanish": "perezoso",
+    "portuguese": "preguiçoso",
+    "english": "perezoso",
+    "phonetic": "perezoso",
+    "category": "adjetivo",
+    "example": "Es muy perezoso",
+    "exampleTranslation": "Exemplo com perezoso",
+    "exampleEnglish": "Example with perezoso"
+  },
+  {
+    "spanish": "perfección",
+    "portuguese": "perfeição",
+    "english": "perfección",
+    "phonetic": "perfección",
+    "category": "substantivo",
+    "example": "El perfección",
+    "exampleTranslation": "Exemplo com perfección",
+    "exampleEnglish": "Example with perfección"
+  },
+  {
+    "spanish": "perfeccionar",
+    "portuguese": "aperfeiçoar",
+    "english": "perfeccionar",
+    "phonetic": "perfeccionar",
+    "category": "verbo",
+    "example": "Voy a perfeccionar",
+    "exampleTranslation": "Exemplo com perfeccionar",
+    "exampleEnglish": "Example with perfeccionar"
+  },
+  {
+    "spanish": "perfeccionista",
+    "portuguese": "e m. e f. perfeccionista",
+    "english": "perfeccionista",
+    "phonetic": "perfeccionista",
+    "category": "adjetivo",
+    "example": "Es muy perfeccionista",
+    "exampleTranslation": "Exemplo com perfeccionista",
+    "exampleEnglish": "Example with perfeccionista"
+  },
+  {
+    "spanish": "perfecto",
+    "portuguese": "perfeito",
+    "english": "perfecto",
+    "phonetic": "perfecto",
+    "category": "adjetivo",
+    "example": "Es muy perfecto",
+    "exampleTranslation": "Exemplo com perfecto",
+    "exampleEnglish": "Example with perfecto"
+  },
+  {
+    "spanish": "perfidia",
+    "portuguese": "perfídia",
+    "english": "perfidia",
+    "phonetic": "perfidia",
+    "category": "substantivo",
+    "example": "El perfidia",
+    "exampleTranslation": "Exemplo com perfidia",
+    "exampleEnglish": "Example with perfidia"
+  },
+  {
+    "spanish": "pérfido",
+    "portuguese": "pérfido",
+    "english": "pérfido",
+    "phonetic": "pérfido",
+    "category": "adjetivo",
+    "example": "Es muy pérfido",
+    "exampleTranslation": "Exemplo com pérfido",
+    "exampleEnglish": "Example with pérfido"
+  },
+  {
+    "spanish": "perfil",
+    "portuguese": "perfil",
+    "english": "perfil",
+    "phonetic": "perfil",
+    "category": "substantivo",
+    "example": "El perfil",
+    "exampleTranslation": "Exemplo com perfil",
+    "exampleEnglish": "Example with perfil"
+  },
+  {
+    "spanish": "perforación",
+    "portuguese": "perfuração",
+    "english": "perforación",
+    "phonetic": "perforación",
+    "category": "substantivo",
+    "example": "El perforación",
+    "exampleTranslation": "Exemplo com perforación",
+    "exampleEnglish": "Example with perforación"
+  },
+  {
+    "spanish": "perforar",
+    "portuguese": "perfurar",
+    "english": "perforar",
+    "phonetic": "perforar",
+    "category": "verbo",
+    "example": "Voy a perforar",
+    "exampleTranslation": "Exemplo com perforar",
+    "exampleEnglish": "Example with perforar"
+  },
+  {
+    "spanish": "perfumar",
+    "portuguese": "perfumar",
+    "english": "perfumar",
+    "phonetic": "perfumar",
+    "category": "verbo",
+    "example": "Voy a perfumar",
+    "exampleTranslation": "Exemplo com perfumar",
+    "exampleEnglish": "Example with perfumar"
+  },
+  {
+    "spanish": "perfume",
+    "portuguese": "perfume",
+    "english": "perfume",
+    "phonetic": "perfume",
+    "category": "substantivo",
+    "example": "El perfume",
+    "exampleTranslation": "Exemplo com perfume",
+    "exampleEnglish": "Example with perfume"
+  },
+  {
+    "spanish": "perfumería",
+    "portuguese": "perfumaria",
+    "english": "perfumería",
+    "phonetic": "perfumería",
+    "category": "substantivo",
+    "example": "El perfumería",
+    "exampleTranslation": "Exemplo com perfumería",
+    "exampleEnglish": "Example with perfumería"
+  },
+  {
+    "spanish": "pergamino",
+    "portuguese": "pergaminho",
+    "english": "pergamino",
+    "phonetic": "pergamino",
+    "category": "substantivo",
+    "example": "El pergamino",
+    "exampleTranslation": "Exemplo com pergamino",
+    "exampleEnglish": "Example with pergamino"
+  },
+  {
+    "spanish": "pérgola",
+    "portuguese": "pérgula",
+    "english": "pérgola",
+    "phonetic": "pérgola",
+    "category": "substantivo",
+    "example": "El pérgola",
+    "exampleTranslation": "Exemplo com pérgola",
+    "exampleEnglish": "Example with pérgola"
+  },
+  {
+    "spanish": "pericia",
+    "portuguese": "perícia",
+    "english": "pericia",
+    "phonetic": "pericia",
+    "category": "substantivo",
+    "example": "El pericia",
+    "exampleTranslation": "Exemplo com pericia",
+    "exampleEnglish": "Example with pericia"
+  },
+  {
+    "spanish": "periferia",
+    "portuguese": "periferia",
+    "english": "periferia",
+    "phonetic": "periferia",
+    "category": "substantivo",
+    "example": "El periferia",
+    "exampleTranslation": "Exemplo com periferia",
+    "exampleEnglish": "Example with periferia"
+  },
+  {
+    "spanish": "periférico",
+    "portuguese": "periférico",
+    "english": "periférico",
+    "phonetic": "periférico",
+    "category": "adjetivo",
+    "example": "Es muy periférico",
+    "exampleTranslation": "Exemplo com periférico",
+    "exampleEnglish": "Example with periférico"
+  },
+  {
+    "spanish": "perífrasis",
+    "portuguese": "perífrase",
+    "english": "perífrasis",
+    "phonetic": "perífrasis",
+    "category": "substantivo",
+    "example": "El perífrasis",
+    "exampleTranslation": "Exemplo com perífrasis",
+    "exampleEnglish": "Example with perífrasis"
+  },
+  {
+    "spanish": "perigeo",
+    "portuguese": "perigeu",
+    "english": "perigeo",
+    "phonetic": "perigeo",
+    "category": "substantivo",
+    "example": "El perigeo",
+    "exampleTranslation": "Exemplo com perigeo",
+    "exampleEnglish": "Example with perigeo"
+  },
+  {
+    "spanish": "perímetro",
+    "portuguese": "perímetro",
+    "english": "perímetro",
+    "phonetic": "perímetro",
+    "category": "substantivo",
+    "example": "El perímetro",
+    "exampleTranslation": "Exemplo com perímetro",
+    "exampleEnglish": "Example with perímetro"
+  },
+  {
+    "spanish": "periodicidad",
+    "portuguese": "periodicidade",
+    "english": "periodicidad",
+    "phonetic": "periodicidad",
+    "category": "substantivo",
+    "example": "El periodicidad",
+    "exampleTranslation": "Exemplo com periodicidad",
+    "exampleEnglish": "Example with periodicidad"
+  },
+  {
+    "spanish": "periódico",
+    "portuguese": "periódico jornal",
+    "english": "periódico",
+    "phonetic": "periódico",
+    "category": "adjetivo",
+    "example": "Es muy periódico",
+    "exampleTranslation": "Exemplo com periódico",
+    "exampleEnglish": "Example with periódico"
+  },
+  {
+    "spanish": "periodista",
+    "portuguese": "e f. jornalista",
+    "english": "periodista",
+    "phonetic": "periodista",
+    "category": "substantivo",
+    "example": "El periodista",
+    "exampleTranslation": "Exemplo com periodista",
+    "exampleEnglish": "Example with periodista"
+  },
+  {
+    "spanish": "período",
+    "portuguese": "período",
+    "english": "período",
+    "phonetic": "período",
+    "category": "substantivo",
+    "example": "El período",
+    "exampleTranslation": "Exemplo com período",
+    "exampleEnglish": "Example with período"
+  },
+  {
+    "spanish": "peripecia",
+    "portuguese": "peripécia",
+    "english": "peripecia",
+    "phonetic": "peripecia",
+    "category": "substantivo",
+    "example": "El peripecia",
+    "exampleTranslation": "Exemplo com peripecia",
+    "exampleEnglish": "Example with peripecia"
+  },
+  {
+    "spanish": "periplo",
+    "portuguese": "périplo",
+    "english": "periplo",
+    "phonetic": "periplo",
+    "category": "substantivo",
+    "example": "El periplo",
+    "exampleTranslation": "Exemplo com periplo",
+    "exampleEnglish": "Example with periplo"
+  },
+  {
+    "spanish": "periquito",
+    "portuguese": "periquito",
+    "english": "periquito",
+    "phonetic": "periquito",
+    "category": "substantivo",
+    "example": "El periquito",
+    "exampleTranslation": "Exemplo com periquito",
+    "exampleEnglish": "Example with periquito"
+  },
+  {
+    "spanish": "periscópico",
+    "portuguese": "periscópico",
+    "english": "periscópico",
+    "phonetic": "periscópico",
+    "category": "adjetivo",
+    "example": "Es muy periscópico",
+    "exampleTranslation": "Exemplo com periscópico",
+    "exampleEnglish": "Example with periscópico"
+  },
+  {
+    "spanish": "periscopio",
+    "portuguese": "periscópio",
+    "english": "periscopio",
+    "phonetic": "periscopio",
+    "category": "substantivo",
+    "example": "El periscopio",
+    "exampleTranslation": "Exemplo com periscopio",
+    "exampleEnglish": "Example with periscopio"
+  },
+  {
+    "spanish": "perístasis",
+    "portuguese": "perístase",
+    "english": "perístasis",
+    "phonetic": "perístasis",
+    "category": "substantivo",
+    "example": "El perístasis",
+    "exampleTranslation": "Exemplo com perístasis",
+    "exampleEnglish": "Example with perístasis"
+  },
+  {
+    "spanish": "perito",
+    "portuguese": "e m. perito",
+    "english": "perito",
+    "phonetic": "perito",
+    "category": "adjetivo",
+    "example": "Es muy perito",
+    "exampleTranslation": "Exemplo com perito",
+    "exampleEnglish": "Example with perito"
+  },
+  {
+    "spanish": "perjudicar",
+    "portuguese": "prejudicar",
+    "english": "perjudicar",
+    "phonetic": "perjudicar",
+    "category": "verbo",
+    "example": "Voy a perjudicar",
+    "exampleTranslation": "Exemplo com perjudicar",
+    "exampleEnglish": "Example with perjudicar"
+  },
+  {
+    "spanish": "perjudicial",
+    "portuguese": "prejudicial",
+    "english": "perjudicial",
+    "phonetic": "perjudicial",
+    "category": "adjetivo",
+    "example": "Es muy perjudicial",
+    "exampleTranslation": "Exemplo com perjudicial",
+    "exampleEnglish": "Example with perjudicial"
+  },
+  {
+    "spanish": "perjuicio",
+    "portuguese": "prejuízo",
+    "english": "perjuicio",
+    "phonetic": "perjuicio",
+    "category": "substantivo",
+    "example": "El perjuicio",
+    "exampleTranslation": "Exemplo com perjuicio",
+    "exampleEnglish": "Example with perjuicio"
+  },
+  {
+    "spanish": "perjurar",
+    "portuguese": "perjurar",
+    "english": "perjurar",
+    "phonetic": "perjurar",
+    "category": "verbo",
+    "example": "Voy a perjurar",
+    "exampleTranslation": "Exemplo com perjurar",
+    "exampleEnglish": "Example with perjurar"
+  },
+  {
+    "spanish": "perjurio",
+    "portuguese": "perjúrio",
+    "english": "perjurio",
+    "phonetic": "perjurio",
+    "category": "substantivo",
+    "example": "El perjurio",
+    "exampleTranslation": "Exemplo com perjurio",
+    "exampleEnglish": "Example with perjurio"
+  },
+  {
+    "spanish": "perjuro",
+    "portuguese": "e m. perjuro",
+    "english": "perjuro",
+    "phonetic": "perjuro",
+    "category": "adjetivo",
+    "example": "Es muy perjuro",
+    "exampleTranslation": "Exemplo com perjuro",
+    "exampleEnglish": "Example with perjuro"
+  },
+  {
+    "spanish": "perla",
+    "portuguese": "pérola",
+    "english": "perla",
+    "phonetic": "perla",
+    "category": "substantivo",
+    "example": "El perla",
+    "exampleTranslation": "Exemplo com perla",
+    "exampleEnglish": "Example with perla"
+  },
+  {
+    "spanish": "permanecer",
+    "portuguese": "permanecer",
+    "english": "permanecer",
+    "phonetic": "permanecer",
+    "category": "verbo",
+    "example": "Voy a permanecer",
+    "exampleTranslation": "Exemplo com permanecer",
+    "exampleEnglish": "Example with permanecer"
+  },
+  {
+    "spanish": "permanencia",
+    "portuguese": "permanência",
+    "english": "permanencia",
+    "phonetic": "permanencia",
+    "category": "substantivo",
+    "example": "El permanencia",
+    "exampleTranslation": "Exemplo com permanencia",
+    "exampleEnglish": "Example with permanencia"
+  },
+  {
+    "spanish": "permanente",
+    "portuguese": "permanente",
+    "english": "permanente",
+    "phonetic": "permanente",
+    "category": "adjetivo",
+    "example": "Es muy permanente",
+    "exampleTranslation": "Exemplo com permanente",
+    "exampleEnglish": "Example with permanente"
+  },
+  {
+    "spanish": "permisible",
+    "portuguese": "permissível",
+    "english": "permisible",
+    "phonetic": "permisible",
+    "category": "adjetivo",
+    "example": "Es muy permisible",
+    "exampleTranslation": "Exemplo com permisible",
+    "exampleEnglish": "Example with permisible"
+  },
+  {
+    "spanish": "permisión",
+    "portuguese": "permissão",
+    "english": "permisión",
+    "phonetic": "permisión",
+    "category": "substantivo",
+    "example": "El permisión",
+    "exampleTranslation": "Exemplo com permisión",
+    "exampleEnglish": "Example with permisión"
+  },
+  {
+    "spanish": "permiso",
+    "portuguese": "permissão, licença",
+    "english": "permiso",
+    "phonetic": "permiso",
+    "category": "substantivo",
+    "example": "El permiso",
+    "exampleTranslation": "Exemplo com permiso",
+    "exampleEnglish": "Example with permiso"
+  },
+  {
+    "spanish": "permitir",
+    "portuguese": "permitir",
+    "english": "permitir",
+    "phonetic": "permitir",
+    "category": "verbo",
+    "example": "Voy a permitir",
+    "exampleTranslation": "Exemplo com permitir",
+    "exampleEnglish": "Example with permitir"
+  },
+  {
+    "spanish": "permuta",
+    "portuguese": "permuta",
+    "english": "permuta",
+    "phonetic": "permuta",
+    "category": "substantivo",
+    "example": "El permuta",
+    "exampleTranslation": "Exemplo com permuta",
+    "exampleEnglish": "Example with permuta"
+  },
+  {
+    "spanish": "permutar",
+    "portuguese": "permutar",
+    "english": "permutar",
+    "phonetic": "permutar",
+    "category": "verbo",
+    "example": "Voy a permutar",
+    "exampleTranslation": "Exemplo com permutar",
+    "exampleEnglish": "Example with permutar"
+  },
+  {
+    "spanish": "pernicioso",
+    "portuguese": "pernicioso",
+    "english": "pernicioso",
+    "phonetic": "pernicioso",
+    "category": "adjetivo",
+    "example": "Es muy pernicioso",
+    "exampleTranslation": "Exemplo com pernicioso",
+    "exampleEnglish": "Example with pernicioso"
+  },
+  {
+    "spanish": "pernil",
+    "portuguese": "pernil",
+    "english": "pernil",
+    "phonetic": "pernil",
+    "category": "substantivo",
+    "example": "El pernil",
+    "exampleTranslation": "Exemplo com pernil",
+    "exampleEnglish": "Example with pernil"
+  },
+  {
+    "spanish": "pernoctar",
+    "portuguese": "pernoitar",
+    "english": "pernoctar",
+    "phonetic": "pernoctar",
+    "category": "verbo",
+    "example": "Voy a pernoctar",
+    "exampleTranslation": "Exemplo com pernoctar",
+    "exampleEnglish": "Example with pernoctar"
+  },
+  {
+    "spanish": "pero",
+    "portuguese": "porém, mas, contudo",
+    "english": "pero",
+    "phonetic": "pero",
+    "category": "conjunção",
+    "example": "El pero",
+    "exampleTranslation": "Exemplo com pero",
+    "exampleEnglish": "Example with pero"
+  },
+  {
+    "spanish": "perpendicular",
+    "portuguese": "e m. e f. perpendicular",
+    "english": "perpendicular",
+    "phonetic": "perpendicular",
+    "category": "adjetivo",
+    "example": "Es muy perpendicular",
+    "exampleTranslation": "Exemplo com perpendicular",
+    "exampleEnglish": "Example with perpendicular"
+  },
+  {
+    "spanish": "perpetración",
+    "portuguese": "perpetração",
+    "english": "perpetración",
+    "phonetic": "perpetración",
+    "category": "substantivo",
+    "example": "El perpetración",
+    "exampleTranslation": "Exemplo com perpetración",
+    "exampleEnglish": "Example with perpetración"
+  },
+  {
+    "spanish": "perpetrar",
+    "portuguese": "perpetrar",
+    "english": "perpetrar",
+    "phonetic": "perpetrar",
+    "category": "verbo",
+    "example": "Voy a perpetrar",
+    "exampleTranslation": "Exemplo com perpetrar",
+    "exampleEnglish": "Example with perpetrar"
+  },
+  {
+    "spanish": "perpetuar",
+    "portuguese": "perpetuar",
+    "english": "perpetuar",
+    "phonetic": "perpetuar",
+    "category": "verbo",
+    "example": "Voy a perpetuar",
+    "exampleTranslation": "Exemplo com perpetuar",
+    "exampleEnglish": "Example with perpetuar"
+  },
+  {
+    "spanish": "perpetuo",
+    "portuguese": "perpétuo",
+    "english": "perpetuo",
+    "phonetic": "perpetuo",
+    "category": "adjetivo",
+    "example": "Es muy perpetuo",
+    "exampleTranslation": "Exemplo com perpetuo",
+    "exampleEnglish": "Example with perpetuo"
+  },
+  {
+    "spanish": "perplejidad",
+    "portuguese": "perplexidade",
+    "english": "perplejidad",
+    "phonetic": "perplejidad",
+    "category": "substantivo",
+    "example": "El perplejidad",
+    "exampleTranslation": "Exemplo com perplejidad",
+    "exampleEnglish": "Example with perplejidad"
+  },
+  {
+    "spanish": "perplejo",
+    "portuguese": "perplexo",
+    "english": "perplejo",
+    "phonetic": "perplejo",
+    "category": "adjetivo",
+    "example": "Es muy perplejo",
+    "exampleTranslation": "Exemplo com perplejo",
+    "exampleEnglish": "Example with perplejo"
+  },
+  {
+    "spanish": "perro,",
+    "portuguese": "cão",
+    "english": "perro,",
+    "phonetic": "perro,",
+    "category": "substantivo",
+    "example": "El perro,",
+    "exampleTranslation": "Exemplo com perro,",
+    "exampleEnglish": "Example with perro,"
+  },
+  {
+    "spanish": "persa",
+    "portuguese": "e m. e f. persa.",
+    "english": "persa",
+    "phonetic": "persa",
+    "category": "adjetivo",
+    "example": "Es muy persa",
+    "exampleTranslation": "Exemplo com persa",
+    "exampleEnglish": "Example with persa"
+  },
+  {
+    "spanish": "persecución",
+    "portuguese": "perseguição",
+    "english": "persecución",
+    "phonetic": "persecución",
+    "category": "substantivo",
+    "example": "El persecución",
+    "exampleTranslation": "Exemplo com persecución",
+    "exampleEnglish": "Example with persecución"
+  },
+  {
+    "spanish": "perseguir",
+    "portuguese": "perseguir",
+    "english": "perseguir",
+    "phonetic": "perseguir",
+    "category": "verbo",
+    "example": "Voy a perseguir",
+    "exampleTranslation": "Exemplo com perseguir",
+    "exampleEnglish": "Example with perseguir"
+  },
+  {
+    "spanish": "perseverancia",
+    "portuguese": "perseverança",
+    "english": "perseverancia",
+    "phonetic": "perseverancia",
+    "category": "substantivo",
+    "example": "El perseverancia",
+    "exampleTranslation": "Exemplo com perseverancia",
+    "exampleEnglish": "Example with perseverancia"
+  },
+  {
+    "spanish": "perseverante",
+    "portuguese": "perseverante",
+    "english": "perseverante",
+    "phonetic": "perseverante",
+    "category": "adjetivo",
+    "example": "Es muy perseverante",
+    "exampleTranslation": "Exemplo com perseverante",
+    "exampleEnglish": "Example with perseverante"
+  },
+  {
+    "spanish": "perseverar",
+    "portuguese": "perseverar",
+    "english": "perseverar",
+    "phonetic": "perseverar",
+    "category": "verbo",
+    "example": "Voy a perseverar",
+    "exampleTranslation": "Exemplo com perseverar",
+    "exampleEnglish": "Example with perseverar"
+  },
+  {
+    "spanish": "persistencia",
+    "portuguese": "persistência",
+    "english": "persistencia",
+    "phonetic": "persistencia",
+    "category": "substantivo",
+    "example": "El persistencia",
+    "exampleTranslation": "Exemplo com persistencia",
+    "exampleEnglish": "Example with persistencia"
+  },
+  {
+    "spanish": "persistente",
+    "portuguese": "persistente",
+    "english": "persistente",
+    "phonetic": "persistente",
+    "category": "adjetivo",
+    "example": "Es muy persistente",
+    "exampleTranslation": "Exemplo com persistente",
+    "exampleEnglish": "Example with persistente"
+  },
+  {
+    "spanish": "persistir",
+    "portuguese": "persistir",
+    "english": "persistir",
+    "phonetic": "persistir",
+    "category": "verbo",
+    "example": "Voy a persistir",
+    "exampleTranslation": "Exemplo com persistir",
+    "exampleEnglish": "Example with persistir"
+  },
+  {
+    "spanish": "persona",
+    "portuguese": "pessoa",
+    "english": "persona",
+    "phonetic": "persona",
+    "category": "substantivo",
+    "example": "El persona",
+    "exampleTranslation": "Exemplo com persona",
+    "exampleEnglish": "Example with persona"
+  },
+  {
+    "spanish": "personaje",
+    "portuguese": "personagem",
+    "english": "personaje",
+    "phonetic": "personaje",
+    "category": "substantivo",
+    "example": "El personaje",
+    "exampleTranslation": "Exemplo com personaje",
+    "exampleEnglish": "Example with personaje"
+  },
+  {
+    "spanish": "personal",
+    "portuguese": "pessoal",
+    "english": "personal",
+    "phonetic": "personal",
+    "category": "adjetivo",
+    "example": "Es muy personal",
+    "exampleTranslation": "Exemplo com personal",
+    "exampleEnglish": "Example with personal"
+  },
+  {
+    "spanish": "personalidad",
+    "portuguese": "personalidade",
+    "english": "personalidad",
+    "phonetic": "personalidad",
+    "category": "substantivo",
+    "example": "El personalidad",
+    "exampleTranslation": "Exemplo com personalidad",
+    "exampleEnglish": "Example with personalidad"
+  },
+  {
+    "spanish": "personalista",
+    "portuguese": "personalista",
+    "english": "personalista",
+    "phonetic": "personalista",
+    "category": "adjetivo",
+    "example": "Es muy personalista",
+    "exampleTranslation": "Exemplo com personalista",
+    "exampleEnglish": "Example with personalista"
+  },
+  {
+    "spanish": "personalizar",
+    "portuguese": "personalizar",
+    "english": "personalizar",
+    "phonetic": "personalizar",
+    "category": "verbo",
+    "example": "Voy a personalizar",
+    "exampleTranslation": "Exemplo com personalizar",
+    "exampleEnglish": "Example with personalizar"
+  },
+  {
+    "spanish": "perspectiva",
+    "portuguese": "perspectiva",
+    "english": "perspectiva",
+    "phonetic": "perspectiva",
+    "category": "substantivo",
+    "example": "El perspectiva",
+    "exampleTranslation": "Exemplo com perspectiva",
+    "exampleEnglish": "Example with perspectiva"
+  },
+  {
+    "spanish": "perspicacia",
+    "portuguese": "perspicácia",
+    "english": "perspicacia",
+    "phonetic": "perspicacia",
+    "category": "substantivo",
+    "example": "El perspicacia",
+    "exampleTranslation": "Exemplo com perspicacia",
+    "exampleEnglish": "Example with perspicacia"
+  },
+  {
+    "spanish": "perspicaz",
+    "portuguese": "perspicaz",
+    "english": "perspicaz",
+    "phonetic": "perspicaz",
+    "category": "adjetivo",
+    "example": "Es muy perspicaz",
+    "exampleTranslation": "Exemplo com perspicaz",
+    "exampleEnglish": "Example with perspicaz"
+  },
+  {
+    "spanish": "persuadir",
+    "portuguese": "persuadir",
+    "english": "persuadir",
+    "phonetic": "persuadir",
+    "category": "verbo",
+    "example": "Voy a persuadir",
+    "exampleTranslation": "Exemplo com persuadir",
+    "exampleEnglish": "Example with persuadir"
+  },
+  {
+    "spanish": "persuasión",
+    "portuguese": "persuasão",
+    "english": "persuasión",
+    "phonetic": "persuasión",
+    "category": "substantivo",
+    "example": "El persuasión",
+    "exampleTranslation": "Exemplo com persuasión",
+    "exampleEnglish": "Example with persuasión"
+  },
+  {
+    "spanish": "persuasivo",
+    "portuguese": "persuasivo",
+    "english": "persuasivo",
+    "phonetic": "persuasivo",
+    "category": "adjetivo",
+    "example": "Es muy persuasivo",
+    "exampleTranslation": "Exemplo com persuasivo",
+    "exampleEnglish": "Example with persuasivo"
+  },
+  {
+    "spanish": "pertenecer",
+    "portuguese": "pertencer",
+    "english": "pertenecer",
+    "phonetic": "pertenecer",
+    "category": "verbo",
+    "example": "Voy a pertenecer",
+    "exampleTranslation": "Exemplo com pertenecer",
+    "exampleEnglish": "Example with pertenecer"
+  },
+  {
+    "spanish": "pertinencia",
+    "portuguese": "pertinência",
+    "english": "pertinencia",
+    "phonetic": "pertinencia",
+    "category": "substantivo",
+    "example": "El pertinencia",
+    "exampleTranslation": "Exemplo com pertinencia",
+    "exampleEnglish": "Example with pertinencia"
+  },
+  {
+    "spanish": "pertinente",
+    "portuguese": "pertinente",
+    "english": "pertinente",
+    "phonetic": "pertinente",
+    "category": "adjetivo",
+    "example": "Es muy pertinente",
+    "exampleTranslation": "Exemplo com pertinente",
+    "exampleEnglish": "Example with pertinente"
+  },
+  {
+    "spanish": "perturbación",
+    "portuguese": "perturbação",
+    "english": "perturbación",
+    "phonetic": "perturbación",
+    "category": "substantivo",
+    "example": "El perturbación",
+    "exampleTranslation": "Exemplo com perturbación",
+    "exampleEnglish": "Example with perturbación"
+  },
+  {
+    "spanish": "perturbar",
+    "portuguese": "perturbar",
+    "english": "perturbar",
+    "phonetic": "perturbar",
+    "category": "verbo",
+    "example": "Voy a perturbar",
+    "exampleTranslation": "Exemplo com perturbar",
+    "exampleEnglish": "Example with perturbar"
+  },
+  {
+    "spanish": "peruano",
+    "portuguese": "e m. peruano",
+    "english": "peruano",
+    "phonetic": "peruano",
+    "category": "adjetivo",
+    "example": "Es muy peruano",
+    "exampleTranslation": "Exemplo com peruano",
+    "exampleEnglish": "Example with peruano"
+  },
+  {
+    "spanish": "perversidad",
+    "portuguese": "perversidade",
+    "english": "perversidad",
+    "phonetic": "perversidad",
+    "category": "substantivo",
+    "example": "El perversidad",
+    "exampleTranslation": "Exemplo com perversidad",
+    "exampleEnglish": "Example with perversidad"
+  },
+  {
+    "spanish": "perversión",
+    "portuguese": "perversão",
+    "english": "perversión",
+    "phonetic": "perversión",
+    "category": "substantivo",
+    "example": "El perversión",
+    "exampleTranslation": "Exemplo com perversión",
+    "exampleEnglish": "Example with perversión"
+  },
+  {
+    "spanish": "perverso",
+    "portuguese": "perverso",
+    "english": "perverso",
+    "phonetic": "perverso",
+    "category": "adjetivo",
+    "example": "Es muy perverso",
+    "exampleTranslation": "Exemplo com perverso",
+    "exampleEnglish": "Example with perverso"
+  },
+  {
+    "spanish": "pervertir",
+    "portuguese": "perverter",
+    "english": "pervertir",
+    "phonetic": "pervertir",
+    "category": "verbo",
+    "example": "Voy a pervertir",
+    "exampleTranslation": "Exemplo com pervertir",
+    "exampleEnglish": "Example with pervertir"
+  },
+  {
+    "spanish": "pesadilla",
+    "portuguese": "pesadelo",
+    "english": "pesadilla",
+    "phonetic": "pesadiʎa",
+    "category": "substantivo",
+    "example": "El pesadilla",
+    "exampleTranslation": "Exemplo com pesadilla",
+    "exampleEnglish": "Example with pesadilla"
+  },
+  {
+    "spanish": "pesar,",
+    "portuguese": "pesar",
+    "english": "pesar,",
+    "phonetic": "pesar,",
+    "category": "substantivo",
+    "example": "El pesar,",
+    "exampleTranslation": "Exemplo com pesar,",
+    "exampleEnglish": "Example with pesar,"
+  },
+  {
+    "spanish": "pesaroso",
+    "portuguese": "pesaroso",
+    "english": "pesaroso",
+    "phonetic": "pesaroso",
+    "category": "adjetivo",
+    "example": "Es muy pesaroso",
+    "exampleTranslation": "Exemplo com pesaroso",
+    "exampleEnglish": "Example with pesaroso"
+  },
+  {
+    "spanish": "pesca",
+    "portuguese": "pesca",
+    "english": "pesca",
+    "phonetic": "pesca",
+    "category": "substantivo",
+    "example": "El pesca",
+    "exampleTranslation": "Exemplo com pesca",
+    "exampleEnglish": "Example with pesca"
+  },
+  {
+    "spanish": "pescado",
+    "portuguese": "pescado, peixe",
+    "english": "pescado",
+    "phonetic": "pescado",
+    "category": "substantivo",
+    "example": "El pescado",
+    "exampleTranslation": "Exemplo com pescado",
+    "exampleEnglish": "Example with pescado"
+  },
+  {
+    "spanish": "pescador",
+    "portuguese": "pescador",
+    "english": "pescador",
+    "phonetic": "pescador",
+    "category": "substantivo",
+    "example": "El pescador",
+    "exampleTranslation": "Exemplo com pescador",
+    "exampleEnglish": "Example with pescador"
+  },
+  {
+    "spanish": "pescar",
+    "portuguese": "pescar",
+    "english": "pescar",
+    "phonetic": "pescar",
+    "category": "verbo",
+    "example": "Voy a pescar",
+    "exampleTranslation": "Exemplo com pescar",
+    "exampleEnglish": "Example with pescar"
+  },
+  {
+    "spanish": "pescuezo",
+    "portuguese": "pescoço de animais",
+    "english": "pescuezo",
+    "phonetic": "pescuezo",
+    "category": "substantivo",
+    "example": "El pescuezo",
+    "exampleTranslation": "Exemplo com pescuezo",
+    "exampleEnglish": "Example with pescuezo"
+  },
+  {
+    "spanish": "pesebre",
+    "portuguese": "presépio",
+    "english": "pesebre",
+    "phonetic": "pesebre",
+    "category": "substantivo",
+    "example": "El pesebre",
+    "exampleTranslation": "Exemplo com pesebre",
+    "exampleEnglish": "Example with pesebre"
+  },
+  {
+    "spanish": "peseta",
+    "portuguese": "peseta",
+    "english": "peseta",
+    "phonetic": "peseta",
+    "category": "substantivo",
+    "example": "El peseta",
+    "exampleTranslation": "Exemplo com peseta",
+    "exampleEnglish": "Example with peseta"
+  },
+  {
+    "spanish": "pesimismo",
+    "portuguese": "pessimismo",
+    "english": "pesimismo",
+    "phonetic": "pesimismo",
+    "category": "substantivo",
+    "example": "El pesimismo",
+    "exampleTranslation": "Exemplo com pesimismo",
+    "exampleEnglish": "Example with pesimismo"
+  },
+  {
+    "spanish": "pesimista",
+    "portuguese": "e m. e f. pessimista",
+    "english": "pesimista",
+    "phonetic": "pesimista",
+    "category": "adjetivo",
+    "example": "Es muy pesimista",
+    "exampleTranslation": "Exemplo com pesimista",
+    "exampleEnglish": "Example with pesimista"
+  },
+  {
+    "spanish": "pésimo",
+    "portuguese": "péssimo",
+    "english": "pésimo",
+    "phonetic": "pésimo",
+    "category": "adjetivo",
+    "example": "Es muy pésimo",
+    "exampleTranslation": "Exemplo com pésimo",
+    "exampleEnglish": "Example with pésimo"
+  },
+  {
+    "spanish": "peso",
+    "portuguese": "peso",
+    "english": "peso",
+    "phonetic": "peso",
+    "category": "substantivo",
+    "example": "El peso",
+    "exampleTranslation": "Exemplo com peso",
+    "exampleEnglish": "Example with peso"
+  },
+  {
+    "spanish": "pesquero",
+    "portuguese": "e m. pesqueiro",
+    "english": "pesquero",
+    "phonetic": "pesquero",
+    "category": "adjetivo",
+    "example": "Es muy pesquero",
+    "exampleTranslation": "Exemplo com pesquero",
+    "exampleEnglish": "Example with pesquero"
+  },
+  {
+    "spanish": "pestaña",
+    "portuguese": "pestana",
+    "english": "pestaña",
+    "phonetic": "pestaɲa",
+    "category": "substantivo",
+    "example": "El pestaña",
+    "exampleTranslation": "Exemplo com pestaña",
+    "exampleEnglish": "Example with pestaña"
+  },
+  {
+    "spanish": "pestañear",
+    "portuguese": "pestanejar",
+    "english": "pestañear",
+    "phonetic": "pestaɲear",
+    "category": "verbo",
+    "example": "Voy a pestañear",
+    "exampleTranslation": "Exemplo com pestañear",
+    "exampleEnglish": "Example with pestañear"
+  },
+  {
+    "spanish": "peste",
+    "portuguese": "peste",
+    "english": "peste",
+    "phonetic": "peste",
+    "category": "substantivo",
+    "example": "El peste",
+    "exampleTranslation": "Exemplo com peste",
+    "exampleEnglish": "Example with peste"
+  },
+  {
+    "spanish": "pétalo",
+    "portuguese": "pétala",
+    "english": "pétalo",
+    "phonetic": "pétalo",
+    "category": "substantivo",
+    "example": "El pétalo",
+    "exampleTranslation": "Exemplo com pétalo",
+    "exampleEnglish": "Example with pétalo"
+  },
+  {
+    "spanish": "petición",
+    "portuguese": "petição",
+    "english": "petición",
+    "phonetic": "petición",
+    "category": "substantivo",
+    "example": "El petición",
+    "exampleTranslation": "Exemplo com petición",
+    "exampleEnglish": "Example with petición"
+  },
+  {
+    "spanish": "pétreo",
+    "portuguese": "pétre",
+    "english": "pétreo",
+    "phonetic": "pétreo",
+    "category": "adjetivo",
+    "example": "Es muy pétreo",
+    "exampleTranslation": "Exemplo com pétreo",
+    "exampleEnglish": "Example with pétreo"
+  },
+  {
+    "spanish": "petrificación",
+    "portuguese": "petrificação",
+    "english": "petrificación",
+    "phonetic": "petrificación",
+    "category": "substantivo",
+    "example": "El petrificación",
+    "exampleTranslation": "Exemplo com petrificación",
+    "exampleEnglish": "Example with petrificación"
+  },
+  {
+    "spanish": "petrificar",
+    "portuguese": "petrificar",
+    "english": "petrificar",
+    "phonetic": "petrificar",
+    "category": "verbo",
+    "example": "Voy a petrificar",
+    "exampleTranslation": "Exemplo com petrificar",
+    "exampleEnglish": "Example with petrificar"
+  },
+  {
+    "spanish": "petróleo",
+    "portuguese": "petróleo",
+    "english": "petróleo",
+    "phonetic": "petróleo",
+    "category": "substantivo",
+    "example": "El petróleo",
+    "exampleTranslation": "Exemplo com petróleo",
+    "exampleEnglish": "Example with petróleo"
+  },
+  {
+    "spanish": "petrolero",
+    "portuguese": "e m. petroleiro",
+    "english": "petrolero",
+    "phonetic": "petrolero",
+    "category": "adjetivo",
+    "example": "Es muy petrolero",
+    "exampleTranslation": "Exemplo com petrolero",
+    "exampleEnglish": "Example with petrolero"
+  },
+  {
+    "spanish": "petrolífero",
+    "portuguese": "petrolífero",
+    "english": "petrolífero",
+    "phonetic": "petrolífero",
+    "category": "adjetivo",
+    "example": "Es muy petrolífero",
+    "exampleTranslation": "Exemplo com petrolífero",
+    "exampleEnglish": "Example with petrolífero"
+  },
+  {
+    "spanish": "petulancia",
+    "portuguese": "petulância",
+    "english": "petulancia",
+    "phonetic": "petulancia",
+    "category": "substantivo",
+    "example": "El petulancia",
+    "exampleTranslation": "Exemplo com petulancia",
+    "exampleEnglish": "Example with petulancia"
+  },
+  {
+    "spanish": "petulante",
+    "portuguese": "petulante",
+    "english": "petulante",
+    "phonetic": "petulante",
+    "category": "adjetivo",
+    "example": "Es muy petulante",
+    "exampleTranslation": "Exemplo com petulante",
+    "exampleEnglish": "Example with petulante"
+  },
+  {
+    "spanish": "peyorativo",
+    "portuguese": "pejorativo",
+    "english": "peyorativo",
+    "phonetic": "peyorativo",
+    "category": "adjetivo",
+    "example": "Es muy peyorativo",
+    "exampleTranslation": "Exemplo com peyorativo",
+    "exampleEnglish": "Example with peyorativo"
+  },
+  {
+    "spanish": "pez",
+    "portuguese": "peixe",
+    "english": "pez",
+    "phonetic": "pez",
+    "category": "substantivo",
+    "example": "El pez",
+    "exampleTranslation": "Exemplo com pez",
+    "exampleEnglish": "Example with pez"
+  },
+  {
+    "spanish": "piadoso",
+    "portuguese": "piedoso",
+    "english": "piadoso",
+    "phonetic": "piadoso",
+    "category": "adjetivo",
+    "example": "Es muy piadoso",
+    "exampleTranslation": "Exemplo com piadoso",
+    "exampleEnglish": "Example with piadoso"
+  },
+  {
+    "spanish": "pianista",
+    "portuguese": "e f. pianista",
+    "english": "pianista",
+    "phonetic": "pianista",
+    "category": "substantivo",
+    "example": "El pianista",
+    "exampleTranslation": "Exemplo com pianista",
+    "exampleEnglish": "Example with pianista"
+  },
+  {
+    "spanish": "piano",
+    "portuguese": "piano",
+    "english": "piano",
+    "phonetic": "piano",
+    "category": "substantivo",
+    "example": "El piano",
+    "exampleTranslation": "Exemplo com piano",
+    "exampleEnglish": "Example with piano"
+  },
+  {
+    "spanish": "picante",
+    "portuguese": "picante",
+    "english": "picante",
+    "phonetic": "picante",
+    "category": "adjetivo",
+    "example": "Es muy picante",
+    "exampleTranslation": "Exemplo com picante",
+    "exampleEnglish": "Example with picante"
+  },
+  {
+    "spanish": "picar",
+    "portuguese": "picar",
+    "english": "picar",
+    "phonetic": "picar",
+    "category": "verbo",
+    "example": "Voy a picar",
+    "exampleTranslation": "Exemplo com picar",
+    "exampleEnglish": "Example with picar"
+  },
+  {
+    "spanish": "picardía",
+    "portuguese": "picardia",
+    "english": "picardía",
+    "phonetic": "picardía",
+    "category": "substantivo",
+    "example": "El picardía",
+    "exampleTranslation": "Exemplo com picardía",
+    "exampleEnglish": "Example with picardía"
+  },
+  {
+    "spanish": "pícaro",
+    "portuguese": "pícaro",
+    "english": "pícaro",
+    "phonetic": "pícaro",
+    "category": "adjetivo",
+    "example": "Es muy pícaro",
+    "exampleTranslation": "Exemplo com pícaro",
+    "exampleEnglish": "Example with pícaro"
+  },
+  {
+    "spanish": "pico",
+    "portuguese": "pico",
+    "english": "pico",
+    "phonetic": "pico",
+    "category": "substantivo",
+    "example": "El pico",
+    "exampleTranslation": "Exemplo com pico",
+    "exampleEnglish": "Example with pico"
+  },
+  {
+    "spanish": "pie",
+    "portuguese": "pé",
+    "english": "pie",
+    "phonetic": "pie",
+    "category": "substantivo",
+    "example": "El pie",
+    "exampleTranslation": "Exemplo com pie",
+    "exampleEnglish": "Example with pie"
+  },
+  {
+    "spanish": "piedad",
+    "portuguese": "piedade",
+    "english": "piedad",
+    "phonetic": "piedad",
+    "category": "substantivo",
+    "example": "El piedad",
+    "exampleTranslation": "Exemplo com piedad",
+    "exampleEnglish": "Example with piedad"
+  },
+  {
+    "spanish": "piedra",
+    "portuguese": "pedra",
+    "english": "piedra",
+    "phonetic": "piedra",
+    "category": "substantivo",
+    "example": "El piedra",
+    "exampleTranslation": "Exemplo com piedra",
+    "exampleEnglish": "Example with piedra"
+  },
+  {
+    "spanish": "piel",
+    "portuguese": "pele",
+    "english": "piel",
+    "phonetic": "piel",
+    "category": "substantivo",
+    "example": "El piel",
+    "exampleTranslation": "Exemplo com piel",
+    "exampleEnglish": "Example with piel"
+  },
+  {
+    "spanish": "piélago",
+    "portuguese": "pélago",
+    "english": "piélago",
+    "phonetic": "piélago",
+    "category": "substantivo",
+    "example": "El piélago",
+    "exampleTranslation": "Exemplo com piélago",
+    "exampleEnglish": "Example with piélago"
+  },
+  {
+    "spanish": "pierna",
+    "portuguese": "perna",
+    "english": "pierna",
+    "phonetic": "pierna",
+    "category": "substantivo",
+    "example": "El pierna",
+    "exampleTranslation": "Exemplo com pierna",
+    "exampleEnglish": "Example with pierna"
+  },
+  {
+    "spanish": "pieza",
+    "portuguese": "peça",
+    "english": "pieza",
+    "phonetic": "pieza",
+    "category": "substantivo",
+    "example": "El pieza",
+    "exampleTranslation": "Exemplo com pieza",
+    "exampleEnglish": "Example with pieza"
+  },
+  {
+    "spanish": "pigmentación",
+    "portuguese": "pigmentação",
+    "english": "pigmentación",
+    "phonetic": "pigmentación",
+    "category": "substantivo",
+    "example": "El pigmentación",
+    "exampleTranslation": "Exemplo com pigmentación",
+    "exampleEnglish": "Example with pigmentación"
+  },
+  {
+    "spanish": "pigmentar",
+    "portuguese": "pigmentar",
+    "english": "pigmentar",
+    "phonetic": "pigmentar",
+    "category": "verbo",
+    "example": "Voy a pigmentar",
+    "exampleTranslation": "Exemplo com pigmentar",
+    "exampleEnglish": "Example with pigmentar"
+  },
+  {
+    "spanish": "pigmento",
+    "portuguese": "pigmento",
+    "english": "pigmento",
+    "phonetic": "pigmento",
+    "category": "substantivo",
+    "example": "El pigmento",
+    "exampleTranslation": "Exemplo com pigmento",
+    "exampleEnglish": "Example with pigmento"
+  },
+  {
+    "spanish": "pigmeo",
+    "portuguese": "e m. pigmeu",
+    "english": "pigmeo",
+    "phonetic": "pigmeo",
+    "category": "adjetivo",
+    "example": "Es muy pigmeo",
+    "exampleTranslation": "Exemplo com pigmeo",
+    "exampleEnglish": "Example with pigmeo"
+  },
+  {
+    "spanish": "pijama",
+    "portuguese": "pijama",
+    "english": "pijama",
+    "phonetic": "pijama",
+    "category": "substantivo",
+    "example": "El pijama",
+    "exampleTranslation": "Exemplo com pijama",
+    "exampleEnglish": "Example with pijama"
+  },
+  {
+    "spanish": "pila",
+    "portuguese": "pilha",
+    "english": "pila",
+    "phonetic": "pila",
+    "category": "substantivo",
+    "example": "El pila",
+    "exampleTranslation": "Exemplo com pila",
+    "exampleEnglish": "Example with pila"
+  },
+  {
+    "spanish": "píldora",
+    "portuguese": "pílula",
+    "english": "píldora",
+    "phonetic": "píldora",
+    "category": "substantivo",
+    "example": "El píldora",
+    "exampleTranslation": "Exemplo com píldora",
+    "exampleEnglish": "Example with píldora"
+  },
+  {
+    "spanish": "pillaje",
+    "portuguese": "pilhagem",
+    "english": "pillaje",
+    "phonetic": "piʎaje",
+    "category": "substantivo",
+    "example": "El pillaje",
+    "exampleTranslation": "Exemplo com pillaje",
+    "exampleEnglish": "Example with pillaje"
+  },
+  {
+    "spanish": "pillar",
+    "portuguese": "pilhar",
+    "english": "pillar",
+    "phonetic": "piʎar",
+    "category": "verbo",
+    "example": "Voy a pillar",
+    "exampleTranslation": "Exemplo com pillar",
+    "exampleEnglish": "Example with pillar"
+  },
+  {
+    "spanish": "piloto",
+    "portuguese": "piloto",
+    "english": "piloto",
+    "phonetic": "piloto",
+    "category": "substantivo",
+    "example": "El piloto",
+    "exampleTranslation": "Exemplo com piloto",
+    "exampleEnglish": "Example with piloto"
+  },
+  {
+    "spanish": "pimentón",
+    "portuguese": "pimentão",
+    "english": "pimentón",
+    "phonetic": "pimentón",
+    "category": "substantivo",
+    "example": "El pimentón",
+    "exampleTranslation": "Exemplo com pimentón",
+    "exampleEnglish": "Example with pimentón"
+  },
+  {
+    "spanish": "pimienta",
+    "portuguese": "pimenta",
+    "english": "pimienta",
+    "phonetic": "pimienta",
+    "category": "substantivo",
+    "example": "El pimienta",
+    "exampleTranslation": "Exemplo com pimienta",
+    "exampleEnglish": "Example with pimienta"
+  },
+  {
+    "spanish": "pimiento",
+    "portuguese": "pimenteiro",
+    "english": "pimiento",
+    "phonetic": "pimiento",
+    "category": "substantivo",
+    "example": "El pimiento",
+    "exampleTranslation": "Exemplo com pimiento",
+    "exampleEnglish": "Example with pimiento"
+  },
+  {
+    "spanish": "piña",
+    "portuguese": "abacaxi",
+    "english": "piña",
+    "phonetic": "piɲa",
+    "category": "substantivo",
+    "example": "El piña",
+    "exampleTranslation": "Exemplo com piña",
+    "exampleEnglish": "Example with piña"
+  },
+  {
+    "spanish": "pinacoteca",
+    "portuguese": "pinacoteca",
+    "english": "pinacoteca",
+    "phonetic": "pinacoteca",
+    "category": "substantivo",
+    "example": "El pinacoteca",
+    "exampleTranslation": "Exemplo com pinacoteca",
+    "exampleEnglish": "Example with pinacoteca"
+  },
+  {
+    "spanish": "pináculo",
+    "portuguese": "pináculo",
+    "english": "pináculo",
+    "phonetic": "pináculo",
+    "category": "substantivo",
+    "example": "El pináculo",
+    "exampleTranslation": "Exemplo com pináculo",
+    "exampleEnglish": "Example with pináculo"
+  },
+  {
+    "spanish": "pincel",
+    "portuguese": "pincel",
+    "english": "pincel",
+    "phonetic": "pincel",
+    "category": "substantivo",
+    "example": "El pincel",
+    "exampleTranslation": "Exemplo com pincel",
+    "exampleEnglish": "Example with pincel"
+  },
+  {
+    "spanish": "pincelada",
+    "portuguese": "pincelada",
+    "english": "pincelada",
+    "phonetic": "pincelada",
+    "category": "substantivo",
+    "example": "El pincelada",
+    "exampleTranslation": "Exemplo com pincelada",
+    "exampleEnglish": "Example with pincelada"
+  },
+  {
+    "spanish": "pinchar",
+    "portuguese": "picar, espetar",
+    "english": "pinchar",
+    "phonetic": "pinchar",
+    "category": "verbo",
+    "example": "Voy a pinchar",
+    "exampleTranslation": "Exemplo com pinchar",
+    "exampleEnglish": "Example with pinchar"
+  },
+  {
+    "spanish": "pingüino",
+    "portuguese": "pingüim",
+    "english": "pingüino",
+    "phonetic": "pingüino",
+    "category": "substantivo",
+    "example": "El pingüino",
+    "exampleTranslation": "Exemplo com pingüino",
+    "exampleEnglish": "Example with pingüino"
+  },
+  {
+    "spanish": "pino",
+    "portuguese": "pinheiro",
+    "english": "pino",
+    "phonetic": "pino",
+    "category": "substantivo",
+    "example": "El pino",
+    "exampleTranslation": "Exemplo com pino",
+    "exampleEnglish": "Example with pino"
+  },
+  {
+    "spanish": "piñón",
+    "portuguese": "pinhão",
+    "english": "piñón",
+    "phonetic": "piɲón",
+    "category": "substantivo",
+    "example": "El piñón",
+    "exampleTranslation": "Exemplo com piñón",
+    "exampleEnglish": "Example with piñón"
+  },
+  {
+    "spanish": "pinta",
+    "portuguese": "pinta",
+    "english": "pinta",
+    "phonetic": "pinta",
+    "category": "substantivo",
+    "example": "El pinta",
+    "exampleTranslation": "Exemplo com pinta",
+    "exampleEnglish": "Example with pinta"
+  },
+  {
+    "spanish": "pintalabios",
+    "portuguese": "batom",
+    "english": "pintalabios",
+    "phonetic": "pintalabios",
+    "category": "substantivo",
+    "example": "El pintalabios",
+    "exampleTranslation": "Exemplo com pintalabios",
+    "exampleEnglish": "Example with pintalabios"
+  },
+  {
+    "spanish": "pintar",
+    "portuguese": "pintar",
+    "english": "pintar",
+    "phonetic": "pintar",
+    "category": "verbo",
+    "example": "Voy a pintar",
+    "exampleTranslation": "Exemplo com pintar",
+    "exampleEnglish": "Example with pintar"
+  },
+  {
+    "spanish": "pintor,",
+    "portuguese": "pintor",
+    "english": "pintor,",
+    "phonetic": "pintor,",
+    "category": "substantivo",
+    "example": "El pintor,",
+    "exampleTranslation": "Exemplo com pintor,",
+    "exampleEnglish": "Example with pintor,"
+  },
+  {
+    "spanish": "pintoresco",
+    "portuguese": "pitoresco",
+    "english": "pintoresco",
+    "phonetic": "pintoresco",
+    "category": "adjetivo",
+    "example": "Es muy pintoresco",
+    "exampleTranslation": "Exemplo com pintoresco",
+    "exampleEnglish": "Example with pintoresco"
+  },
+  {
+    "spanish": "pintura",
+    "portuguese": "pintura",
+    "english": "pintura",
+    "phonetic": "pintura",
+    "category": "substantivo",
+    "example": "El pintura",
+    "exampleTranslation": "Exemplo com pintura",
+    "exampleEnglish": "Example with pintura"
+  },
+  {
+    "spanish": "pinza",
+    "portuguese": "pinça",
+    "english": "pinza",
+    "phonetic": "pinza",
+    "category": "substantivo",
+    "example": "El pinza",
+    "exampleTranslation": "Exemplo com pinza",
+    "exampleEnglish": "Example with pinza"
+  },
+  {
+    "spanish": "pinzar",
+    "portuguese": "pinçar",
+    "english": "pinzar",
+    "phonetic": "pinzar",
+    "category": "verbo",
+    "example": "Voy a pinzar",
+    "exampleTranslation": "Exemplo com pinzar",
+    "exampleEnglish": "Example with pinzar"
+  },
+  {
+    "spanish": "piojo",
+    "portuguese": "piolho",
+    "english": "piojo",
+    "phonetic": "piojo",
+    "category": "substantivo",
+    "example": "El piojo",
+    "exampleTranslation": "Exemplo com piojo",
+    "exampleEnglish": "Example with piojo"
+  },
+  {
+    "spanish": "pionero",
+    "portuguese": "e adj. pioneiro",
+    "english": "pionero",
+    "phonetic": "pionero",
+    "category": "substantivo",
+    "example": "El pionero",
+    "exampleTranslation": "Exemplo com pionero",
+    "exampleEnglish": "Example with pionero"
+  },
+  {
+    "spanish": "pipa",
+    "portuguese": "pipa",
+    "english": "pipa",
+    "phonetic": "pipa",
+    "category": "substantivo",
+    "example": "El pipa",
+    "exampleTranslation": "Exemplo com pipa",
+    "exampleEnglish": "Example with pipa"
+  },
+  {
+    "spanish": "pipí",
+    "portuguese": "pipi",
+    "english": "pipí",
+    "phonetic": "pipí",
+    "category": "substantivo",
+    "example": "El pipí",
+    "exampleTranslation": "Exemplo com pipí",
+    "exampleEnglish": "Example with pipí"
+  },
+  {
+    "spanish": "pira",
+    "portuguese": "pira",
+    "english": "pira",
+    "phonetic": "pira",
+    "category": "substantivo",
+    "example": "El pira",
+    "exampleTranslation": "Exemplo com pira",
+    "exampleEnglish": "Example with pira"
+  },
+  {
+    "spanish": "pirámide",
+    "portuguese": "pirâmide",
+    "english": "pirámide",
+    "phonetic": "pirámide",
+    "category": "substantivo",
+    "example": "El pirámide",
+    "exampleTranslation": "Exemplo com pirámide",
+    "exampleEnglish": "Example with pirámide"
+  },
+  {
+    "spanish": "piraña",
+    "portuguese": "piranha",
+    "english": "piraña",
+    "phonetic": "piraɲa",
+    "category": "substantivo",
+    "example": "El piraña",
+    "exampleTranslation": "Exemplo com piraña",
+    "exampleEnglish": "Example with piraña"
+  },
+  {
+    "spanish": "pirata",
+    "portuguese": "pirata",
+    "english": "pirata",
+    "phonetic": "pirata",
+    "category": "substantivo",
+    "example": "El pirata",
+    "exampleTranslation": "Exemplo com pirata",
+    "exampleEnglish": "Example with pirata"
+  },
+  {
+    "spanish": "piratería",
+    "portuguese": "pirataria",
+    "english": "piratería",
+    "phonetic": "piratería",
+    "category": "substantivo",
+    "example": "El piratería",
+    "exampleTranslation": "Exemplo com piratería",
+    "exampleEnglish": "Example with piratería"
+  },
+  {
+    "spanish": "pirueta",
+    "portuguese": "pirueta",
+    "english": "pirueta",
+    "phonetic": "pirueta",
+    "category": "substantivo",
+    "example": "El pirueta",
+    "exampleTranslation": "Exemplo com pirueta",
+    "exampleEnglish": "Example with pirueta"
+  },
+  {
+    "spanish": "pisada",
+    "portuguese": "pisada",
+    "english": "pisada",
+    "phonetic": "pisada",
+    "category": "substantivo",
+    "example": "El pisada",
+    "exampleTranslation": "Exemplo com pisada",
+    "exampleEnglish": "Example with pisada"
+  },
+  {
+    "spanish": "pisar",
+    "portuguese": "pisar",
+    "english": "pisar",
+    "phonetic": "pisar",
+    "category": "verbo",
+    "example": "Voy a pisar",
+    "exampleTranslation": "Exemplo com pisar",
+    "exampleEnglish": "Example with pisar"
+  },
+  {
+    "spanish": "piscicultura",
+    "portuguese": "piscicultura",
+    "english": "piscicultura",
+    "phonetic": "piscicultura",
+    "category": "substantivo",
+    "example": "El piscicultura",
+    "exampleTranslation": "Exemplo com piscicultura",
+    "exampleEnglish": "Example with piscicultura"
+  },
+  {
+    "spanish": "piscina",
+    "portuguese": "piscina",
+    "english": "piscina",
+    "phonetic": "piscina",
+    "category": "substantivo",
+    "example": "El piscina",
+    "exampleTranslation": "Exemplo com piscina",
+    "exampleEnglish": "Example with piscina"
+  },
+  {
+    "spanish": "piso",
+    "portuguese": "piso, chão andar (de edifício)",
+    "english": "piso",
+    "phonetic": "piso",
+    "category": "substantivo",
+    "example": "El piso",
+    "exampleTranslation": "Exemplo com piso",
+    "exampleEnglish": "Example with piso"
+  },
+  {
+    "spanish": "pista",
+    "portuguese": "pista",
+    "english": "pista",
+    "phonetic": "pista",
+    "category": "substantivo",
+    "example": "El pista",
+    "exampleTranslation": "Exemplo com pista",
+    "exampleEnglish": "Example with pista"
+  },
+  {
+    "spanish": "pistacho",
+    "portuguese": "pistache",
+    "english": "pistacho",
+    "phonetic": "pistacho",
+    "category": "substantivo",
+    "example": "El pistacho",
+    "exampleTranslation": "Exemplo com pistacho",
+    "exampleEnglish": "Example with pistacho"
+  },
+  {
+    "spanish": "pistola",
+    "portuguese": "pistola",
+    "english": "pistola",
+    "phonetic": "pistola",
+    "category": "substantivo",
+    "example": "El pistola",
+    "exampleTranslation": "Exemplo com pistola",
+    "exampleEnglish": "Example with pistola"
+  },
+  {
+    "spanish": "pistolero",
+    "portuguese": "pistoleiro",
+    "english": "pistolero",
+    "phonetic": "pistolero",
+    "category": "substantivo",
+    "example": "El pistolero",
+    "exampleTranslation": "Exemplo com pistolero",
+    "exampleEnglish": "Example with pistolero"
+  },
+  {
+    "spanish": "pistón",
+    "portuguese": "pistão",
+    "english": "pistón",
+    "phonetic": "pistón",
+    "category": "substantivo",
+    "example": "El pistón",
+    "exampleTranslation": "Exemplo com pistón",
+    "exampleEnglish": "Example with pistón"
+  },
+  {
+    "spanish": "placentero",
+    "portuguese": "prazeroso",
+    "english": "placentero",
+    "phonetic": "placentero",
+    "category": "adjetivo",
+    "example": "Es muy placentero",
+    "exampleTranslation": "Exemplo com placentero",
+    "exampleEnglish": "Example with placentero"
+  },
+  {
+    "spanish": "placer",
+    "portuguese": "prazer",
+    "english": "placer",
+    "phonetic": "placer",
+    "category": "substantivo",
+    "example": "El placer",
+    "exampleTranslation": "Exemplo com placer",
+    "exampleEnglish": "Example with placer"
+  },
+  {
+    "spanish": "placer",
+    "portuguese": "agradar placidez f. placidez",
+    "english": "placer",
+    "phonetic": "placer",
+    "category": "verbo",
+    "example": "Voy a placer",
+    "exampleTranslation": "Exemplo com placer",
+    "exampleEnglish": "Example with placer"
+  },
+  {
+    "spanish": "plácido",
+    "portuguese": "plácido",
+    "english": "plácido",
+    "phonetic": "plácido",
+    "category": "adjetivo",
+    "example": "Es muy plácido",
+    "exampleTranslation": "Exemplo com plácido",
+    "exampleEnglish": "Example with plácido"
+  },
+  {
+    "spanish": "plaga",
+    "portuguese": "praga",
+    "english": "plaga",
+    "phonetic": "plaga",
+    "category": "substantivo",
+    "example": "El plaga",
+    "exampleTranslation": "Exemplo com plaga",
+    "exampleEnglish": "Example with plaga"
+  },
+  {
+    "spanish": "plagiar",
+    "portuguese": "plagiar",
+    "english": "plagiar",
+    "phonetic": "plagiar",
+    "category": "verbo",
+    "example": "Voy a plagiar",
+    "exampleTranslation": "Exemplo com plagiar",
+    "exampleEnglish": "Example with plagiar"
+  },
+  {
+    "spanish": "plagio",
+    "portuguese": "plágio",
+    "english": "plagio",
+    "phonetic": "plagio",
+    "category": "substantivo",
+    "example": "El plagio",
+    "exampleTranslation": "Exemplo com plagio",
+    "exampleEnglish": "Example with plagio"
+  },
+  {
+    "spanish": "plan",
+    "portuguese": "plano",
+    "english": "plan",
+    "phonetic": "plan",
+    "category": "substantivo",
+    "example": "El plan",
+    "exampleTranslation": "Exemplo com plan",
+    "exampleEnglish": "Example with plan"
+  },
+  {
+    "spanish": "plancha",
+    "portuguese": "prancha",
+    "english": "plancha",
+    "phonetic": "plancha",
+    "category": "substantivo",
+    "example": "El plancha",
+    "exampleTranslation": "Exemplo com plancha",
+    "exampleEnglish": "Example with plancha"
+  },
+  {
+    "spanish": "planchar",
+    "portuguese": "passar roupa",
+    "english": "planchar",
+    "phonetic": "planchar",
+    "category": "verbo",
+    "example": "Voy a planchar",
+    "exampleTranslation": "Exemplo com planchar",
+    "exampleEnglish": "Example with planchar"
+  },
+  {
+    "spanish": "planear",
+    "portuguese": "planar",
+    "english": "planear",
+    "phonetic": "planear",
+    "category": "verbo",
+    "example": "Voy a planear",
+    "exampleTranslation": "Exemplo com planear",
+    "exampleEnglish": "Example with planear"
+  },
+  {
+    "spanish": "planeta",
+    "portuguese": "planeta",
+    "english": "planeta",
+    "phonetic": "planeta",
+    "category": "substantivo",
+    "example": "El planeta",
+    "exampleTranslation": "Exemplo com planeta",
+    "exampleEnglish": "Example with planeta"
+  },
+  {
+    "spanish": "planicie",
+    "portuguese": "planície",
+    "english": "planicie",
+    "phonetic": "planicie",
+    "category": "substantivo",
+    "example": "El planicie",
+    "exampleTranslation": "Exemplo com planicie",
+    "exampleEnglish": "Example with planicie"
+  },
+  {
+    "spanish": "planificación",
+    "portuguese": "planificação",
+    "english": "planificación",
+    "phonetic": "planificación",
+    "category": "substantivo",
+    "example": "El planificación",
+    "exampleTranslation": "Exemplo com planificación",
+    "exampleEnglish": "Example with planificación"
+  },
+  {
+    "spanish": "planificar",
+    "portuguese": "planificar",
+    "english": "planificar",
+    "phonetic": "planificar",
+    "category": "verbo",
+    "example": "Voy a planificar",
+    "exampleTranslation": "Exemplo com planificar",
+    "exampleEnglish": "Example with planificar"
+  },
+  {
+    "spanish": "plano",
+    "portuguese": "e m. plano",
+    "english": "plano",
+    "phonetic": "plano",
+    "category": "adjetivo",
+    "example": "Es muy plano",
+    "exampleTranslation": "Exemplo com plano",
+    "exampleEnglish": "Example with plano"
+  },
+  {
+    "spanish": "planta",
+    "portuguese": "planta",
+    "english": "planta",
+    "phonetic": "planta",
+    "category": "substantivo",
+    "example": "El planta",
+    "exampleTranslation": "Exemplo com planta",
+    "exampleEnglish": "Example with planta"
+  },
+  {
+    "spanish": "plantación",
+    "portuguese": "plantação",
+    "english": "plantación",
+    "phonetic": "plantación",
+    "category": "substantivo",
+    "example": "El plantación",
+    "exampleTranslation": "Exemplo com plantación",
+    "exampleEnglish": "Example with plantación"
+  },
+  {
+    "spanish": "plantar",
+    "portuguese": "plantar",
+    "english": "plantar",
+    "phonetic": "plantar",
+    "category": "verbo",
+    "example": "Voy a plantar",
+    "exampleTranslation": "Exemplo com plantar",
+    "exampleEnglish": "Example with plantar"
+  },
+  {
+    "spanish": "plantío",
+    "portuguese": "plantio, plantação",
+    "english": "plantío",
+    "phonetic": "plantío",
+    "category": "substantivo",
+    "example": "El plantío",
+    "exampleTranslation": "Exemplo com plantío",
+    "exampleEnglish": "Example with plantío"
+  },
+  {
+    "spanish": "plástica",
+    "portuguese": "plástica",
+    "english": "plástica",
+    "phonetic": "plástica",
+    "category": "substantivo",
+    "example": "El plástica",
+    "exampleTranslation": "Exemplo com plástica",
+    "exampleEnglish": "Example with plástica"
+  },
+  {
+    "spanish": "plástico",
+    "portuguese": "e m. plástico",
+    "english": "plástico",
+    "phonetic": "plástico",
+    "category": "adjetivo",
+    "example": "Es muy plástico",
+    "exampleTranslation": "Exemplo com plástico",
+    "exampleEnglish": "Example with plástico"
+  },
+  {
+    "spanish": "plata",
+    "portuguese": "prata",
+    "english": "plata",
+    "phonetic": "plata",
+    "category": "substantivo",
+    "example": "El plata",
+    "exampleTranslation": "Exemplo com plata",
+    "exampleEnglish": "Example with plata"
+  },
+  {
+    "spanish": "plataforma",
+    "portuguese": "plataforma",
+    "english": "plataforma",
+    "phonetic": "plataforma",
+    "category": "substantivo",
+    "example": "El plataforma",
+    "exampleTranslation": "Exemplo com plataforma",
+    "exampleEnglish": "Example with plataforma"
+  },
+  {
+    "spanish": "plátano",
+    "portuguese": "banana, bananeira",
+    "english": "plátano",
+    "phonetic": "plátano",
+    "category": "substantivo",
+    "example": "El plátano",
+    "exampleTranslation": "Exemplo com plátano",
+    "exampleEnglish": "Example with plátano"
+  },
+  {
+    "spanish": "platea",
+    "portuguese": "platéia",
+    "english": "platea",
+    "phonetic": "platea",
+    "category": "substantivo",
+    "example": "El platea",
+    "exampleTranslation": "Exemplo com platea",
+    "exampleEnglish": "Example with platea"
+  },
+  {
+    "spanish": "platillo",
+    "portuguese": "pires",
+    "english": "platillo",
+    "phonetic": "platiʎo",
+    "category": "substantivo",
+    "example": "El platillo",
+    "exampleTranslation": "Exemplo com platillo",
+    "exampleEnglish": "Example with platillo"
+  },
+  {
+    "spanish": "plato",
+    "portuguese": "prato",
+    "english": "plato",
+    "phonetic": "plato",
+    "category": "substantivo",
+    "example": "El plato",
+    "exampleTranslation": "Exemplo com plato",
+    "exampleEnglish": "Example with plato"
+  },
+  {
+    "spanish": "platónico",
+    "portuguese": "platônico",
+    "english": "platónico",
+    "phonetic": "platónico",
+    "category": "adjetivo",
+    "example": "Es muy platónico",
+    "exampleTranslation": "Exemplo com platónico",
+    "exampleEnglish": "Example with platónico"
+  },
+  {
+    "spanish": "plausible",
+    "portuguese": "plausível",
+    "english": "plausible",
+    "phonetic": "plausible",
+    "category": "adjetivo",
+    "example": "Es muy plausible",
+    "exampleTranslation": "Exemplo com plausible",
+    "exampleEnglish": "Example with plausible"
+  },
+  {
+    "spanish": "playa",
+    "portuguese": "praia",
+    "english": "playa",
+    "phonetic": "playa",
+    "category": "substantivo",
+    "example": "El playa",
+    "exampleTranslation": "Exemplo com playa",
+    "exampleEnglish": "Example with playa"
+  },
+  {
+    "spanish": "plaza",
+    "portuguese": "praça",
+    "english": "plaza",
+    "phonetic": "plaza",
+    "category": "substantivo",
+    "example": "El plaza",
+    "exampleTranslation": "Exemplo com plaza",
+    "exampleEnglish": "Example with plaza"
+  },
+  {
+    "spanish": "plazo",
+    "portuguese": "prazo",
+    "english": "plazo",
+    "phonetic": "plazo",
+    "category": "substantivo",
+    "example": "El plazo",
+    "exampleTranslation": "Exemplo com plazo",
+    "exampleEnglish": "Example with plazo"
+  },
+  {
+    "spanish": "plebe",
+    "portuguese": "plebe",
+    "english": "plebe",
+    "phonetic": "plebe",
+    "category": "substantivo",
+    "example": "El plebe",
+    "exampleTranslation": "Exemplo com plebe",
+    "exampleEnglish": "Example with plebe"
+  },
+  {
+    "spanish": "plebeyo",
+    "portuguese": "e m. plebeu",
+    "english": "plebeyo",
+    "phonetic": "plebeyo",
+    "category": "adjetivo",
+    "example": "Es muy plebeyo",
+    "exampleTranslation": "Exemplo com plebeyo",
+    "exampleEnglish": "Example with plebeyo"
+  },
+  {
+    "spanish": "plebiscito",
+    "portuguese": "plebiscito",
+    "english": "plebiscito",
+    "phonetic": "plebiscito",
+    "category": "substantivo",
+    "example": "El plebiscito",
+    "exampleTranslation": "Exemplo com plebiscito",
+    "exampleEnglish": "Example with plebiscito"
+  },
+  {
+    "spanish": "plegadizo",
+    "portuguese": "dobradiço",
+    "english": "plegadizo",
+    "phonetic": "plegadizo",
+    "category": "adjetivo",
+    "example": "Es muy plegadizo",
+    "exampleTranslation": "Exemplo com plegadizo",
+    "exampleEnglish": "Example with plegadizo"
+  },
+  {
+    "spanish": "plegamiento",
+    "portuguese": "dobra",
+    "english": "plegamiento",
+    "phonetic": "plegamiento",
+    "category": "substantivo",
+    "example": "El plegamiento",
+    "exampleTranslation": "Exemplo com plegamiento",
+    "exampleEnglish": "Example with plegamiento"
+  },
+  {
+    "spanish": "plegar",
+    "portuguese": "dobrar",
+    "english": "plegar",
+    "phonetic": "plegar",
+    "category": "verbo",
+    "example": "Voy a plegar",
+    "exampleTranslation": "Exemplo com plegar",
+    "exampleEnglish": "Example with plegar"
+  },
+  {
+    "spanish": "plegaria",
+    "portuguese": "prece, oração, reza",
+    "english": "plegaria",
+    "phonetic": "plegaria",
+    "category": "substantivo",
+    "example": "El plegaria",
+    "exampleTranslation": "Exemplo com plegaria",
+    "exampleEnglish": "Example with plegaria"
+  },
+  {
+    "spanish": "pleitear",
+    "portuguese": "pleitear, disputar",
+    "english": "pleitear",
+    "phonetic": "pleitear",
+    "category": "verbo",
+    "example": "Voy a pleitear",
+    "exampleTranslation": "Exemplo com pleitear",
+    "exampleEnglish": "Example with pleitear"
+  },
+  {
+    "spanish": "pleito",
+    "portuguese": "pleito, litígio",
+    "english": "pleito",
+    "phonetic": "pleito",
+    "category": "substantivo",
+    "example": "El pleito",
+    "exampleTranslation": "Exemplo com pleito",
+    "exampleEnglish": "Example with pleito"
+  },
+  {
+    "spanish": "plenario",
+    "portuguese": "e m. plenário",
+    "english": "plenario",
+    "phonetic": "plenario",
+    "category": "adjetivo",
+    "example": "Es muy plenario",
+    "exampleTranslation": "Exemplo com plenario",
+    "exampleEnglish": "Example with plenario"
+  },
+  {
+    "spanish": "plenilunio",
+    "portuguese": "plenilúnio",
+    "english": "plenilunio",
+    "phonetic": "plenilunio",
+    "category": "substantivo",
+    "example": "El plenilunio",
+    "exampleTranslation": "Exemplo com plenilunio",
+    "exampleEnglish": "Example with plenilunio"
+  },
+  {
+    "spanish": "plenipotenciario",
+    "portuguese": "plenipotenciário",
+    "english": "plenipotenciario",
+    "phonetic": "plenipotenciario",
+    "category": "adjetivo",
+    "example": "Es muy plenipotenciario",
+    "exampleTranslation": "Exemplo com plenipotenciario",
+    "exampleEnglish": "Example with plenipotenciario"
+  },
+  {
+    "spanish": "plenitud",
+    "portuguese": "plenitude",
+    "english": "plenitud",
+    "phonetic": "plenitud",
+    "category": "substantivo",
+    "example": "El plenitud",
+    "exampleTranslation": "Exemplo com plenitud",
+    "exampleEnglish": "Example with plenitud"
+  },
+  {
+    "spanish": "pleno",
+    "portuguese": "pleno",
+    "english": "pleno",
+    "phonetic": "pleno",
+    "category": "adjetivo",
+    "example": "Es muy pleno",
+    "exampleTranslation": "Exemplo com pleno",
+    "exampleEnglish": "Example with pleno"
+  },
+  {
+    "spanish": "plomo",
+    "portuguese": "chumbo",
+    "english": "plomo",
+    "phonetic": "plomo",
+    "category": "substantivo",
+    "example": "El plomo",
+    "exampleTranslation": "Exemplo com plomo",
+    "exampleEnglish": "Example with plomo"
+  },
+  {
+    "spanish": "pluma",
+    "portuguese": "pluma, pena",
+    "english": "pluma",
+    "phonetic": "pluma",
+    "category": "substantivo",
+    "example": "El pluma",
+    "exampleTranslation": "Exemplo com pluma",
+    "exampleEnglish": "Example with pluma"
+  },
+  {
+    "spanish": "plumaje",
+    "portuguese": "plumagem",
+    "english": "plumaje",
+    "phonetic": "plumaje",
+    "category": "substantivo",
+    "example": "El plumaje",
+    "exampleTranslation": "Exemplo com plumaje",
+    "exampleEnglish": "Example with plumaje"
+  },
+  {
+    "spanish": "plúmbeo",
+    "portuguese": "plúmbeo",
+    "english": "plúmbeo",
+    "phonetic": "plúmbeo",
+    "category": "adjetivo",
+    "example": "Es muy plúmbeo",
+    "exampleTranslation": "Exemplo com plúmbeo",
+    "exampleEnglish": "Example with plúmbeo"
+  },
+  {
+    "spanish": "plumero",
+    "portuguese": "espanador",
+    "english": "plumero",
+    "phonetic": "plumero",
+    "category": "substantivo",
+    "example": "El plumero",
+    "exampleTranslation": "Exemplo com plumero",
+    "exampleEnglish": "Example with plumero"
+  },
+  {
+    "spanish": "plural",
+    "portuguese": "e m. plural",
+    "english": "plural",
+    "phonetic": "plural",
+    "category": "adjetivo",
+    "example": "Es muy plural",
+    "exampleTranslation": "Exemplo com plural",
+    "exampleEnglish": "Example with plural"
+  },
+  {
+    "spanish": "pluscuamperfecto",
+    "portuguese": "e m. mais-que- perfeito",
+    "english": "pluscuamperfecto",
+    "phonetic": "pluscuamperfecto",
+    "category": "adjetivo",
+    "example": "Es muy pluscuamperfecto",
+    "exampleTranslation": "Exemplo com pluscuamperfecto",
+    "exampleEnglish": "Example with pluscuamperfecto"
+  },
+  {
+    "spanish": "plusvalía",
+    "portuguese": "mais-valia",
+    "english": "plusvalía",
+    "phonetic": "plusvalía",
+    "category": "substantivo",
+    "example": "El plusvalía",
+    "exampleTranslation": "Exemplo com plusvalía",
+    "exampleEnglish": "Example with plusvalía"
+  },
+  {
+    "spanish": "plutonio",
+    "portuguese": "plutônio",
+    "english": "plutonio",
+    "phonetic": "plutonio",
+    "category": "substantivo",
+    "example": "El plutonio",
+    "exampleTranslation": "Exemplo com plutonio",
+    "exampleEnglish": "Example with plutonio"
+  },
+  {
+    "spanish": "pluvial",
+    "portuguese": "pluvial",
+    "english": "pluvial",
+    "phonetic": "pluvial",
+    "category": "adjetivo",
+    "example": "Es muy pluvial",
+    "exampleTranslation": "Exemplo com pluvial",
+    "exampleEnglish": "Example with pluvial"
+  },
+  {
+    "spanish": "población",
+    "portuguese": "povoação",
+    "english": "población",
+    "phonetic": "población",
+    "category": "substantivo",
+    "example": "El población",
+    "exampleTranslation": "Exemplo com población",
+    "exampleEnglish": "Example with población"
+  },
+  {
+    "spanish": "poblar",
+    "portuguese": "povoar",
+    "english": "poblar",
+    "phonetic": "poblar",
+    "category": "verbo",
+    "example": "Voy a poblar",
+    "exampleTranslation": "Exemplo com poblar",
+    "exampleEnglish": "Example with poblar"
+  },
+  {
+    "spanish": "pobre",
+    "portuguese": "e m. e f. pobre",
+    "english": "pobre",
+    "phonetic": "pobre",
+    "category": "adjetivo",
+    "example": "Es muy pobre",
+    "exampleTranslation": "Exemplo com pobre",
+    "exampleEnglish": "Example with pobre"
+  },
+  {
+    "spanish": "pobreza",
+    "portuguese": "pobreza",
+    "english": "pobreza",
+    "phonetic": "pobreza",
+    "category": "substantivo",
+    "example": "El pobreza",
+    "exampleTranslation": "Exemplo com pobreza",
+    "exampleEnglish": "Example with pobreza"
+  },
+  {
+    "spanish": "poción",
+    "portuguese": "poção",
+    "english": "poción",
+    "phonetic": "poción",
+    "category": "substantivo",
+    "example": "El poción",
+    "exampleTranslation": "Exemplo com poción",
+    "exampleEnglish": "Example with poción"
+  },
+  {
+    "spanish": "poco",
+    "portuguese": "e adv. pouco",
+    "english": "poco",
+    "phonetic": "poco",
+    "category": "adjetivo",
+    "example": "Es muy poco",
+    "exampleTranslation": "Exemplo com poco",
+    "exampleEnglish": "Example with poco"
+  },
+  {
+    "spanish": "podar",
+    "portuguese": "podar",
+    "english": "podar",
+    "phonetic": "podar",
+    "category": "verbo",
+    "example": "Voy a podar",
+    "exampleTranslation": "Exemplo com podar",
+    "exampleEnglish": "Example with podar"
+  },
+  {
+    "spanish": "poder",
+    "portuguese": "poder",
+    "english": "poder",
+    "phonetic": "poder",
+    "category": "substantivo",
+    "example": "El poder",
+    "exampleTranslation": "Exemplo com poder",
+    "exampleEnglish": "Example with poder"
+  },
+  {
+    "spanish": "poder",
+    "portuguese": "poder",
+    "english": "poder",
+    "phonetic": "poder",
+    "category": "verbo",
+    "example": "Voy a poder",
+    "exampleTranslation": "Exemplo com poder",
+    "exampleEnglish": "Example with poder"
+  },
+  {
+    "spanish": "poderío",
+    "portuguese": "poderio",
+    "english": "poderío",
+    "phonetic": "poderío",
+    "category": "substantivo",
+    "example": "El poderío",
+    "exampleTranslation": "Exemplo com poderío",
+    "exampleEnglish": "Example with poderío"
+  },
+  {
+    "spanish": "poderoso",
+    "portuguese": "poderoso",
+    "english": "poderoso",
+    "phonetic": "poderoso",
+    "category": "adjetivo",
+    "example": "Es muy poderoso",
+    "exampleTranslation": "Exemplo com poderoso",
+    "exampleEnglish": "Example with poderoso"
+  },
+  {
+    "spanish": "podredumbre",
+    "portuguese": "podridão",
+    "english": "podredumbre",
+    "phonetic": "podredumbre",
+    "category": "substantivo",
+    "example": "El podredumbre",
+    "exampleTranslation": "Exemplo com podredumbre",
+    "exampleEnglish": "Example with podredumbre"
+  },
+  {
+    "spanish": "podrido",
+    "portuguese": "podre",
+    "english": "podrido",
+    "phonetic": "podrido",
+    "category": "adjetivo",
+    "example": "Es muy podrido",
+    "exampleTranslation": "Exemplo com podrido",
+    "exampleEnglish": "Example with podrido"
+  },
+  {
+    "spanish": "podrir",
+    "portuguese": "apodrecer",
+    "english": "podrir",
+    "phonetic": "podrir",
+    "category": "verbo",
+    "example": "Voy a podrir",
+    "exampleTranslation": "Exemplo com podrir",
+    "exampleEnglish": "Example with podrir"
+  },
+  {
+    "spanish": "poema",
+    "portuguese": "poema",
+    "english": "poema",
+    "phonetic": "poema",
+    "category": "substantivo",
+    "example": "El poema",
+    "exampleTranslation": "Exemplo com poema",
+    "exampleEnglish": "Example with poema"
+  },
+  {
+    "spanish": "poesía",
+    "portuguese": "poesia",
+    "english": "poesía",
+    "phonetic": "poesía",
+    "category": "substantivo",
+    "example": "El poesía",
+    "exampleTranslation": "Exemplo com poesía",
+    "exampleEnglish": "Example with poesía"
+  },
+  {
+    "spanish": "poeta",
+    "portuguese": "poeta",
+    "english": "poeta",
+    "phonetic": "poeta",
+    "category": "substantivo",
+    "example": "El poeta",
+    "exampleTranslation": "Exemplo com poeta",
+    "exampleEnglish": "Example with poeta"
+  },
+  {
+    "spanish": "poético",
+    "portuguese": "poético",
+    "english": "poético",
+    "phonetic": "poético",
+    "category": "adjetivo",
+    "example": "Es muy poético",
+    "exampleTranslation": "Exemplo com poético",
+    "exampleEnglish": "Example with poético"
+  },
+  {
+    "spanish": "poetisa",
+    "portuguese": "poetisa",
+    "english": "poetisa",
+    "phonetic": "poetisa",
+    "category": "substantivo",
+    "example": "El poetisa",
+    "exampleTranslation": "Exemplo com poetisa",
+    "exampleEnglish": "Example with poetisa"
+  },
+  {
+    "spanish": "polaco",
+    "portuguese": "e m. polaco",
+    "english": "polaco",
+    "phonetic": "polaco",
+    "category": "adjetivo",
+    "example": "Es muy polaco",
+    "exampleTranslation": "Exemplo com polaco",
+    "exampleEnglish": "Example with polaco"
+  },
+  {
+    "spanish": "polar",
+    "portuguese": "polar",
+    "english": "polar",
+    "phonetic": "polar",
+    "category": "adjetivo",
+    "example": "Es muy polar",
+    "exampleTranslation": "Exemplo com polar",
+    "exampleEnglish": "Example with polar"
+  },
+  {
+    "spanish": "polémico",
+    "portuguese": "polêmico",
+    "english": "polémico",
+    "phonetic": "polémico",
+    "category": "adjetivo",
+    "example": "Es muy polémico",
+    "exampleTranslation": "Exemplo com polémico",
+    "exampleEnglish": "Example with polémico"
+  },
+  {
+    "spanish": "polemizar",
+    "portuguese": "polemizar",
+    "english": "polemizar",
+    "phonetic": "polemizar",
+    "category": "verbo",
+    "example": "Voy a polemizar",
+    "exampleTranslation": "Exemplo com polemizar",
+    "exampleEnglish": "Example with polemizar"
+  },
+  {
+    "spanish": "polen",
+    "portuguese": "pólen",
+    "english": "polen",
+    "phonetic": "polen",
+    "category": "substantivo",
+    "example": "El polen",
+    "exampleTranslation": "Exemplo com polen",
+    "exampleEnglish": "Example with polen"
+  },
+  {
+    "spanish": "policía",
+    "portuguese": "polícia",
+    "english": "policía",
+    "phonetic": "policía",
+    "category": "substantivo",
+    "example": "El policía",
+    "exampleTranslation": "Exemplo com policía",
+    "exampleEnglish": "Example with policía"
+  },
+  {
+    "spanish": "poligamia",
+    "portuguese": "poligamia",
+    "english": "poligamia",
+    "phonetic": "poligamia",
+    "category": "substantivo",
+    "example": "El poligamia",
+    "exampleTranslation": "Exemplo com poligamia",
+    "exampleEnglish": "Example with poligamia"
+  },
+  {
+    "spanish": "polígamo",
+    "portuguese": "e m. polígamo",
+    "english": "polígamo",
+    "phonetic": "polígamo",
+    "category": "adjetivo",
+    "example": "Es muy polígamo",
+    "exampleTranslation": "Exemplo com polígamo",
+    "exampleEnglish": "Example with polígamo"
+  },
+  {
+    "spanish": "políglota",
+    "portuguese": "poliglota",
+    "english": "políglota",
+    "phonetic": "políglota",
+    "category": "substantivo",
+    "example": "El políglota",
+    "exampleTranslation": "Exemplo com políglota",
+    "exampleEnglish": "Example with políglota"
+  },
+  {
+    "spanish": "polilla",
+    "portuguese": "traça",
+    "english": "polilla",
+    "phonetic": "poliʎa",
+    "category": "substantivo",
+    "example": "El polilla",
+    "exampleTranslation": "Exemplo com polilla",
+    "exampleEnglish": "Example with polilla"
+  },
+  {
+    "spanish": "polisílabo",
+    "portuguese": "polissilábico",
+    "english": "polisílabo",
+    "phonetic": "polisílabo",
+    "category": "adjetivo",
+    "example": "Es muy polisílabo",
+    "exampleTranslation": "Exemplo com polisílabo",
+    "exampleEnglish": "Example with polisílabo"
+  },
+  {
+    "spanish": "politeísmo",
+    "portuguese": "politeísmo",
+    "english": "politeísmo",
+    "phonetic": "politeísmo",
+    "category": "substantivo",
+    "example": "El politeísmo",
+    "exampleTranslation": "Exemplo com politeísmo",
+    "exampleEnglish": "Example with politeísmo"
+  },
+  {
+    "spanish": "politeísta",
+    "portuguese": "politeísta",
+    "english": "politeísta",
+    "phonetic": "politeísta",
+    "category": "adjetivo",
+    "example": "Es muy politeísta",
+    "exampleTranslation": "Exemplo com politeísta",
+    "exampleEnglish": "Example with politeísta"
+  },
+  {
+    "spanish": "política",
+    "portuguese": "política",
+    "english": "política",
+    "phonetic": "política",
+    "category": "substantivo",
+    "example": "El política",
+    "exampleTranslation": "Exemplo com política",
+    "exampleEnglish": "Example with política"
+  },
+  {
+    "spanish": "político",
+    "portuguese": "e m. político",
+    "english": "político",
+    "phonetic": "político",
+    "category": "adjetivo",
+    "example": "Es muy político",
+    "exampleTranslation": "Exemplo com político",
+    "exampleEnglish": "Example with político"
+  },
+  {
+    "spanish": "polivalencia",
+    "portuguese": "polivalência",
+    "english": "polivalencia",
+    "phonetic": "polivalencia",
+    "category": "substantivo",
+    "example": "El polivalencia",
+    "exampleTranslation": "Exemplo com polivalencia",
+    "exampleEnglish": "Example with polivalencia"
+  },
+  {
+    "spanish": "polivalente",
+    "portuguese": "polivalente",
+    "english": "polivalente",
+    "phonetic": "polivalente",
+    "category": "adjetivo",
+    "example": "Es muy polivalente",
+    "exampleTranslation": "Exemplo com polivalente",
+    "exampleEnglish": "Example with polivalente"
+  },
+  {
+    "spanish": "póliza",
+    "portuguese": "apólice",
+    "english": "póliza",
+    "phonetic": "póliza",
+    "category": "substantivo",
+    "example": "El póliza",
+    "exampleTranslation": "Exemplo com póliza",
+    "exampleEnglish": "Example with póliza"
+  },
+  {
+    "spanish": "pollero",
+    "portuguese": "galinheiro",
+    "english": "pollero",
+    "phonetic": "poʎero",
+    "category": "substantivo",
+    "example": "El pollero",
+    "exampleTranslation": "Exemplo com pollero",
+    "exampleEnglish": "Example with pollero"
+  },
+  {
+    "spanish": "pollo",
+    "portuguese": "frango",
+    "english": "pollo",
+    "phonetic": "poʎo",
+    "category": "substantivo",
+    "example": "El pollo",
+    "exampleTranslation": "Exemplo com pollo",
+    "exampleEnglish": "Example with pollo"
+  },
+  {
+    "spanish": "polo",
+    "portuguese": "pólo",
+    "english": "polo",
+    "phonetic": "polo",
+    "category": "substantivo",
+    "example": "El polo",
+    "exampleTranslation": "Exemplo com polo",
+    "exampleEnglish": "Example with polo"
+  },
+  {
+    "spanish": "polución",
+    "portuguese": "poluição",
+    "english": "polución",
+    "phonetic": "polución",
+    "category": "substantivo",
+    "example": "El polución",
+    "exampleTranslation": "Exemplo com polución",
+    "exampleEnglish": "Example with polución"
+  },
+  {
+    "spanish": "polvo",
+    "portuguese": "pó",
+    "english": "polvo",
+    "phonetic": "polvo",
+    "category": "substantivo",
+    "example": "El polvo",
+    "exampleTranslation": "Exemplo com polvo",
+    "exampleEnglish": "Example with polvo"
+  },
+  {
+    "spanish": "pólvora",
+    "portuguese": "pólvora",
+    "english": "pólvora",
+    "phonetic": "pólvora",
+    "category": "substantivo",
+    "example": "El pólvora",
+    "exampleTranslation": "Exemplo com pólvora",
+    "exampleEnglish": "Example with pólvora"
+  },
+  {
+    "spanish": "polvoriento",
+    "portuguese": "poeirento",
+    "english": "polvoriento",
+    "phonetic": "polvoriento",
+    "category": "adjetivo",
+    "example": "Es muy polvoriento",
+    "exampleTranslation": "Exemplo com polvoriento",
+    "exampleEnglish": "Example with polvoriento"
+  },
+  {
+    "spanish": "pomada",
+    "portuguese": "pomada",
+    "english": "pomada",
+    "phonetic": "pomada",
+    "category": "substantivo",
+    "example": "El pomada",
+    "exampleTranslation": "Exemplo com pomada",
+    "exampleEnglish": "Example with pomada"
+  },
+  {
+    "spanish": "pomelo",
+    "portuguese": "pomelo",
+    "english": "pomelo",
+    "phonetic": "pomelo",
+    "category": "substantivo",
+    "example": "El pomelo",
+    "exampleTranslation": "Exemplo com pomelo",
+    "exampleEnglish": "Example with pomelo"
+  },
+  {
+    "spanish": "pomo",
+    "portuguese": "pomo",
+    "english": "pomo",
+    "phonetic": "pomo",
+    "category": "substantivo",
+    "example": "El pomo",
+    "exampleTranslation": "Exemplo com pomo",
+    "exampleEnglish": "Example with pomo"
+  },
+  {
+    "spanish": "pompa",
+    "portuguese": "pompa",
+    "english": "pompa",
+    "phonetic": "pompa",
+    "category": "substantivo",
+    "example": "El pompa",
+    "exampleTranslation": "Exemplo com pompa",
+    "exampleEnglish": "Example with pompa"
+  },
+  {
+    "spanish": "pomposo",
+    "portuguese": "pomposo",
+    "english": "pomposo",
+    "phonetic": "pomposo",
+    "category": "adjetivo",
+    "example": "Es muy pomposo",
+    "exampleTranslation": "Exemplo com pomposo",
+    "exampleEnglish": "Example with pomposo"
+  },
+  {
+    "spanish": "ponderable",
+    "portuguese": "ponderável",
+    "english": "ponderable",
+    "phonetic": "ponderable",
+    "category": "adjetivo",
+    "example": "Es muy ponderable",
+    "exampleTranslation": "Exemplo com ponderable",
+    "exampleEnglish": "Example with ponderable"
+  },
+  {
+    "spanish": "ponderación",
+    "portuguese": "ponderação",
+    "english": "ponderación",
+    "phonetic": "ponderación",
+    "category": "substantivo",
+    "example": "El ponderación",
+    "exampleTranslation": "Exemplo com ponderación",
+    "exampleEnglish": "Example with ponderación"
+  },
+  {
+    "spanish": "ponderar",
+    "portuguese": "ponderar",
+    "english": "ponderar",
+    "phonetic": "ponderar",
+    "category": "verbo",
+    "example": "Voy a ponderar",
+    "exampleTranslation": "Exemplo com ponderar",
+    "exampleEnglish": "Example with ponderar"
+  },
+  {
+    "spanish": "poner",
+    "portuguese": "pôr",
+    "english": "poner",
+    "phonetic": "poner",
+    "category": "verbo",
+    "example": "Voy a poner",
+    "exampleTranslation": "Exemplo com poner",
+    "exampleEnglish": "Example with poner"
+  },
+  {
+    "spanish": "pontifical",
+    "portuguese": "pontifical",
+    "english": "pontifical",
+    "phonetic": "pontifical",
+    "category": "adjetivo",
+    "example": "Es muy pontifical",
+    "exampleTranslation": "Exemplo com pontifical",
+    "exampleEnglish": "Example with pontifical"
+  },
+  {
+    "spanish": "pontífice",
+    "portuguese": "pontífice",
+    "english": "pontífice",
+    "phonetic": "pontífice",
+    "category": "substantivo",
+    "example": "El pontífice",
+    "exampleTranslation": "Exemplo com pontífice",
+    "exampleEnglish": "Example with pontífice"
+  },
+  {
+    "spanish": "pontificio",
+    "portuguese": "pontifício",
+    "english": "pontificio",
+    "phonetic": "pontificio",
+    "category": "adjetivo",
+    "example": "Es muy pontificio",
+    "exampleTranslation": "Exemplo com pontificio",
+    "exampleEnglish": "Example with pontificio"
+  },
+  {
+    "spanish": "ponzoña",
+    "portuguese": "peçonha",
+    "english": "ponzoña",
+    "phonetic": "ponzoɲa",
+    "category": "substantivo",
+    "example": "El ponzoña",
+    "exampleTranslation": "Exemplo com ponzoña",
+    "exampleEnglish": "Example with ponzoña"
+  },
+  {
+    "spanish": "popa",
+    "portuguese": "popa",
+    "english": "popa",
+    "phonetic": "popa",
+    "category": "substantivo",
+    "example": "El popa",
+    "exampleTranslation": "Exemplo com popa",
+    "exampleEnglish": "Example with popa"
+  },
+  {
+    "spanish": "populacho",
+    "portuguese": "populacho",
+    "english": "populacho",
+    "phonetic": "populacho",
+    "category": "substantivo",
+    "example": "El populacho",
+    "exampleTranslation": "Exemplo com populacho",
+    "exampleEnglish": "Example with populacho"
+  },
+  {
+    "spanish": "popular",
+    "portuguese": "popular",
+    "english": "popular",
+    "phonetic": "popular",
+    "category": "adjetivo",
+    "example": "Es muy popular",
+    "exampleTranslation": "Exemplo com popular",
+    "exampleEnglish": "Example with popular"
+  },
+  {
+    "spanish": "popularidad",
+    "portuguese": "popularidade",
+    "english": "popularidad",
+    "phonetic": "popularidad",
+    "category": "substantivo",
+    "example": "El popularidad",
+    "exampleTranslation": "Exemplo com popularidad",
+    "exampleEnglish": "Example with popularidad"
+  },
+  {
+    "spanish": "populista",
+    "portuguese": "populista",
+    "english": "populista",
+    "phonetic": "populista",
+    "category": "adjetivo",
+    "example": "Es muy populista",
+    "exampleTranslation": "Exemplo com populista",
+    "exampleEnglish": "Example with populista"
+  },
+  {
+    "spanish": "populoso",
+    "portuguese": "populoso",
+    "english": "populoso",
+    "phonetic": "populoso",
+    "category": "adjetivo",
+    "example": "Es muy populoso",
+    "exampleTranslation": "Exemplo com populoso",
+    "exampleEnglish": "Example with populoso"
+  },
+  {
+    "spanish": "por",
+    "portuguese": "pôr",
+    "english": "por",
+    "phonetic": "por",
+    "category": "preposição",
+    "example": "El por",
+    "exampleTranslation": "Exemplo com por",
+    "exampleEnglish": "Example with por"
+  },
+  {
+    "spanish": "porcelana",
+    "portuguese": "porcelana",
+    "english": "porcelana",
+    "phonetic": "porcelana",
+    "category": "substantivo",
+    "example": "El porcelana",
+    "exampleTranslation": "Exemplo com porcelana",
+    "exampleEnglish": "Example with porcelana"
+  },
+  {
+    "spanish": "porcentaje",
+    "portuguese": "percentagem",
+    "english": "porcentaje",
+    "phonetic": "porcentaje",
+    "category": "substantivo",
+    "example": "El porcentaje",
+    "exampleTranslation": "Exemplo com porcentaje",
+    "exampleEnglish": "Example with porcentaje"
+  },
+  {
+    "spanish": "porcentual",
+    "portuguese": "e m. percentual",
+    "english": "porcentual",
+    "phonetic": "porcentual",
+    "category": "adjetivo",
+    "example": "Es muy porcentual",
+    "exampleTranslation": "Exemplo com porcentual",
+    "exampleEnglish": "Example with porcentual"
+  },
+  {
+    "spanish": "porción",
+    "portuguese": "porção",
+    "english": "porción",
+    "phonetic": "porción",
+    "category": "substantivo",
+    "example": "El porción",
+    "exampleTranslation": "Exemplo com porción",
+    "exampleEnglish": "Example with porción"
+  },
+  {
+    "spanish": "pordiosero",
+    "portuguese": "mendigo",
+    "english": "pordiosero",
+    "phonetic": "pordiosero",
+    "category": "adjetivo",
+    "example": "Es muy pordiosero",
+    "exampleTranslation": "Exemplo com pordiosero",
+    "exampleEnglish": "Example with pordiosero"
+  },
+  {
+    "spanish": "pornografia",
+    "portuguese": "pornografia",
+    "english": "pornografia",
+    "phonetic": "pornografia",
+    "category": "substantivo",
+    "example": "El pornografia",
+    "exampleTranslation": "Exemplo com pornografia",
+    "exampleEnglish": "Example with pornografia"
+  },
+  {
+    "spanish": "pornográfico",
+    "portuguese": "pornográfico",
+    "english": "pornográfico",
+    "phonetic": "pornográfico",
+    "category": "adjetivo",
+    "example": "Es muy pornográfico",
+    "exampleTranslation": "Exemplo com pornográfico",
+    "exampleEnglish": "Example with pornográfico"
+  },
+  {
+    "spanish": "poro",
+    "portuguese": "poro",
+    "english": "poro",
+    "phonetic": "poro",
+    "category": "substantivo",
+    "example": "El poro",
+    "exampleTranslation": "Exemplo com poro",
+    "exampleEnglish": "Example with poro"
+  },
+  {
+    "spanish": "porosidad",
+    "portuguese": "porosidade",
+    "english": "porosidad",
+    "phonetic": "porosidad",
+    "category": "substantivo",
+    "example": "El porosidad",
+    "exampleTranslation": "Exemplo com porosidad",
+    "exampleEnglish": "Example with porosidad"
+  },
+  {
+    "spanish": "poroso",
+    "portuguese": "poroso",
+    "english": "poroso",
+    "phonetic": "poroso",
+    "category": "adjetivo",
+    "example": "Es muy poroso",
+    "exampleTranslation": "Exemplo com poroso",
+    "exampleEnglish": "Example with poroso"
+  },
+  {
+    "spanish": "porque",
+    "portuguese": "porque",
+    "english": "porque",
+    "phonetic": "porque",
+    "category": "conjunção",
+    "example": "El porque",
+    "exampleTranslation": "Exemplo com porque",
+    "exampleEnglish": "Example with porque"
+  },
+  {
+    "spanish": "porqué",
+    "portuguese": "porquê",
+    "english": "porqué",
+    "phonetic": "porqué",
+    "category": "substantivo",
+    "example": "El porqué",
+    "exampleTranslation": "Exemplo com porqué",
+    "exampleEnglish": "Example with porqué"
+  },
+  {
+    "spanish": "porquería",
+    "portuguese": "porcaria",
+    "english": "porquería",
+    "phonetic": "porquería",
+    "category": "substantivo",
+    "example": "El porquería",
+    "exampleTranslation": "Exemplo com porquería",
+    "exampleEnglish": "Example with porquería"
+  },
+  {
+    "spanish": "porra",
+    "portuguese": "porrete, cacetete",
+    "english": "porra",
+    "phonetic": "porra",
+    "category": "substantivo",
+    "example": "El porra",
+    "exampleTranslation": "Exemplo com porra",
+    "exampleEnglish": "Example with porra"
+  },
+  {
+    "spanish": "porrada",
+    "portuguese": "cacetada",
+    "english": "porrada",
+    "phonetic": "porrada",
+    "category": "substantivo",
+    "example": "El porrada",
+    "exampleTranslation": "Exemplo com porrada",
+    "exampleEnglish": "Example with porrada"
+  },
+  {
+    "spanish": "portaaviones",
+    "portuguese": "porta",
+    "english": "portaaviones",
+    "phonetic": "portaaviones",
+    "category": "substantivo",
+    "example": "El portaaviones",
+    "exampleTranslation": "Exemplo com portaaviones",
+    "exampleEnglish": "Example with portaaviones"
+  },
+  {
+    "spanish": "portada",
+    "portuguese": "fachada, capa de livro",
+    "english": "portada",
+    "phonetic": "portada",
+    "category": "substantivo",
+    "example": "El portada",
+    "exampleTranslation": "Exemplo com portada",
+    "exampleEnglish": "Example with portada"
+  },
+  {
+    "spanish": "portal",
+    "portuguese": "portal, pórtico",
+    "english": "portal",
+    "phonetic": "portal",
+    "category": "substantivo",
+    "example": "El portal",
+    "exampleTranslation": "Exemplo com portal",
+    "exampleEnglish": "Example with portal"
+  },
+  {
+    "spanish": "portamonedas",
+    "portuguese": "porta",
+    "english": "portamonedas",
+    "phonetic": "portamonedas",
+    "category": "substantivo",
+    "example": "El portamonedas",
+    "exampleTranslation": "Exemplo com portamonedas",
+    "exampleEnglish": "Example with portamonedas"
+  },
+  {
+    "spanish": "portaplumas",
+    "portuguese": "porta",
+    "english": "portaplumas",
+    "phonetic": "portaplumas",
+    "category": "substantivo",
+    "example": "El portaplumas",
+    "exampleTranslation": "Exemplo com portaplumas",
+    "exampleEnglish": "Example with portaplumas"
+  },
+  {
+    "spanish": "portar",
+    "portuguese": "levar, trazer",
+    "english": "portar",
+    "phonetic": "portar",
+    "category": "verbo",
+    "example": "Voy a portar",
+    "exampleTranslation": "Exemplo com portar",
+    "exampleEnglish": "Example with portar"
+  },
+  {
+    "spanish": "portátil",
+    "portuguese": "portátil",
+    "english": "portátil",
+    "phonetic": "portátil",
+    "category": "adjetivo",
+    "example": "Es muy portátil",
+    "exampleTranslation": "Exemplo com portátil",
+    "exampleEnglish": "Example with portátil"
+  },
+  {
+    "spanish": "portavoz",
+    "portuguese": "porta",
+    "english": "portavoz",
+    "phonetic": "portavoz",
+    "category": "substantivo",
+    "example": "El portavoz",
+    "exampleTranslation": "Exemplo com portavoz",
+    "exampleEnglish": "Example with portavoz"
+  },
+  {
+    "spanish": "porte",
+    "portuguese": "porte",
+    "english": "porte",
+    "phonetic": "porte",
+    "category": "substantivo",
+    "example": "El porte",
+    "exampleTranslation": "Exemplo com porte",
+    "exampleEnglish": "Example with porte"
+  },
+  {
+    "spanish": "portear",
+    "portuguese": "portar, levar, conduzir",
+    "english": "portear",
+    "phonetic": "portear",
+    "category": "verbo",
+    "example": "Voy a portear",
+    "exampleTranslation": "Exemplo com portear",
+    "exampleEnglish": "Example with portear"
+  },
+  {
+    "spanish": "portento",
+    "portuguese": "portento",
+    "english": "portento",
+    "phonetic": "portento",
+    "category": "substantivo",
+    "example": "El portento",
+    "exampleTranslation": "Exemplo com portento",
+    "exampleEnglish": "Example with portento"
+  },
+  {
+    "spanish": "portentoso",
+    "portuguese": "portentoso",
+    "english": "portentoso",
+    "phonetic": "portentoso",
+    "category": "adjetivo",
+    "example": "Es muy portentoso",
+    "exampleTranslation": "Exemplo com portentoso",
+    "exampleEnglish": "Example with portentoso"
+  },
+  {
+    "spanish": "portería",
+    "portuguese": "portaria",
+    "english": "portería",
+    "phonetic": "portería",
+    "category": "substantivo",
+    "example": "El portería",
+    "exampleTranslation": "Exemplo com portería",
+    "exampleEnglish": "Example with portería"
+  },
+  {
+    "spanish": "portero",
+    "portuguese": "porteiro",
+    "english": "portero",
+    "phonetic": "portero",
+    "category": "substantivo",
+    "example": "El portero",
+    "exampleTranslation": "Exemplo com portero",
+    "exampleEnglish": "Example with portero"
+  },
+  {
+    "spanish": "pórtico",
+    "portuguese": "pórtico",
+    "english": "pórtico",
+    "phonetic": "pórtico",
+    "category": "substantivo",
+    "example": "El pórtico",
+    "exampleTranslation": "Exemplo com pórtico",
+    "exampleEnglish": "Example with pórtico"
+  },
+  {
+    "spanish": "portorriqueño",
+    "portuguese": "e m. portoriquenho",
+    "english": "portorriqueño",
+    "phonetic": "portorriqueɲo",
+    "category": "adjetivo",
+    "example": "Es muy portorriqueño",
+    "exampleTranslation": "Exemplo com portorriqueño",
+    "exampleEnglish": "Example with portorriqueño"
+  },
+  {
+    "spanish": "portuario",
+    "portuguese": "portuário",
+    "english": "portuario",
+    "phonetic": "portuario",
+    "category": "adjetivo",
+    "example": "Es muy portuario",
+    "exampleTranslation": "Exemplo com portuario",
+    "exampleEnglish": "Example with portuario"
+  },
+  {
+    "spanish": "portugués",
+    "portuguese": "e m. português",
+    "english": "portugués",
+    "phonetic": "portugués",
+    "category": "adjetivo",
+    "example": "Es muy portugués",
+    "exampleTranslation": "Exemplo com portugués",
+    "exampleEnglish": "Example with portugués"
+  },
+  {
+    "spanish": "porvenir",
+    "portuguese": "porvir",
+    "english": "porvenir",
+    "phonetic": "porvenir",
+    "category": "substantivo",
+    "example": "El porvenir",
+    "exampleTranslation": "Exemplo com porvenir",
+    "exampleEnglish": "Example with porvenir"
+  },
+  {
+    "spanish": "posada",
+    "portuguese": "pousada",
+    "english": "posada",
+    "phonetic": "posada",
+    "category": "substantivo",
+    "example": "El posada",
+    "exampleTranslation": "Exemplo com posada",
+    "exampleEnglish": "Example with posada"
+  },
+  {
+    "spanish": "pose",
+    "portuguese": "pose",
+    "english": "pose",
+    "phonetic": "pose",
+    "category": "substantivo",
+    "example": "El pose",
+    "exampleTranslation": "Exemplo com pose",
+    "exampleEnglish": "Example with pose"
+  },
+  {
+    "spanish": "poseer",
+    "portuguese": "possuir",
+    "english": "poseer",
+    "phonetic": "poseer",
+    "category": "verbo",
+    "example": "Voy a poseer",
+    "exampleTranslation": "Exemplo com poseer",
+    "exampleEnglish": "Example with poseer"
+  },
+  {
+    "spanish": "posesión",
+    "portuguese": "possessão, posse",
+    "english": "posesión",
+    "phonetic": "posesión",
+    "category": "substantivo",
+    "example": "El posesión",
+    "exampleTranslation": "Exemplo com posesión",
+    "exampleEnglish": "Example with posesión"
+  },
+  {
+    "spanish": "posesivo",
+    "portuguese": "e m. possessivo",
+    "english": "posesivo",
+    "phonetic": "posesivo",
+    "category": "adjetivo",
+    "example": "Es muy posesivo",
+    "exampleTranslation": "Exemplo com posesivo",
+    "exampleEnglish": "Example with posesivo"
+  },
+  {
+    "spanish": "poseso",
+    "portuguese": "possesso",
+    "english": "poseso",
+    "phonetic": "poseso",
+    "category": "adjetivo",
+    "example": "Es muy poseso",
+    "exampleTranslation": "Exemplo com poseso",
+    "exampleEnglish": "Example with poseso"
+  },
+  {
+    "spanish": "posguerra",
+    "portuguese": "pós",
+    "english": "posguerra",
+    "phonetic": "posguerra",
+    "category": "substantivo",
+    "example": "El posguerra",
+    "exampleTranslation": "Exemplo com posguerra",
+    "exampleEnglish": "Example with posguerra"
+  },
+  {
+    "spanish": "posibilidad",
+    "portuguese": "possibilidade",
+    "english": "posibilidad",
+    "phonetic": "posibilidad",
+    "category": "substantivo",
+    "example": "El posibilidad",
+    "exampleTranslation": "Exemplo com posibilidad",
+    "exampleEnglish": "Example with posibilidad"
+  },
+  {
+    "spanish": "posibilitar",
+    "portuguese": "possibilitar",
+    "english": "posibilitar",
+    "phonetic": "posibilitar",
+    "category": "verbo",
+    "example": "Voy a posibilitar",
+    "exampleTranslation": "Exemplo com posibilitar",
+    "exampleEnglish": "Example with posibilitar"
+  },
+  {
+    "spanish": "posible",
+    "portuguese": "possível",
+    "english": "posible",
+    "phonetic": "posible",
+    "category": "adjetivo",
+    "example": "Es muy posible",
+    "exampleTranslation": "Exemplo com posible",
+    "exampleEnglish": "Example with posible"
+  },
+  {
+    "spanish": "posición",
+    "portuguese": "posição",
+    "english": "posición",
+    "phonetic": "posición",
+    "category": "substantivo",
+    "example": "El posición",
+    "exampleTranslation": "Exemplo com posición",
+    "exampleEnglish": "Example with posición"
+  },
+  {
+    "spanish": "posicionamiento",
+    "portuguese": "posicionamento",
+    "english": "posicionamiento",
+    "phonetic": "posicionamiento",
+    "category": "substantivo",
+    "example": "El posicionamiento",
+    "exampleTranslation": "Exemplo com posicionamiento",
+    "exampleEnglish": "Example with posicionamiento"
+  },
+  {
+    "spanish": "positivo",
+    "portuguese": "positivo",
+    "english": "positivo",
+    "phonetic": "positivo",
+    "category": "adjetivo",
+    "example": "Es muy positivo",
+    "exampleTranslation": "Exemplo com positivo",
+    "exampleEnglish": "Example with positivo"
+  },
+  {
+    "spanish": "posmeridiano",
+    "portuguese": "pós",
+    "english": "posmeridiano",
+    "phonetic": "posmeridiano",
+    "category": "substantivo",
+    "example": "El posmeridiano",
+    "exampleTranslation": "Exemplo com posmeridiano",
+    "exampleEnglish": "Example with posmeridiano"
+  },
+  {
+    "spanish": "posponer",
+    "portuguese": "pospor",
+    "english": "posponer",
+    "phonetic": "posponer",
+    "category": "verbo",
+    "example": "Voy a posponer",
+    "exampleTranslation": "Exemplo com posponer",
+    "exampleEnglish": "Example with posponer"
+  },
+  {
+    "spanish": "postal",
+    "portuguese": "postal f. cartãopostal",
+    "english": "postal",
+    "phonetic": "postal",
+    "category": "adjetivo",
+    "example": "Es muy postal",
+    "exampleTranslation": "Exemplo com postal",
+    "exampleEnglish": "Example with postal"
+  },
+  {
+    "spanish": "poste",
+    "portuguese": "poste",
+    "english": "poste",
+    "phonetic": "poste",
+    "category": "substantivo",
+    "example": "El poste",
+    "exampleTranslation": "Exemplo com poste",
+    "exampleEnglish": "Example with poste"
+  },
+  {
+    "spanish": "postergar",
+    "portuguese": "postergar",
+    "english": "postergar",
+    "phonetic": "postergar",
+    "category": "verbo",
+    "example": "Voy a postergar",
+    "exampleTranslation": "Exemplo com postergar",
+    "exampleEnglish": "Example with postergar"
+  },
+  {
+    "spanish": "posteridad",
+    "portuguese": "posteridad",
+    "english": "posteridad",
+    "phonetic": "posteridad",
+    "category": "substantivo",
+    "example": "El posteridad",
+    "exampleTranslation": "Exemplo com posteridad",
+    "exampleEnglish": "Example with posteridad"
+  },
+  {
+    "spanish": "posterior",
+    "portuguese": "posterior",
+    "english": "posterior",
+    "phonetic": "posterior",
+    "category": "adjetivo",
+    "example": "Es muy posterior",
+    "exampleTranslation": "Exemplo com posterior",
+    "exampleEnglish": "Example with posterior"
+  },
+  {
+    "spanish": "postizo",
+    "portuguese": "postiço",
+    "english": "postizo",
+    "phonetic": "postizo",
+    "category": "adjetivo",
+    "example": "Es muy postizo",
+    "exampleTranslation": "Exemplo com postizo",
+    "exampleEnglish": "Example with postizo"
+  },
+  {
+    "spanish": "postración",
+    "portuguese": "prostração",
+    "english": "postración",
+    "phonetic": "postración",
+    "category": "substantivo",
+    "example": "El postración",
+    "exampleTranslation": "Exemplo com postración",
+    "exampleEnglish": "Example with postración"
+  },
+  {
+    "spanish": "postrar",
+    "portuguese": "prostrar",
+    "english": "postrar",
+    "phonetic": "postrar",
+    "category": "verbo",
+    "example": "Voy a postrar",
+    "exampleTranslation": "Exemplo com postrar",
+    "exampleEnglish": "Example with postrar"
+  },
+  {
+    "spanish": "postre",
+    "portuguese": "sobremesa",
+    "english": "postre",
+    "phonetic": "postre",
+    "category": "substantivo",
+    "example": "El postre",
+    "exampleTranslation": "Exemplo com postre",
+    "exampleEnglish": "Example with postre"
+  },
+  {
+    "spanish": "postrer",
+    "portuguese": "V. postrero",
+    "english": "postrer",
+    "phonetic": "postrer",
+    "category": "adjetivo",
+    "example": "Es muy postrer",
+    "exampleTranslation": "Exemplo com postrer",
+    "exampleEnglish": "Example with postrer"
+  },
+  {
+    "spanish": "postrero",
+    "portuguese": "último",
+    "english": "postrero",
+    "phonetic": "postrero",
+    "category": "adjetivo",
+    "example": "Es muy postrero",
+    "exampleTranslation": "Exemplo com postrero",
+    "exampleEnglish": "Example with postrero"
+  },
+  {
+    "spanish": "póstumo",
+    "portuguese": "póstumo",
+    "english": "póstumo",
+    "phonetic": "póstumo",
+    "category": "adjetivo",
+    "example": "Es muy póstumo",
+    "exampleTranslation": "Exemplo com póstumo",
+    "exampleEnglish": "Example with póstumo"
+  },
+  {
+    "spanish": "postura",
+    "portuguese": "postura",
+    "english": "postura",
+    "phonetic": "postura",
+    "category": "substantivo",
+    "example": "El postura",
+    "exampleTranslation": "Exemplo com postura",
+    "exampleEnglish": "Example with postura"
+  },
+  {
+    "spanish": "potable",
+    "portuguese": "potável",
+    "english": "potable",
+    "phonetic": "potable",
+    "category": "adjetivo",
+    "example": "Es muy potable",
+    "exampleTranslation": "Exemplo com potable",
+    "exampleEnglish": "Example with potable"
+  },
+  {
+    "spanish": "potencia",
+    "portuguese": "potência",
+    "english": "potencia",
+    "phonetic": "potencia",
+    "category": "substantivo",
+    "example": "El potencia",
+    "exampleTranslation": "Exemplo com potencia",
+    "exampleEnglish": "Example with potencia"
+  },
+  {
+    "spanish": "potentado",
+    "portuguese": "potentado",
+    "english": "potentado",
+    "phonetic": "potentado",
+    "category": "substantivo",
+    "example": "El potentado",
+    "exampleTranslation": "Exemplo com potentado",
+    "exampleEnglish": "Example with potentado"
+  },
+  {
+    "spanish": "potente",
+    "portuguese": "potente",
+    "english": "potente",
+    "phonetic": "potente",
+    "category": "adjetivo",
+    "example": "Es muy potente",
+    "exampleTranslation": "Exemplo com potente",
+    "exampleEnglish": "Example with potente"
+  },
+  {
+    "spanish": "potestad",
+    "portuguese": "potestade",
+    "english": "potestad",
+    "phonetic": "potestad",
+    "category": "substantivo",
+    "example": "El potestad",
+    "exampleTranslation": "Exemplo com potestad",
+    "exampleEnglish": "Example with potestad"
+  },
+  {
+    "spanish": "potro",
+    "portuguese": "potro",
+    "english": "potro",
+    "phonetic": "potro",
+    "category": "substantivo",
+    "example": "El potro",
+    "exampleTranslation": "Exemplo com potro",
+    "exampleEnglish": "Example with potro"
+  },
+  {
+    "spanish": "pozo",
+    "portuguese": "poço",
+    "english": "pozo",
+    "phonetic": "pozo",
+    "category": "substantivo",
+    "example": "El pozo",
+    "exampleTranslation": "Exemplo com pozo",
+    "exampleEnglish": "Example with pozo"
+  },
+  {
+    "spanish": "práctica",
+    "portuguese": "prática",
+    "english": "práctica",
+    "phonetic": "práctica",
+    "category": "substantivo",
+    "example": "El práctica",
+    "exampleTranslation": "Exemplo com práctica",
+    "exampleEnglish": "Example with práctica"
+  }
+]

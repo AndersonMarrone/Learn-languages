@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
+import { createPortal } from 'react-dom';
+import { useTranslation } from '../hooks/useTranslation';
 import './Modal.css';
 
 const Modal = ({ isOpen, onClose, children, title }) => {
+  const { t } = useTranslation();
   // Fechar modal com ESC
   useEffect(() => {
     const handleEscKey = (event) => {
@@ -23,7 +26,7 @@ const Modal = ({ isOpen, onClose, children, title }) => {
 
   if (!isOpen) return null;
 
-  return (
+  const modalContent = (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
@@ -31,7 +34,7 @@ const Modal = ({ isOpen, onClose, children, title }) => {
           <button 
             className="modal-close-btn"
             onClick={onClose}
-            aria-label="Fechar modal"
+            aria-label={t('interface.closeModal')}
           >
             ✕
           </button>
@@ -46,12 +49,14 @@ const Modal = ({ isOpen, onClose, children, title }) => {
             className="modal-close-footer-btn"
             onClick={onClose}
           >
-            Fechar
+{t('buttons.close')}
           </button>
         </div>
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 };
 
 export default Modal;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TranslationControls from './TranslationControls';
+import { useTranslation } from '../hooks/useTranslation';
 import './SearchBar.css';
 
 const SearchBar = ({ 
@@ -11,6 +12,7 @@ const SearchBar = ({
   onToLanguageChange,
   onSwapLanguages 
 }) => {
+  const { t } = useTranslation();
   const [inputValue, setInputValue] = useState('');
   const [searchTerms, setSearchTerms] = useState([]);
 
@@ -69,25 +71,16 @@ const SearchBar = ({
           value={inputValue}
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}
-          placeholder={`Digite palavras ou frases para traduzir de ${
-            fromLanguage === 'auto' ? 'qualquer idioma' : 
-            fromLanguage === 'es' ? 'espanhol' :
-            fromLanguage === 'pt' ? 'português' :
-            fromLanguage === 'en' ? 'inglês' : 'idioma desconhecido'
-          } para ${
-            toLanguage === 'pt' ? 'português' :
-            toLanguage === 'es' ? 'espanhol' :
-            toLanguage === 'en' ? 'inglês' : 'idioma desconhecido'
-          }...`}
+          placeholder={t('search.placeholder')}
           className="search-input"
         />
         <div className="search-buttons">
           <button onClick={handleSearch} className="search-btn">
-            🔍 Traduzir
+            🔍 {t('search.button')}
           </button>
           {(inputValue || searchTerms.length > 0) && (
             <button onClick={handleClear} className="clear-btn">
-              ✕ Limpar
+              ✕ {t('buttons.clear')}
             </button>
           )}
         </div>
@@ -95,7 +88,7 @@ const SearchBar = ({
       
       {searchTerms.length > 0 && (
         <div className="search-terms">
-          <span className="search-terms-label">Buscando por:</span>
+          <span className="search-terms-label">{t('interface.searchingFor')}</span>
           <div className="terms-list">
             {searchTerms.map((term, index) => (
               <span key={index} className="search-term-tag">
@@ -103,7 +96,7 @@ const SearchBar = ({
                 <button
                   onClick={() => removeSearchTerm(index)}
                   className="remove-term-btn"
-                  aria-label={`Remover termo "${term}"`}
+                  aria-label={`${t('buttons.remove')} termo "${term}"`}
                 >
                   ✕
                 </button>

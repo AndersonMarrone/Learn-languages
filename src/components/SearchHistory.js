@@ -3,6 +3,7 @@ import historyService from '../services/historyService';
 import WordCard from './WordCard';
 import PhraseCard from './PhraseCard';
 import ConfirmModal from './ConfirmModal';
+import { useTranslation } from '../hooks/useTranslation';
 import './SearchHistory.css';
 
 const SearchHistory = ({ 
@@ -10,8 +11,10 @@ const SearchHistory = ({
   instanceId = 'default', 
   expandedLimit = 10,
   fromLanguage = 'auto',
-  toLanguage = 'pt'
+  toLanguage = 'pt',
+  globalVoice = null
 }) => {
+  const { t } = useTranslation();
   const [history, setHistory] = useState([]);
   const [filteredHistory, setFilteredHistory] = useState([]);
   const [searchFilter, setSearchFilter] = useState('');
@@ -29,6 +32,12 @@ const SearchHistory = ({
   useEffect(() => {
     loadHistory();
   }, []);
+
+  useEffect(() => {
+    if (globalVoice) {
+      console.log('🎤 SearchHistory recebeu voz global:', globalVoice.name);
+    }
+  }, [globalVoice]);
 
   useEffect(() => {
     // Recarregar quando a instância muda
@@ -61,7 +70,6 @@ const SearchHistory = ({
     
     const statsData = {
       totalWords: historyData.length,
-      totalSearches: historyData.reduce((sum, item) => sum + (item.searchCount || 1), 0),
       recentWords: historyData.slice(0, 5),
       mostSearched: [...historyData].sort((a, b) => (b.searchCount || 1) - (a.searchCount || 1)).slice(0, 5)
     };
@@ -115,8 +123,8 @@ const SearchHistory = ({
   const handleRemoveItem = (itemId, wordText) => {
     setConfirmModal({
       isOpen: true,
-      title: 'Remover do Histórico',
-      message: `Deseja remover "${wordText}" do seu histórico de buscas?`,
+      title: t('interface.removeFromHistory'),
+      message: t('interface.removeFromHistoryConfirm').replace('{word}', wordText),
       type: 'warning',
       onConfirm: () => {
         historyService.removeFromHistory(itemId);
@@ -133,8 +141,8 @@ const SearchHistory = ({
   const handleClearHistory = () => {
     setConfirmModal({
       isOpen: true,
-      title: 'Limpar Histórico',
-      message: 'Tem certeza que deseja limpar todo o histórico? Esta ação não pode ser desfeita e você perderá todas as suas palavras salvas.',
+      title: t('history.clear'),
+      message: t('history.clearConfirm'),
       type: 'danger',
       onConfirm: () => {
         historyService.clearHistory();
@@ -156,7 +164,7 @@ const SearchHistory = ({
       <div className="history-header">
         <div className="history-title">
           <span className="history-icon">📚</span>
-          <h2>Histórico de Buscas</h2>
+          <h2>{t('history.title')}</h2>
           <button 
             className="toggle-history-btn"
             onClick={() => setShowHistory(!showHistory)}
@@ -168,11 +176,7 @@ const SearchHistory = ({
         <div className="history-stats">
           <div className="stat-item">
             <span className="stat-number">{stats.totalWords || 0}</span>
-            <span className="stat-label">Palavras</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">{stats.totalSearches || 0}</span>
-            <span className="stat-label">Buscas</span>
+            <span className="stat-label">{t('interface.words')}</span>
           </div>
         </div>
       </div>
@@ -183,7 +187,7 @@ const SearchHistory = ({
               <div className="search-filter">
                 <input
                   type="text"
-                  placeholder="Filtrar histórico..."
+                  placeholder={t('interface.filterHistory')}
                   value={searchFilter}
                   onChange={(e) => setSearchFilter(e.target.value)}
                   className="filter-input"
@@ -195,19 +199,19 @@ const SearchHistory = ({
                   className={`tab-btn ${viewMode === 'recent' ? 'active' : ''}`}
                   onClick={() => setViewMode('recent')}
                 >
-                  🕒 Recentes
+                  🕒 {t('interface.recent')}
                 </button>
                 <button
                   className={`tab-btn ${viewMode === 'frequent' ? 'active' : ''}`}
                   onClick={() => setViewMode('frequent')}
                 >
-                  🔥 Frequentes
+                  🔥 {t('interface.frequent')}
                 </button>
                 <button
                   className={`tab-btn ${viewMode === 'all' ? 'active' : ''}`}
                   onClick={() => setViewMode('all')}
                 >
-                  📋 Todas
+                  📋 {t('interface.all')}
                 </button>
               </div>
 
@@ -218,28 +222,28 @@ const SearchHistory = ({
                   loadHistory();
                 }}
                 className="action-btn reload-btn"
-                title="Recarregar histórico"
+                title={t('buttons.reload')}
               >
                 ↻
               </button>
               <button 
                 onClick={handleRemoveDuplicates}
                 className="action-btn dedupe-btn"
-                title="Remover duplicatas"
+                title={t('interface.removeDuplicates')}
               >
                 🔄
               </button>
               <button 
                 onClick={handleExportHistory}
                 className="action-btn export-btn"
-                title="Exportar histórico"
+                title={t('buttons.export')}
               >
                 📥
               </button>
               <button 
                 onClick={handleClearHistory}
                 className="action-btn clear-btn"
-                title="Limpar histórico"
+                title={t('buttons.clear')}
               >
                 🗑️
               </button>
@@ -250,8 +254,8 @@ const SearchHistory = ({
             {history.length === 0 ? (
               <div className="empty-history">
                 <span className="empty-icon">📚</span>
-                <h3>Nenhuma palavra no histórico</h3>
-                <p>Suas palavras pesquisadas aparecerão aqui</p>
+                <h3>{t('history.empty')}</h3>
+                <p>{t('history.emptyDescription')}</p>
               </div>
             ) : filteredHistory.length > 0 ? (
               <div className="history-grid">
@@ -266,7 +270,7 @@ const SearchHistory = ({
                       <button
                         onClick={() => handleRemoveItem(item.id, item.spanish)}
                         className="remove-item-btn"
-                        title="Remover do histórico"
+                        title={t('interface.removeFromHistory')}
                       >
                         ✕
                       </button>
@@ -278,12 +282,14 @@ const SearchHistory = ({
                           phrase={item} 
                           fromLanguage={fromLanguage}
                           toLanguage={toLanguage}
+                          globalVoice={globalVoice}
                         />
                       ) : (
                         <WordCard 
                           word={item} 
                           fromLanguage={fromLanguage}
                           toLanguage={toLanguage}
+                          globalVoice={globalVoice}
                         />
                       )}
                     </div>
@@ -292,7 +298,7 @@ const SearchHistory = ({
               </div>
             ) : (
               <div className="no-results-history">
-                <p>Nenhuma palavra encontrada no histórico</p>
+                <p>{t('search.noResults')}</p>
               </div>
             )}
           </div>
@@ -306,8 +312,8 @@ const SearchHistory = ({
         title={confirmModal.title}
         message={confirmModal.message}
         type={confirmModal.type}
-        confirmText={confirmModal.type === 'danger' ? 'Sim, limpar' : 'Sim, remover'}
-        cancelText="Cancelar"
+        confirmText={confirmModal.type === 'danger' ? t('interface.yesClear') : t('interface.yesRemove')}
+        cancelText={t('buttons.cancel')}
       />
     </div>
   );

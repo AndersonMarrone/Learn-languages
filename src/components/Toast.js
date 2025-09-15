@@ -1,88 +1,65 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from '../hooks/useTranslation';
 import './Toast.css';
 
-const Toast = ({ 
-  isVisible, 
-  onClose, 
-  type = 'success', 
-  title, 
-  message, 
-  duration = 4000 
-}) => {
+const Toast = ({ message, type = 'info', duration = 3000, onClose }) => {
+  const { t } = useTranslation();
+  const [isVisible, setIsVisible] = useState(true);
+
   useEffect(() => {
-    if (isVisible && duration > 0) {
-      const timer = setTimeout(() => {
-        onClose();
-      }, duration);
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+      setTimeout(() => {
+        onClose?.();
+      }, 300); // Tempo para animação de saída
+    }, duration);
 
-      return () => clearTimeout(timer);
-    }
-  }, [isVisible, duration, onClose]);
+    return () => clearTimeout(timer);
+  }, [duration, onClose]);
 
-  if (!isVisible) return null;
-
-  const getTypeConfig = () => {
+  const getIcon = () => {
     switch (type) {
       case 'success':
-        return {
-          icon: '✅',
-          bgColor: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-          borderColor: '#10b981'
-        };
+        return '✅';
       case 'error':
-        return {
-          icon: '❌',
-          bgColor: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
-          borderColor: '#ef4444'
-        };
+        return '❌';
       case 'warning':
-        return {
-          icon: '⚠️',
-          bgColor: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
-          borderColor: '#f59e0b'
-        };
+        return '⚠️';
       case 'info':
-        return {
-          icon: 'ℹ️',
-          bgColor: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
-          borderColor: '#3b82f6'
-        };
       default:
-        return {
-          icon: '✅',
-          bgColor: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-          borderColor: '#10b981'
-        };
+        return 'ℹ️';
     }
   };
 
-  const config = getTypeConfig();
+  const getTypeClass = () => {
+    switch (type) {
+      case 'success':
+        return 'toast-success';
+      case 'error':
+        return 'toast-error';
+      case 'warning':
+        return 'toast-warning';
+      case 'info':
+      default:
+        return 'toast-info';
+    }
+  };
 
   return (
-    <div className="toast-overlay">
-      <div 
-        className="toast-container"
-        style={{
-          background: config.bgColor,
-          borderColor: config.borderColor
-        }}
-      >
-        <div className="toast-header">
-          <div className="toast-icon">
-            {config.icon}
-          </div>
-          <div className="toast-content">
-            <h4 className="toast-title">{title}</h4>
-            <p className="toast-message">{message}</p>
-          </div>
-          <button 
-            className="toast-close"
-            onClick={onClose}
-            aria-label="Fechar notificação"
-          >
-            ✕
-          </button>
-        </div>
+    <div className={`toast ${getTypeClass()} ${isVisible ? 'toast-visible' : 'toast-hidden'}`}>
+      <div className="toast-content">
+        <span className="toast-icon">{getIcon()}</span>
+        <span className="toast-message">{message}</span>
+        <button 
+          className="toast-close" 
+          onClick={() => {
+            setIsVisible(false);
+            setTimeout(() => onClose?.(), 300);
+          }}
+          aria-label={t('buttons.close')}
+        >
+          ✕
+        </button>
       </div>
     </div>
   );

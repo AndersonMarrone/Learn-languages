@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import WordCard from './components/WordCard';
@@ -6,11 +6,16 @@ import PhraseCard from './components/PhraseCard';
 import SearchHistory from './components/SearchHistory';
 import VoiceInfo from './components/VoiceInfo';
 import ApiKeyConfig from './components/ApiKeyConfig';
+import LanguageSelector from './components/LanguageSelector';
+import { LanguageProvider } from './contexts/LanguageContext';
+import { ToastProvider } from './contexts/ToastContext';
+import { useTranslation } from './hooks/useTranslation';
 import translationService from './services/translationService';
 import historyService from './services/historyService';
 import { spanishWords } from './data/spanishWords';
 
-function App() {
+function AppContent() {
+  const { t } = useTranslation();
   const [searchTerms, setSearchTerms] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -18,7 +23,13 @@ function App() {
   // const [lastValidHistory, setLastValidHistory] = useState([]);
   const [fromLanguage, setFromLanguage] = useState('auto');
   const [toLanguage, setToLanguage] = useState('pt');
+  const [globalVoice, setGlobalVoice] = useState(null);
   const apiConfigRef = useRef();
+
+  const handleVoiceChange = useCallback((voice) => {
+    console.log('🎤 App.js recebeu mudança de voz:', voice ? voice.name : 'null');
+    setGlobalVoice(voice);
+  }, []);
 
   useEffect(() => {
     // Verificar se já tem API key configurada ao carregar
@@ -211,15 +222,18 @@ function App() {
           <div className="header-content">
             <div className="logo-section">
               <div className="logo">
-               
-                <h1>Tradutor</h1>
+                <span className="logo-icon">🌍</span>
+                <h1>{t('app.title')}</h1>
               </div>
-              <p className="tagline">Aprenda idiomas de forma inteligente com IA</p>
+              <p className="tagline">{t('app.subtitle')}</p>
             </div>
-            <div className="header-stats">
-              <div className="stat-item">
-                <span className="stat-number">{searchResults.length + geminiResults.length}</span>
-                <span className="stat-label">Palavras encontradas</span>
+            <div className="header-controls">
+              <LanguageSelector />
+              <div className="header-stats">
+                <div className="stat-item">
+                  <span className="stat-number">{searchResults.length + geminiResults.length}</span>
+                  <span className="stat-label">{t('search.results')}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -240,7 +254,7 @@ function App() {
         {isLoading && (
           <div className="loading">
             <div className="spinner"></div>
-            <p>Buscando palavras...</p>
+            <p>{t('search.loading')}</p>
           </div>
         )}
 
@@ -249,11 +263,11 @@ function App() {
             <div className="section-header">
               <div className="section-title">
                 <span className="section-icon">🔍</span>
-                <h2>Resultados Encontrados</h2>
-                <span className="result-count">{searchResults.length} palavras</span>
+                <h2>{t('interface.resultsFound')}</h2>
+                <span className="result-count">{searchResults.length} {t('interface.words')}</span>
               </div>
               <div className="section-description">
-                Palavras da base de dados e histórico de buscas
+                {t('interface.databaseDescription')}
               </div>
             </div>
             <div className="words-grid">
@@ -263,6 +277,7 @@ function App() {
                   word={word} 
                   fromLanguage={fromLanguage}
                   toLanguage={toLanguage}
+                  globalVoice={globalVoice}
                 />
               ))}
             </div>
@@ -278,11 +293,11 @@ function App() {
             <div className="section-header">
               <div className="section-title">
                 <span className="section-icon">🤖</span>
-                <h2>Novas Traduções</h2>
-                <span className="result-count ai-badge">{geminiResults.length} palavras</span>
+                <h2>{t('interface.newTranslations')}</h2>
+                <span className="result-count ai-badge">{geminiResults.length} {t('interface.words')}</span>
               </div>
               <div className="section-description">
-                Traduções inéditas geradas pela IA e adicionadas ao seu histórico
+                {t('interface.aiDescription')}
               </div>
             </div>
             <div className="words-grid">
@@ -293,6 +308,7 @@ function App() {
                     phrase={item} 
                     fromLanguage={fromLanguage}
                     toLanguage={toLanguage}
+                    globalVoice={globalVoice}
                   />
                 ) : (
                   <WordCard 
@@ -300,6 +316,7 @@ function App() {
                     word={item} 
                     fromLanguage={fromLanguage}
                     toLanguage={toLanguage}
+                    globalVoice={globalVoice}
                   />
                 )
               ))}
@@ -316,6 +333,7 @@ function App() {
             expandedLimit={8}
             fromLanguage={fromLanguage}
             toLanguage={toLanguage}
+            globalVoice={globalVoice}
           />
         )}
 
@@ -323,7 +341,7 @@ function App() {
         {!isLoading && searchTerms.length > 0 && searchResults.length === 0 && geminiResults.length === 0 && (
           <>
             <div className="no-results">
-              <p>Nenhuma palavra encontrada para os termos pesquisados.</p>
+              <p>{t('search.noResults')}</p>
               {!translationService.isGeminiAvailable() && (
                 <div style={{ 
                   marginTop: '15px', 
@@ -333,10 +351,10 @@ function App() {
                   border: '1px solid #f59e0b'
                 }}>
                   <p style={{ margin: '0 0 10px 0', fontWeight: '600', color: '#92400e' }}>
-                    🤖 Quer buscar qualquer palavra em espanhol?
+                    {t('interface.wantToSearch')}
                   </p>
                   <p style={{ margin: '0 0 15px 0', fontSize: '14px', color: '#92400e' }}>
-                    Configure o Gemini AI para traduzir automaticamente palavras que não estão na nossa base de dados!
+                    {t('interface.configureDescription')}
                   </p>
                   <button 
                     onClick={() => {
@@ -366,12 +384,12 @@ function App() {
                       e.target.style.boxShadow = '0 2px 8px rgba(245, 158, 11, 0.3)';
                     }}
                   >
-                    ⚙️ Configurar Gemini AI
+                    ⚙️ {t('interface.configureGemini')}
                   </button>
                 </div>
               )}
               {translationService.isGeminiAvailable() && (
-                <p>Tente buscar por outras palavras ou termos em português/inglês.</p>
+                <p>{t('interface.tryOtherWords')}</p>
               )}
             </div>
             
@@ -382,20 +400,76 @@ function App() {
               expandedLimit={50}
               fromLanguage={fromLanguage}
               toLanguage={toLanguage}
+              globalVoice={globalVoice}
             />
           </>
         )}
 
         {searchTerms.length === 0 && (
-          <div className="welcome-message">
-            <h3>Como usar:</h3>
-            <ul>
-              <li>Digite palavras ou frases completas</li>
-              <li>Busque em espanhol, português ou inglês</li>
-              <li>Separe múltiplos termos por vírgula</li>
-              <li>Frases são traduzidas automaticamente com IA</li>
-              <li>Use os botões 📢 para ouvir a pronúncia</li>
-            </ul>
+          <div className="usage-guide">
+            <div className="usage-header">
+              <div className="usage-icon">🚀</div>
+              <h2>{t('usage.title')}</h2>
+              <p className="usage-subtitle">{t('usage.subtitle')}</p>
+            </div>
+            
+            <div className="usage-steps">
+              <div className="usage-step">
+                <div className="step-number">1</div>
+                <div className="step-content">
+                  <div className="step-icon">✍️</div>
+                  <h3>{t('usage.step1.title')}</h3>
+                  <p>{t('usage.step1.description')}</p>
+                </div>
+              </div>
+              
+              <div className="usage-step">
+                <div className="step-number">2</div>
+                <div className="step-content">
+                  <div className="step-icon">🌍</div>
+                  <h3>{t('usage.step2.title')}</h3>
+                  <p>{t('usage.step2.description')}</p>
+                </div>
+              </div>
+              
+              <div className="usage-step">
+                <div className="step-number">3</div>
+                <div className="step-content">
+                  <div className="step-icon">🔍</div>
+                  <h3>{t('usage.step3.title')}</h3>
+                  <p>{t('usage.step3.description')}</p>
+                </div>
+              </div>
+              
+              <div className="usage-step">
+                <div className="step-number">4</div>
+                <div className="step-content">
+                  <div className="step-icon">📢</div>
+                  <h3>{t('usage.step4.title')}</h3>
+                  <p>{t('usage.step4.description')}</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="usage-features">
+              <div className="feature-card">
+                <div className="feature-icon">🤖</div>
+                <h4>{t('usage.features.ai.title')}</h4>
+                <p>{t('usage.features.ai.description')}</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="feature-icon">📚</div>
+                <h4>{t('usage.features.database.title')}</h4>
+                <p>{t('usage.features.database.description')}</p>
+              </div>
+              
+              <div className="feature-card">
+                <div className="feature-icon">🎯</div>
+                <h4>{t('usage.features.multiple.title')}</h4>
+                <p>{t('usage.features.multiple.description')}</p>
+              </div>
+            </div>
           </div>
         )}
 
@@ -407,6 +481,7 @@ function App() {
             expandedLimit={10}
             fromLanguage={fromLanguage}
             toLanguage={toLanguage}
+            globalVoice={globalVoice}
           />
         )}
       </div>
@@ -417,6 +492,16 @@ function App() {
         <ApiKeyConfig ref={apiConfigRef} onApiKeySet={handleApiKeySet} />
       </div>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <ToastProvider>
+        <AppContent />
+      </ToastProvider>
+    </LanguageProvider>
   );
 }
 
