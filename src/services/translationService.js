@@ -25,33 +25,69 @@ class TranslationService {
     }
   }
 
-  async translateWord(word, fromLang = 'auto', toLangs = ['pt', 'en']) {
+  async translateWord(word, fromLang = 'auto', toLang = 'pt') {
     console.log('🤖 TranslationService.translateWord chamado para:', word);
+    console.log('🌐 Idioma origem:', fromLang, '→ destino:', toLang);
     console.log('🔧 Model disponível?', !!this.model);
     console.log('🔧 GenAI disponível?', !!this.genAI);
     
     if (!this.model) {
       console.warn('⚠️ Gemini não disponível, usando tradução de fallback');
-      return this.getFallbackTranslation(word);
+      return this.getFallbackTranslation(word, fromLang, toLang);
     }
 
     try {
       console.log('📤 Enviando prompt para Gemini...');
       
-      const prompt = `Você é um tradutor especializado em espanhol. Traduza a palavra "${word}" e forneça as informações no formato JSON exato abaixo.
+      // Detectar se é palavra ou frase
+      const isPhrase = word.includes(' ') || word.length > 20;
+      
+      // Mapear códigos de idioma para nomes
+      const languageNames = {
+        'auto': 'detectar automaticamente',
+        'es': 'espanhol',
+        'pt': 'português brasileiro',
+        'en': 'inglês americano'
+      };
+
+      const fromLanguageName = languageNames[fromLang] || 'idioma desconhecido';
+      const toLanguageName = languageNames[toLang] || 'português brasileiro';
+
+      const prompt = isPhrase ? 
+        `Você é um linguista especializado. Analise a frase "${word}" que está em ${fromLanguageName} e traduza para ${toLanguageName}. Forneça as informações no formato JSON exato abaixo.
 
 IMPORTANTE: Responda APENAS com o JSON válido, sem explicações ou texto adicional.
 
 {
-  "spanish": "${word}",
-  "portuguese": "tradução em português brasileiro",
-  "english": "tradução em inglês americano",
-  "phonetic": "fonética IPA em espanhol",
+  "original": "${word}",
+  "translation": "tradução para ${toLanguageName}",
+  "originalLanguage": "${fromLang}",
+  "targetLanguage": "${toLang}",
+  "type": "phrase",
+  "context": "contexto ou situação de uso",
+  "analysis": "análise detalhada explicando se é uma expressão comum, literal, idiomática, ou se há peculiaridades. Mencione se faz sentido gramaticalmente, se é usado no dia a dia, ou se pode ser um mal-entendido",
+  "commonness": "muito comum|comum|pouco comum|raro|não é uma expressão padrão",
+  "tips": "dicas práticas sobre uso, variações regionais ou expressões similares mais comuns",
+  "source": "gemini_ai"
+}`
+        : `Você é um linguista especializado. Analise a palavra "${word}" que está em ${fromLanguageName} e traduza para ${toLanguageName}. Forneça as informações no formato JSON exato abaixo.
+
+IMPORTANTE: Responda APENAS com o JSON válido, sem explicações ou texto adicional.
+
+{
+  "original": "${word}",
+  "translation": "tradução para ${toLanguageName}",
+  "originalLanguage": "${fromLang}",
+  "targetLanguage": "${toLang}",
+  "phonetic": "fonética IPA da palavra original",
   "category": "categoria gramatical",
-  "example": "exemplo de uso em espanhol",
-  "exampleTranslation": "tradução do exemplo em português",
-  "exampleEnglish": "tradução do exemplo em inglês",
-  "confidence": "alta"
+  "example": "exemplo de uso na língua original",
+  "exampleTranslation": "tradução do exemplo para ${toLanguageName}",
+  "analysis": "análise linguística explicando peculiaridades, uso regional, formalidade, ou se há algo interessante sobre esta palavra",
+  "commonness": "muito comum|comum|pouco comum|raro|arcaico",
+  "tips": "dicas sobre uso correto, sinônimos mais comuns, ou variações regionais",
+  "confidence": "alta",
+  "source": "gemini_ai"
 }`;
 
       const result = await this.model.generateContent(prompt);
@@ -77,13 +113,20 @@ IMPORTANTE: Responda APENAS com o JSON válido, sem explicações ou texto adici
         console.log('✅ JSON parseado com sucesso:', translationData);
         
         // Validar se tem os campos essenciais
-        if (translationData.spanish && translationData.portuguese && translationData.english) {
+        if (translationData.original && translationData.translation) {
           console.log('✅ Tradução completa obtida via Gemini');
-          return {
+          
+          // Manter compatibilidade com o formato antigo para componentes existentes
+          const compatibleData = {
             ...translationData,
+            spanish: translationData.original, // Para compatibilidade
+            portuguese: translationData.originalLanguage === 'pt' ? translationData.original : translationData.translation,
+            english: translationData.originalLanguage === 'en' ? translationData.original : (translationData.targetLanguage === 'en' ? translationData.translation : ''),
             source: 'gemini',
             timestamp: new Date().toISOString()
           };
+          
+          return compatibleData;
         } else {
           console.error('❌ Resposta incompleta do Gemini - campos faltando');
           throw new Error('Resposta incompleta do Gemini');
@@ -98,27 +141,34 @@ IMPORTANTE: Responda APENAS com o JSON válido, sem explicações ou texto adici
           try {
             const extractedJson = JSON.parse(jsonMatch[0]);
             console.log('✅ JSON extraído com sucesso:', extractedJson);
-            return {
+            
+            // Aplicar a mesma compatibilidade
+            const compatibleExtracted = {
               ...extractedJson,
+              spanish: extractedJson.original || extractedJson.spanish,
+              portuguese: extractedJson.originalLanguage === 'pt' ? extractedJson.original : extractedJson.translation || extractedJson.portuguese,
+              english: extractedJson.originalLanguage === 'en' ? extractedJson.original : (extractedJson.targetLanguage === 'en' ? extractedJson.translation : extractedJson.english || ''),
               source: 'gemini',
               timestamp: new Date().toISOString()
             };
+            
+            return compatibleExtracted;
           } catch (extractError) {
             console.error('❌ Erro ao extrair JSON:', extractError);
           }
         }
         
-        return this.getFallbackTranslation(word);
+        return this.getFallbackTranslation(word, fromLang, toLang);
       }
 
     } catch (error) {
       console.error('❌ Erro geral na tradução com Gemini:', error);
       console.error('❌ Detalhes do erro:', error.message);
-      return this.getFallbackTranslation(word);
+      return this.getFallbackTranslation(word, fromLang, toLang);
     }
   }
 
-  getFallbackTranslation(word) {
+  getFallbackTranslation(word, fromLang = 'auto', toLang = 'pt') {
     // Tradução básica de fallback para casos comuns
     const basicTranslations = {
       // Verbos comuns
@@ -142,8 +192,22 @@ IMPORTANTE: Responda APENAS com o JSON válido, sem explicações ou texto adici
     const basic = basicTranslations[word.toLowerCase()];
     
     if (basic) {
+      // Determinar a tradução baseada no idioma de destino
+      let translation = '';
+      if (toLang === 'pt') {
+        translation = basic.pt;
+      } else if (toLang === 'en') {
+        translation = basic.en;
+      } else {
+        translation = basic.pt; // Default para português
+      }
+
       return {
-        spanish: word,
+        original: word,
+        translation: translation,
+        originalLanguage: fromLang,
+        targetLanguage: toLang,
+        spanish: word, // Para compatibilidade
         portuguese: basic.pt,
         english: basic.en,
         phonetic: '',
@@ -157,8 +221,18 @@ IMPORTANTE: Responda APENAS com o JSON válido, sem explicações ou texto adici
     }
 
     // Se não encontrou nem no fallback
+    const notFoundTranslation = toLang === 'en' 
+      ? `[Translation not found: ${word}]`
+      : toLang === 'es' 
+      ? `[Traducción no encontrada: ${word}]`
+      : `[Tradução não encontrada: ${word}]`;
+
     return {
-      spanish: word,
+      original: word,
+      translation: notFoundTranslation,
+      originalLanguage: fromLang,
+      targetLanguage: toLang,
+      spanish: word, // Para compatibilidade
       portuguese: `[Tradução não encontrada: ${word}]`,
       english: `[Translation not found: ${word}]`,
       phonetic: '',

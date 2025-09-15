@@ -1,7 +1,18 @@
 import React, { useState } from 'react';
+import TranslationControls from './TranslationControls';
+import { useTranslation } from '../hooks/useTranslation';
 import './SearchBar.css';
 
-const SearchBar = ({ onSearch, onClear }) => {
+const SearchBar = ({ 
+  onSearch, 
+  onClear, 
+  fromLanguage = 'auto',
+  toLanguage = 'pt',
+  onFromLanguageChange,
+  onToLanguageChange,
+  onSwapLanguages 
+}) => {
+  const { t } = useTranslation();
   const [inputValue, setInputValue] = useState('');
   const [searchTerms, setSearchTerms] = useState([]);
 
@@ -23,7 +34,7 @@ const SearchBar = ({ onSearch, onClear }) => {
         .filter(term => term.length > 0);
       
       setSearchTerms(terms);
-      onSearch(terms);
+      onSearch(terms, fromLanguage, toLanguage);
     }
   };
 
@@ -36,7 +47,7 @@ const SearchBar = ({ onSearch, onClear }) => {
   const removeSearchTerm = (indexToRemove) => {
     const newTerms = searchTerms.filter((_, index) => index !== indexToRemove);
     setSearchTerms(newTerms);
-    onSearch(newTerms);
+    onSearch(newTerms, fromLanguage, toLanguage);
     
     if (newTerms.length === 0) {
       setInputValue('');
@@ -45,22 +56,31 @@ const SearchBar = ({ onSearch, onClear }) => {
 
   return (
     <div className="search-bar">
+      <TranslationControls
+        fromLanguage={fromLanguage}
+        toLanguage={toLanguage}
+        onFromLanguageChange={onFromLanguageChange}
+        onToLanguageChange={onToLanguageChange}
+        onSwapLanguages={onSwapLanguages}
+        disabled={false}
+      />
+      
       <div className="search-input-container">
         <input
           type="text"
           value={inputValue}
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}
-          placeholder="Digite uma ou mais palavras separadas por vírgula..."
+          placeholder={t('search.placeholder')}
           className="search-input"
         />
         <div className="search-buttons">
           <button onClick={handleSearch} className="search-btn">
-            🔍 Buscar
+            🔍 {t('search.button')}
           </button>
           {(inputValue || searchTerms.length > 0) && (
             <button onClick={handleClear} className="clear-btn">
-              ✕ Limpar
+              ✕ {t('buttons.clear')}
             </button>
           )}
         </div>
@@ -68,7 +88,7 @@ const SearchBar = ({ onSearch, onClear }) => {
       
       {searchTerms.length > 0 && (
         <div className="search-terms">
-          <span className="search-terms-label">Buscando por:</span>
+          <span className="search-terms-label">{t('interface.searchingFor')}</span>
           <div className="terms-list">
             {searchTerms.map((term, index) => (
               <span key={index} className="search-term-tag">
@@ -76,7 +96,7 @@ const SearchBar = ({ onSearch, onClear }) => {
                 <button
                   onClick={() => removeSearchTerm(index)}
                   className="remove-term-btn"
-                  aria-label={`Remover termo "${term}"`}
+                  aria-label={`${t('buttons.remove')} termo "${term}"`}
                 >
                   ✕
                 </button>

@@ -1,11 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react';
 import translationService from '../services/translationService';
+import { useToast } from '../contexts/ToastContext';
+import { useTranslation } from '../hooks/useTranslation';
 
-const ApiKeyConfig = ({ onApiKeySet }) => {
+const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
+  const { t } = useTranslation();
+  const { showError, showSuccess, showWarning } = useToast();
   const [showConfig, setShowConfig] = useState(false);
   const [apiKey, setApiKey] = useState('');
   const [isConfigured, setIsConfigured] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   useEffect(() => {
     // Verificar se já tem API key configurada
@@ -20,9 +25,21 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
     }
   }, []);
 
+  // Expor função para o componente pai
+  useImperativeHandle(ref, () => ({
+    openConfig: () => {
+      setShowConfig(true);
+    }
+  }));
+
+  const showSuccessNotification = () => {
+    setShowSuccessModal(true);
+    setShowConfig(false); // Fechar modal de configuração
+  };
+
   const handleSaveApiKey = async () => {
     if (!apiKey.trim()) {
-      alert('Por favor, insira uma API key válida');
+      showError(t('settings.apiKeyRequired') || 'Por favor, insira uma API key válida');
       return;
     }
 
@@ -41,13 +58,16 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
           onApiKeySet(true);
         }
         
-        alert('✅ API key configurada e validada com sucesso! Agora você pode buscar qualquer palavra em espanhol.');
+        // Mostrar notificação de sucesso mais elegante
+        showSuccessNotification();
       } else {
-        alert('❌ Erro ao configurar API key. Verifique se a chave está correta e se você tem acesso à API do Gemini.');
+        // Verificar console para erro específico
+        console.log('🔍 Verificando logs do console para detalhes do erro...');
+        showError(t('settings.apiKeyError') || 'Erro ao configurar API key. Verifique se a chave está correta.');
       }
     } catch (error) {
       console.error('❌ Erro ao configurar API key:', error);
-      alert(`❌ Erro ao configurar API key: ${error.message}`);
+      showError(t('settings.apiKeyError') || `Erro ao configurar API key: ${error.message}`);
     } finally {
       setIsLoading(false);
     }
@@ -110,20 +130,20 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
       <button 
         onClick={() => setShowConfig(true)}
         style={{
-          position: 'fixed',
-          bottom: '20px',
-          left: '20px',
-          padding: '12px 20px',
+          padding: '10px 16px',
           backgroundColor: '#10b981',
           color: 'white',
           border: 'none',
           borderRadius: '8px',
           cursor: 'pointer',
-          fontSize: '14px',
+          fontSize: '13px',
           fontWeight: '600',
-          zIndex: 1000,
           boxShadow: '0 4px 12px rgba(16, 185, 129, 0.3)',
-          transition: 'all 0.3s ease'
+          transition: 'all 0.3s ease',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          margin: '10px 0'
         }}
         onMouseOver={(e) => {
           e.target.style.transform = 'translateY(-2px)';
@@ -134,7 +154,7 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
           e.target.style.boxShadow = '0 4px 12px rgba(16, 185, 129, 0.3)';
         }}
       >
-        🤖 Ativar Gemini AI
+        🤖 {t('interface.activateGemini').replace('🤖 ', '')}
       </button>
     );
   }
@@ -142,10 +162,7 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
   if (isConfigured && !showConfig) {
     return (
       <div style={{
-        position: 'fixed',
-        bottom: '20px',
-        left: '20px',
-        zIndex: 1000
+        margin: '10px 0'
       }}>
         <div style={{
           backgroundColor: '#10b981',
@@ -153,12 +170,12 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
           padding: '8px 12px',
           borderRadius: '6px',
           fontSize: '12px',
-          marginBottom: '5px',
           display: 'flex',
           alignItems: 'center',
-          gap: '8px'
+          gap: '8px',
+          boxShadow: '0 2px 8px rgba(16, 185, 129, 0.3)'
         }}>
-          <span>🤖 Gemini AI Ativo</span>
+          <span>{t('interface.geminiActive')}</span>
           <button
             onClick={() => setShowConfig(true)}
             style={{
@@ -207,7 +224,7 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
       />
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h3 style={{ margin: 0, color: '#2d3748' }}>🤖 Configurar Gemini AI</h3>
+        <h3 style={{ margin: 0, color: '#2d3748' }}>{t('interface.configureGemini')}</h3>
         <button 
           onClick={() => setShowConfig(false)}
           style={{ background: 'none', border: 'none', fontSize: '24px', cursor: 'pointer', color: '#666' }}
@@ -244,7 +261,11 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
             onClick={async () => {
               const testResult = await translationService.translateWord('madrugada');
               console.log('🧪 Teste do Gemini:', testResult);
-              alert(`🧪 Teste: ${testResult.source === 'gemini' ? '✅ Funcionando!' : '❌ Não funcionou'}`);
+              if (testResult.source === 'gemini') {
+                showSuccess(t('settings.apiKeyTestSuccess') || 'API key funcionando corretamente!');
+              } else {
+                showError(t('settings.apiKeyTestError') || 'API key não está funcionando corretamente.');
+              }
             }}
             style={{
               padding: '10px 20px',
@@ -256,7 +277,7 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
               fontSize: '14px'
             }}
           >
-            🧪 Testar
+            🧪 {t('buttons.test')}
           </button>
         )}
         {isConfigured && (
@@ -272,7 +293,7 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
               fontSize: '14px'
             }}
           >
-            🗑️ Remover
+            🗑️ {t('buttons.remove')}
           </button>
         )}
         <button
@@ -289,7 +310,7 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
             fontWeight: '600'
           }}
         >
-          {isLoading ? '⏳ Configurando...' : '✅ Salvar'}
+          {isLoading ? '⏳ Configurando...' : `✅ ${t('buttons.save')}`}
         </button>
       </div>
 
@@ -301,10 +322,132 @@ const ApiKeyConfig = ({ onApiKeySet }) => {
         fontSize: '13px',
         color: '#92400e'
       }}>
-        <strong>🔒 Privacidade:</strong> Sua API key é armazenada apenas localmente no seu navegador e nunca é enviada para nossos servidores.
+        <strong>{t('interface.privacy')}</strong> {t('interface.privacyText')}
       </div>
+
+      {/* Modal de sucesso elegante - mesmo estilo do Modal.js */}
+      {showSuccessModal && (
+        <div 
+          className="modal-overlay" 
+          onClick={() => setShowSuccessModal(false)}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0, 0, 0, 0.6)',
+            backdropFilter: 'blur(8px)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 9999,
+            padding: '20px'
+          }}
+        >
+          <div 
+            className="modal-content" 
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: 'white',
+              borderRadius: '20px',
+              boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
+              maxWidth: '500px',
+              width: '100%',
+              maxHeight: '90vh',
+              overflow: 'hidden',
+              animation: 'modalSlideIn 0.3s ease-out'
+            }}
+          >
+            <div 
+              className="modal-header"
+              style={{
+                padding: '25px',
+                background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                color: 'white',
+                textAlign: 'center'
+              }}
+            >
+              <div style={{ fontSize: '3rem', marginBottom: '10px' }}>🎉</div>
+              <h2 style={{ margin: 0, fontSize: '1.5rem', fontWeight: '700' }}>
+                {t('interface.geminiConfigured')}
+              </h2>
+            </div>
+            
+            <div className="modal-body" style={{ padding: '30px' }}>
+              <div style={{ textAlign: 'center', marginBottom: '25px' }}>
+                <h3 style={{ color: '#059669', fontSize: '1.3rem', margin: '0 0 15px 0' }}>
+                  {t('interface.readyToUse')}
+                </h3>
+                <p style={{ color: '#374151', fontSize: '1rem', lineHeight: '1.6', margin: '0 0 10px 0' }}>
+                  Sua API key foi configurada e validada com sucesso.
+                </p>
+                <p style={{ color: '#374151', fontSize: '1rem', lineHeight: '1.6', margin: 0 }}>
+                  Agora você pode buscar <strong>qualquer palavra em espanhol</strong> e receber traduções inteligentes!
+                </p>
+              </div>
+              
+              <div 
+                style={{
+                  background: 'linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%)',
+                  borderRadius: '12px',
+                  padding: '20px',
+                  border: '1px solid #22c55e'
+                }}
+              >
+                <h4 style={{ color: '#166534', fontSize: '1.1rem', margin: '0 0 15px 0' }}>
+                  {t('interface.availableFeatures')}
+                </h4>
+                <ul style={{ color: '#15803d', margin: 0, paddingLeft: '20px' }}>
+                  <li style={{ marginBottom: '8px' }}>🔤 Tradução de palavras individuais</li>
+                  <li style={{ marginBottom: '8px' }}>💬 Tradução de frases completas</li>
+                  <li style={{ marginBottom: '8px' }}>🧠 Análise linguística detalhada</li>
+                  <li style={{ marginBottom: '8px' }}>💡 Dicas de uso e contexto</li>
+                  <li style={{ marginBottom: '0' }}>📊 Indicador de frequência de uso</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div 
+              className="modal-footer"
+              style={{
+                padding: '20px 25px',
+                background: 'rgba(248, 250, 252, 0.8)',
+                borderTop: '1px solid rgba(203, 213, 224, 0.3)',
+                textAlign: 'center'
+              }}
+            >
+              <button 
+                onClick={() => setShowSuccessModal(false)}
+                style={{
+                  background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '12px',
+                  padding: '12px 24px',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(16, 185, 129, 0.3)'
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.transform = 'translateY(-2px)';
+                  e.target.style.boxShadow = '0 6px 16px rgba(16, 185, 129, 0.4)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.transform = 'translateY(0)';
+                  e.target.style.boxShadow = '0 4px 12px rgba(16, 185, 129, 0.3)';
+                }}
+              >
+{t('interface.startTranslating')}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
-};
+});
 
 export default ApiKeyConfig;

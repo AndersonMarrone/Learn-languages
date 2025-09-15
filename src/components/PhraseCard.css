@@ -1,0 +1,976 @@
+.phrase-card-simple {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #f59e0b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 16px;
+}
+
+.phrase-card-simple:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  border-color: #f59e0b;
+}
+
+.phrase-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.language-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.flag {
+  font-size: 1.2rem;
+}
+
+.lang-name {
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.phrase-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.translation-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.translation-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.audio-btn {
+  background: #f59e0b;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: white;
+  font-size: 1rem;
+}
+
+.audio-btn:hover {
+  background: #d97706;
+  transform: scale(1.1);
+}
+
+.phonetic {
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-style: italic;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.category {
+  display: inline-block;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.context {
+  margin: 12px 0;
+  padding: 16px;
+  background: #fefbf3;
+  border-radius: 12px;
+  border: 1px solid #fed7aa;
+  position: relative;
+}
+
+.context-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.context-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #f59e0b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.context-text {
+  font-size: 1rem;
+  color: #1e293b;
+  margin: 0;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.click-hint {
+  text-align: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.click-hint span {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* Header do Card */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.language-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.language-badge.from {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.language-badge.to {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.language-badge .flag {
+  font-size: 1rem;
+}
+
+.expand-btn {
+  background: rgba(245, 158, 11, 0.1);
+  border: none;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #f59e0b;
+  font-size: 0.8rem;
+}
+
+.expand-btn:hover {
+  background: rgba(245, 158, 11, 0.2);
+  transform: scale(1.1);
+}
+
+/* Conteúdo Principal */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.phrase-section {
+  text-align: center;
+  position: relative;
+}
+
+.main-phrase {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.3;
+}
+
+.phonetic {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0 0 12px 0;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.translation-section {
+  text-align: center;
+  padding: 16px;
+  background: rgba(245, 158, 11, 0.05);
+  border-radius: 16px;
+  border: 1px solid rgba(245, 158, 11, 0.1);
+}
+
+.translation-phrase {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 8px 0;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+/* Botões de Áudio */
+.audio-btn {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.audio-btn.primary {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  margin: 0 auto;
+}
+
+.audio-btn.secondary {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  margin: 0 auto;
+}
+
+.audio-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteúdo Expandido */
+.expanded-content {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(245, 158, 11, 0.1);
+  animation: expandContent 0.3s ease-out;
+}
+
+@keyframes expandContent {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.context-section {
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.context-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.context-icon {
+  font-size: 1.2rem;
+}
+
+.context-label {
+  font-weight: 600;
+  color: #059669;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.context-text {
+  font-size: 1rem;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.action-btn.details {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(245, 158, 11, 0.4);
+}
+
+.btn-icon {
+  font-size: 1.1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .phrase-card-modern {
+    padding: 20px;
+    min-height: 100px;
+  }
+  
+  .main-phrase {
+    font-size: 1.2rem;
+  }
+  
+  .translation-phrase {
+    font-size: 1.1rem;
+  }
+  
+  .audio-btn.primary {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .audio-btn.secondary {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .card-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .phrase-card-modern {
+    padding: 16px;
+  }
+  
+  .main-phrase {
+    font-size: 1.1rem;
+  }
+  
+  .translation-phrase {
+    font-size: 1rem;
+  }
+  
+  .language-badge {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .expand-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.7rem;
+  }
+}
+
+.phrase-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%);
+}
+
+.phrase-card-compact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-color: #f59e0b;
+}
+
+/* Elementos comuns - mesmos estilos do WordCard */
+.phrase-card-compact .word-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.phrase-card-compact .spanish-word {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
+}
+
+.phrase-card-compact .audio-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #78350f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.phrase-card-compact .audio-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.phrase-card-compact .phonetic {
+  font-size: 1rem;
+  color: #92400e;
+  margin: 8px 0;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.phrase-card-compact .category {
+  display: inline-block;
+  background: rgba(245, 158, 11, 0.3);
+  color: #78350f;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.phrase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.phrase-type-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245, 158, 11, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #92400e;
+}
+
+.phrase-icon {
+  font-size: 1rem;
+}
+
+.phrase-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.phrase-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.phrase-text-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.spanish-phrase {
+  flex: 1;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #92400e;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.phrase-audio {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.phrase-audio:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(245, 158, 11, 0.4);
+}
+
+.phrase-translations {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.translation-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.translation-row .flag {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.translation-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.translation-text {
+  flex: 1;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #78350f;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.audio-btn.small {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+}
+
+.audio-btn.small:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+.phrase-context {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 15px;
+  border-left: 4px solid #f59e0b;
+}
+
+.context-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.context-icon {
+  font-size: 1.1rem;
+}
+
+.context-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #92400e;
+}
+
+.context-text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #78350f;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .phrase-card-compact {
+    height: 200px;
+    padding: 16px 12px;
+  }
+  
+  .phrase-card-compact .spanish-word {
+    font-size: 1.2rem;
+  }
+  
+  .phrase-card-compact .audio-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .phrase-text-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .spanish-phrase {
+    font-size: 1.1rem;
+  }
+  
+  .phrase-audio {
+    align-self: flex-end;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .translation-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .translation-content {
+    width: 100%;
+  }
+  
+  .translation-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .phrase-card-compact {
+    height: 180px;
+    padding: 14px 10px;
+  }
+  
+  .phrase-card-compact .spanish-word {
+    font-size: 1rem;
+  }
+  
+  .phrase-card-compact .audio-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .spanish-phrase {
+    font-size: 1rem;
+  }
+  
+  .translation-text {
+    font-size: 0.9rem;
+  }
+  
+  .phrase-audio {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .audio-btn.small {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Análise Linguística para Frases */
+.linguistic-analysis {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 1px solid #0ea5e9;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.analysis-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.analysis-icon {
+  font-size: 1.2rem;
+}
+
+.analysis-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0c4a6e;
+}
+
+.commonness-badge {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: auto;
+}
+
+.commonness-badge.muito-comum {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #22c55e;
+}
+
+.commonness-badge.comum {
+  background: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #3b82f6;
+}
+
+.commonness-badge.pouco-comum {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #f59e0b;
+}
+
+.commonness-badge.raro {
+  background: #fecaca;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}
+
+.commonness-badge.não-é-uma-expressão-padrão,
+.commonness-badge.arcaico {
+  background: #f3e8ff;
+  color: #7c3aed;
+  border: 1px solid #a855f7;
+}
+
+.analysis-text {
+  color: #0c4a6e;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+}
+
+.tips-section {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 10px;
+  border-left: 3px solid #0ea5e9;
+}
+
+.tips-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.tips-icon {
+  font-size: 1rem;
+}
+
+.tips-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0c4a6e;
+}
+
+.tips-text {
+  color: #0369a1;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Click-hint para PhraseCard - mesmo estilo do WordCard mas com cores amarelas */
+.phrase-card-compact .click-hint {
+  margin-top: auto;
+  opacity: 0.9;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  line-height: 1.1;
+  margin-bottom: 2px;
+  flex-shrink: 0;
+  background: rgba(245, 158, 11, 0.2);
+  color: #78350f;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.phrase-card-compact .click-hint:hover {
+  opacity: 1;
+  background: rgba(245, 158, 11, 0.3);
+  color: #92400e;
+  transform: scale(1.02);
+}
+
+/* Estilos específicos para PhraseCard com indicadores de idioma */
+.phrase-card-compact .language-indicator {
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+}
+
+.phrase-card-compact .lang-code {
+  color: #92400e;
+}
+
+.phrase-card-compact .translation-preview {
+  background: #fffbeb;
+  border: 1px solid #fed7aa;
+}
+
+.phrase-card-compact .translation-text {
+  color: #374151;
+  font-weight: 500;
+}
+
+.phrase-card-compact .original-phrase {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 0;
+  color: #1f2937;
+  line-height: 1.3;
+}
+
+.phrase-card-compact .example-preview {
+  background: #fffbeb;
+  border-left: 3px solid #f59e0b;
+}
+
+.phrase-card-compact .example-text {
+  color: #92400e;
+}
+
+/* Responsividade para PhraseCard */
+@media (max-width: 768px) {
+  .phrase-card-compact .original-phrase {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .phrase-card-compact {
+    height: 200px !important;
+  }
+  
+  .phrase-card-compact .example-preview {
+    margin: 6px 0;
+    padding: 6px;
+  }
+  
+  .phrase-card-compact .example-text {
+    font-size: 11px;
+  }
+  
+  .phrase-card-compact .original-phrase {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+}
