@@ -223,17 +223,6 @@ const SearchHistory = ({
                 ↻
               </button>
               <button 
-                onClick={() => {
-                  console.log('🧪 Adicionando dados de teste');
-                  historyService.addSampleData();
-                  loadHistory();
-                }}
-                className="action-btn test-btn"
-                title="Adicionar dados de teste"
-              >
-                🧪
-              </button>
-              <button 
                 onClick={handleRemoveDuplicates}
                 className="action-btn dedupe-btn"
                 title="Remover duplicatas"
