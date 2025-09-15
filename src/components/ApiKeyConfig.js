@@ -131,19 +131,22 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
         onClick={() => setShowConfig(true)}
         style={{
           position: 'fixed',
-          bottom: '20px',
-          left: '20px',
-          padding: '12px 20px',
+          top: '80px',
+          right: '20px',
+          padding: '10px 16px',
           backgroundColor: '#10b981',
           color: 'white',
           border: 'none',
           borderRadius: '8px',
           cursor: 'pointer',
-          fontSize: '14px',
+          fontSize: '13px',
           fontWeight: '600',
           zIndex: 1000,
           boxShadow: '0 4px 12px rgba(16, 185, 129, 0.3)',
-          transition: 'all 0.3s ease'
+          transition: 'all 0.3s ease',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px'
         }}
         onMouseOver={(e) => {
           e.target.style.transform = 'translateY(-2px)';
@@ -154,7 +157,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
           e.target.style.boxShadow = '0 4px 12px rgba(16, 185, 129, 0.3)';
         }}
       >
-        {t('interface.activateGemini')}
+        🤖 {t('interface.activateGemini').replace('🤖 ', '')}
       </button>
     );
   }
@@ -163,8 +166,8 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
     return (
       <div style={{
         position: 'fixed',
-        bottom: '20px',
-        left: '20px',
+        top: '80px',
+        right: '20px',
         zIndex: 1000
       }}>
         <div style={{
@@ -173,10 +176,10 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
           padding: '8px 12px',
           borderRadius: '6px',
           fontSize: '12px',
-          marginBottom: '5px',
           display: 'flex',
           alignItems: 'center',
-          gap: '8px'
+          gap: '8px',
+          boxShadow: '0 2px 8px rgba(16, 185, 129, 0.3)'
         }}>
           <span>{t('interface.geminiActive')}</span>
           <button
