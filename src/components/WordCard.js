@@ -268,16 +268,21 @@ const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt', globalVoice 
     // Dividir a transcrição em partes
     const parts = phonetic.split(/[.ˈ]/).filter(part => part.length > 0);
     const explanations_list = [];
+    const processed_sounds = new Set(); // Evitar duplicatas
     
     parts.forEach(part => {
       if (explanations[part]) {
-        explanations_list.push(explanations[part]);
+        if (!processed_sounds.has(part)) {
+          explanations_list.push(explanations[part]);
+          processed_sounds.add(part);
+        }
       } else {
         // Para partes não mapeadas, tentar explicar sons individuais
         const sounds = part.split('');
         sounds.forEach(sound => {
-          if (explanations[sound]) {
+          if (explanations[sound] && !processed_sounds.has(sound)) {
             explanations_list.push(explanations[sound]);
+            processed_sounds.add(sound);
           }
         });
       }
