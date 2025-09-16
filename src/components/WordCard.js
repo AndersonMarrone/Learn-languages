@@ -343,10 +343,6 @@ const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt', globalVoice 
           <span className="category">{t(`categories.${word.category}`) || word.category}</span>
         )}
         
-        
-        <div className="click-hint">
-          <span>{t('interface.clickForDetails')}</span>
-        </div>
       </div>
 
       <Modal 

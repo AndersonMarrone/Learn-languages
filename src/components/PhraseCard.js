@@ -248,10 +248,6 @@ const PhraseCard = ({ phrase, fromLanguage = 'auto', toLanguage = 'pt', globalVo
         
         <span className="category">{t('cards.phrase')}</span>
         
-        
-        <div className="click-hint">
-          <span>{t('interface.clickForDetails')}</span>
-        </div>
       </div>
 
       <Modal 
