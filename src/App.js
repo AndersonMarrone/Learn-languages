@@ -227,12 +227,6 @@ function AppContent() {
             </div>
             <div className="header-controls">
               <LanguageSelector />
-              <div className="header-stats">
-                <div className="stat-item">
-                  <span className="stat-number">{searchResults.length + geminiResults.length}</span>
-                  <span className="stat-label">{t('search.results')}</span>
-                </div>
-              </div>
             </div>
           </div>
         </header>
