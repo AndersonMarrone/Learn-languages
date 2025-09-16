@@ -343,44 +343,6 @@ const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt', globalVoice 
           <span className="category">{t(`categories.${word.category}`) || word.category}</span>
         )}
         
-        {getExampleText() && getExampleTranslation() && (
-          <div className="example">
-            <div className="example-header">
-              <span className="example-label">{t('interface.example')}</span>
-            </div>
-            <div className="example-content">
-              <div className="example-original">
-                <span className="example-flag">{getLanguageFlag(fromLanguage === 'auto' ? 'es' : fromLanguage)}</span>
-                <p className="example-text">"{getExampleText()}"</p>
-                <button 
-                  className="audio-btn example-small"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    playAudio(getExampleText(), fromLanguage === 'auto' ? 'es' : fromLanguage);
-                  }}
-                  aria-label={`Pronunciar exemplo em ${getLanguageName(fromLanguage)}`}
-                >
-                  ▶️
-                </button>
-              </div>
-              <div className="example-arrow">→</div>
-              <div className="example-translation">
-                <span className="example-flag">{getLanguageFlag(toLanguage)}</span>
-                <p className="example-text">"{getExampleTranslation()}"</p>
-                <button 
-                  className="audio-btn example-small"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    playAudio(getExampleTranslation(), toLanguage);
-                  }}
-                  aria-label={`Pronunciar exemplo em ${getLanguageName(toLanguage)}`}
-                >
-                  ▶️
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
         
         <div className="click-hint">
           <span>{t('interface.clickForDetails')}</span>
@@ -409,21 +371,6 @@ const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt', globalVoice 
                 ▶️
               </button>
             </div>
-            {word.example && (
-              <div className="flag-example">
-                <p className="example-sentence">"{word.example}"</p>
-                <button 
-                  className="audio-btn example-small"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    playAudio(word.example, fromLanguage === 'auto' ? 'es' : fromLanguage);
-                  }}
-                  aria-label={`Pronunciar exemplo em ${getLanguageName(fromLanguage)}`}
-                >
-                  ▶️
-                </button>
-              </div>
-            )}
           </div>
           
           {/* Tradução no idioma selecionado */}
@@ -442,22 +389,6 @@ const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt', globalVoice 
                 ▶️
               </button>
             </div>
-            {/* Mostrar exemplo traduzido se disponível */}
-            {getExampleTranslation() && (
-              <div className="flag-example">
-                <p className="example-sentence">"{getExampleTranslation()}"</p>
-                <button 
-                  className="audio-btn example-small"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    playAudio(getExampleTranslation(), toLanguage);
-                  }}
-                  aria-label={`Pronunciar exemplo em ${getLanguageName(toLanguage)}`}
-                >
-                  ▶️
-                </button>
-              </div>
-            )}
           </div>
         </div>
         

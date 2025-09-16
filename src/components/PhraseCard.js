@@ -248,14 +248,6 @@ const PhraseCard = ({ phrase, fromLanguage = 'auto', toLanguage = 'pt', globalVo
         
         <span className="category">{t('cards.phrase')}</span>
         
-        {getContextText() && (
-          <div className="context">
-            <div className="context-header">
-              <span className="context-label">{t('interface.context')}</span>
-            </div>
-            <p className="context-text">{getContextText()}</p>
-          </div>
-        )}
         
         <div className="click-hint">
           <span>{t('interface.clickForDetails')}</span>
@@ -300,15 +292,6 @@ const PhraseCard = ({ phrase, fromLanguage = 'auto', toLanguage = 'pt', globalVo
             </div>
           </div>
           
-          {phrase.context && (
-            <div className="phrase-context">
-              <div className="context-header">
-                <span className="context-icon">💡</span>
-                <span className="context-label">{t('interface.context')}:</span>
-              </div>
-              <p className="context-text">{phrase.context}</p>
-            </div>
-          )}
           
           {phrase.analysis && (
             <div className="linguistic-analysis">
