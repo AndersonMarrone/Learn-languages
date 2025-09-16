@@ -11,7 +11,7 @@
   justify-content: center;
   z-index: 10000;
   padding: 20px;
-  padding-bottom: 160px;
+  padding-bottom: 200px;
   animation: confirmModalFadeIn 0.2s ease-out;
 }
 
