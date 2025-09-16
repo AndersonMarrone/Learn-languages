@@ -227,6 +227,7 @@ function AppContent() {
             </div>
             <div className="header-controls">
               <LanguageSelector />
+              <ApiKeyConfig ref={apiConfigRef} onApiKeySet={handleApiKeySet} />
             </div>
           </div>
         </header>
@@ -471,15 +472,6 @@ function AppContent() {
           />
         )}
 
-        {/* Botão Ativar IA dentro do container principal */}
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
-          marginTop: '20px',
-          padding: '20px 0'
-        }}>
-          <ApiKeyConfig ref={apiConfigRef} onApiKeySet={handleApiKeySet} />
-        </div>
       </div>
       
       {/* Área de controles organizados */}
