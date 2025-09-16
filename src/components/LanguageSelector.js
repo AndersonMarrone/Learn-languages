@@ -21,7 +21,6 @@ const LanguageSelector = ({
 
   const languages = [
     { code: 'pt', name: t('languages.pt'), flag: '🇧🇷' },
-    { code: 'en', name: t('languages.en'), flag: '🇺🇸' },
     { code: 'es', name: t('languages.es'), flag: '🇪🇸' }
   ];
 
