@@ -218,6 +218,74 @@ const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt', globalVoice 
     return names[langCode] || 'Idioma';
   };
 
+  const getPhoneticExplanation = (phonetic) => {
+    if (!phonetic) return null;
+    
+    // Explicações detalhadas para sons comuns em espanhol
+    const explanations = {
+      // Sons básicos
+      'kon': 'kon = "con" (como em "conectar")',
+      'se': 'se = "se" (sílaba tônica, marcada com ˈ)',
+      'xos': 'xos = "jos" (o "x" em espanhol soa como "j" em português)',
+      'hola': 'hola = "o-la" (H é mudo em espanhol)',
+      'gra': 'gra = "gra" (como em "grato")',
+      'θjas': 'θjas = "thias" (θ é o som "th" inglês)',
+      'es': 'es = "es" (como em "escola")',
+      'pa': 'pa = "pa" (como em "pato")',
+      'ɲa': 'ɲa = "nha" (ɲ é o som "nh" português)',
+      'la': 'la = "la" (como em "lata")',
+      'o': 'o = "o" (como em "ovo")',
+      'a': 'a = "a" (como em "água")',
+      'e': 'e = "e" (como em "ele")',
+      'i': 'i = "i" (como em "índio")',
+      'u': 'u = "u" (como em "urso")',
+      'b': 'b = "b" (como em "bola")',
+      'd': 'd = "d" (como em "dado")',
+      'f': 'f = "f" (como em "faca")',
+      'g': 'g = "g" (como em "gato")',
+      'k': 'k = "k" (como em "casa")',
+      'l': 'l = "l" (como em "lua")',
+      'm': 'm = "m" (como em "mão")',
+      'n': 'n = "n" (como em "não")',
+      'p': 'p = "p" (como em "pato")',
+      'r': 'r = "r" (como em "rato")',
+      's': 's = "s" (como em "sapo")',
+      't': 't = "t" (como em "tato")',
+      'v': 'v = "v" (como em "vaca")',
+      'w': 'w = "w" (como em "watt")',
+      'j': 'j = "j" (como em "jato")',
+      'x': 'x = "j" (em espanhol, x soa como j português)',
+      'y': 'y = "i" (em espanhol, y soa como i)',
+      'z': 'z = "s" (em espanhol, z soa como s)',
+      'c': 'c = "k" (antes de a, o, u) ou "s" (antes de e, i)',
+      'qu': 'qu = "k" (como em "que")',
+      'ch': 'ch = "tch" (como em "tchau")',
+      'll': 'll = "lh" (como em "filho")',
+      'ñ': 'ñ = "nh" (como em "ninho")',
+      'rr': 'rr = "rr" (r forte, como em "carro")'
+    };
+
+    // Dividir a transcrição em partes
+    const parts = phonetic.split(/[.ˈ]/).filter(part => part.length > 0);
+    const explanations_list = [];
+    
+    parts.forEach(part => {
+      if (explanations[part]) {
+        explanations_list.push(explanations[part]);
+      } else {
+        // Para partes não mapeadas, tentar explicar sons individuais
+        const sounds = part.split('');
+        sounds.forEach(sound => {
+          if (explanations[sound]) {
+            explanations_list.push(explanations[sound]);
+          }
+        });
+      }
+    });
+
+    return explanations_list.length > 0 ? explanations_list : null;
+  };
+
   const playAudio = (text, lang = 'es') => {
     if ('speechSynthesis' in window) {
       const utterance = new SpeechSynthesisUtterance(text);
@@ -336,7 +404,19 @@ const WordCard = ({ word, fromLanguage = 'auto', toLanguage = 'pt', globalVoice 
         </div>
         
         {word.phonetic && (
-          <p className="phonetic">/{word.phonetic}/</p>
+          <div className="phonetic-section">
+            <p className="phonetic">/{word.phonetic}/</p>
+            {getPhoneticExplanation(word.phonetic) && (
+              <div className="phonetic-explanation">
+                {getPhoneticExplanation(word.phonetic).map((explanation, index) => (
+                  <p key={index} className="explanation-item">{explanation}</p>
+                ))}
+                <p className="phonetic-result">
+                  Então /{word.phonetic}/ = "{word.phonetic.replace(/[.ˈ]/g, '-').toLowerCase()}" ({getOriginalText()})
+                </p>
+              </div>
+            )}
+          </div>
         )}
         
         {word.category && (
