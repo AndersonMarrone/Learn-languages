@@ -262,10 +262,6 @@ function AppContent() {
               <div className="section-title">
                 <span className="section-icon">🔍</span>
                 <h2>{t('interface.resultsFound')}</h2>
-                <span className="result-count">{searchResults.length} {t('interface.words')}</span>
-              </div>
-              <div className="section-description">
-                {t('interface.databaseDescription')}
               </div>
             </div>
             <div className="words-grid">
@@ -292,7 +288,6 @@ function AppContent() {
               <div className="section-title">
                 <span className="section-icon">🤖</span>
                 <h2>{t('interface.newTranslations')}</h2>
-                <span className="result-count ai-badge">{geminiResults.length} {t('interface.words')}</span>
               </div>
               <div className="section-description">
                 {t('interface.aiDescription')}
