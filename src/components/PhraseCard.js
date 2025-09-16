@@ -169,8 +169,17 @@ const PhraseCard = ({ phrase, fromLanguage = 'auto', toLanguage = 'pt', globalVo
       'qu': 'qu = "k" (como em "que")',
       'ch': 'ch = "tch" (como em "tchau")',
       'll': 'll = "lh" (como em "filho")',
+      'ʎ': 'ʎ = "lh" (som do "ll" em espanhol, como em "filho")',
       'ñ': 'ñ = "nh" (como em "ninho")',
-      'rr': 'rr = "rr" (r forte, como em "carro")'
+      'ɲ': 'ɲ = "nh" (som do "ñ" em espanhol, como em "ninho")',
+      'rr': 'rr = "rr" (r forte, como em "carro")',
+      'ɾ': 'ɾ = "r" (r simples, como em "rato")',
+      'β': 'β = "b" (b suave entre vogais)',
+      'ð': 'ð = "d" (d suave entre vogais)',
+      'ɣ': 'ɣ = "g" (g suave entre vogais)',
+      'ʝ': 'ʝ = "i" (som do "y" em espanhol)',
+      'ʧ': 'ʧ = "tch" (som do "ch" em espanhol)',
+      'ʤ': 'ʤ = "dj" (som do "j" em algumas palavras)'
     };
 
     // Dividir a transcrição em partes
