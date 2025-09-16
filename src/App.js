@@ -21,7 +21,7 @@ function AppContent() {
   const [isLoading, setIsLoading] = useState(false);
   const [geminiResults, setGeminiResults] = useState([]);
   // const [lastValidHistory, setLastValidHistory] = useState([]);
-  const [fromLanguage, setFromLanguage] = useState('auto');
+  const [fromLanguage, setFromLanguage] = useState('es');
   const [toLanguage, setToLanguage] = useState('pt');
   const [globalVoice, setGlobalVoice] = useState(null);
   const apiConfigRef = useRef();
@@ -202,16 +202,14 @@ function AppContent() {
   };
 
   const handleSwapLanguages = () => {
-    if (fromLanguage !== 'auto' && toLanguage !== 'auto') {
-      const tempFrom = fromLanguage;
-      setFromLanguage(toLanguage);
-      setToLanguage(tempFrom);
-      
-      // Se há termos de busca, refazer a busca com idiomas trocados
-      if (searchTerms.length > 0) {
-        // Trigger re-search by updating the dependency
-        setSearchTerms([...searchTerms]);
-      }
+    const tempFrom = fromLanguage;
+    setFromLanguage(toLanguage);
+    setToLanguage(tempFrom);
+    
+    // Se há termos de busca, refazer a busca com idiomas trocados
+    if (searchTerms.length > 0) {
+      // Trigger re-search by updating the dependency
+      setSearchTerms([...searchTerms]);
     }
   };
 

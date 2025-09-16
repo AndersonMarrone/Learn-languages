@@ -24,10 +24,8 @@ const LanguageSelector = ({
     { code: 'es', name: t('languages.es'), flag: '🇪🇸' }
   ];
 
-  // Para selects de tradução, adicionar opção "auto" no from
-  const availableLanguages = type === 'from' 
-    ? [{ code: 'auto', name: t('languages.auto'), flag: '🌐' }, ...languages]
-    : languages;
+  // Todos os selects usam apenas português e espanhol
+  const availableLanguages = languages;
 
   const currentLanguage = availableLanguages.find(lang => lang.code === currentLanguageCode);
 

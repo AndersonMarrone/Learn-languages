@@ -13,12 +13,12 @@ const TranslationControls = ({
 }) => {
   const { t } = useTranslation();
   const handleSwap = () => {
-    if (!disabled && fromLanguage !== 'auto' && toLanguage !== 'auto') {
+    if (!disabled) {
       onSwapLanguages();
     }
   };
 
-  const canSwap = fromLanguage !== 'auto' && toLanguage !== 'auto' && fromLanguage !== toLanguage;
+  const canSwap = fromLanguage !== toLanguage;
 
   return (
     <div className="translation-controls">
