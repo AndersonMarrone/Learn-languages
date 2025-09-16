@@ -173,12 +173,6 @@ const SearchHistory = ({
           </button>
         </div>
         
-        <div className="history-stats">
-          <div className="stat-item">
-            <span className="stat-number">{stats.totalWords || 0}</span>
-            <span className="stat-label">{t('interface.words')}</span>
-          </div>
-        </div>
       </div>
 
       {showHistory && (

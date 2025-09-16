@@ -261,7 +261,6 @@ function AppContent() {
             <div className="section-header">
               <div className="section-title">
                 <span className="section-icon">🔍</span>
-                <h2>{t('interface.resultsFound')}</h2>
               </div>
             </div>
             <div className="words-grid">
