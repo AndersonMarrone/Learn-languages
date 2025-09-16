@@ -25,55 +25,18 @@ const TranslationControls = ({
       <div className="language-selectors">
         <div className="selector-container">
           <label className="selector-label">{t('interface.from')}</label>
-          <LanguageSelector
-            selectedLanguage={fromLanguage}
-            onLanguageChange={onFromLanguageChange}
-            type="from"
-            disabled={disabled}
-            className="from-selector"
-          />
-        </div>
-
-        <div className="swap-container">
-          <button
-            className={`swap-button ${canSwap && !disabled ? 'enabled' : 'disabled'}`}
-            onClick={handleSwap}
-            disabled={!canSwap || disabled}
-            aria-label={t('interface.swapLanguages')}
-            title={
-              !canSwap 
-                ? t('interface.cannotSwapAuto')
-                : t('interface.swapLanguagesTooltip')
-            }
-          >
-            <svg 
-              width="20" 
-              height="20" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-              className="swap-icon"
-            >
-              <path 
-                d="M16 17L21 12L16 7M8 7L3 12L8 17M21 12H3" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
+          <div className="fixed-language-display">
+            <span className="language-flag">🇪🇸</span>
+            <span className="language-name">{t('languages.es')}</span>
+          </div>
         </div>
 
         <div className="selector-container">
           <label className="selector-label">{t('interface.to')}</label>
-          <LanguageSelector
-            selectedLanguage={toLanguage}
-            onLanguageChange={onToLanguageChange}
-            type="to"
-            disabled={disabled}
-            className="to-selector"
-          />
+          <div className="fixed-language-display">
+            <span className="language-flag">🇧🇷</span>
+            <span className="language-name">{t('languages.pt')}</span>
+          </div>
         </div>
       </div>
     </div>

@@ -49,6 +49,29 @@
   letter-spacing: 0.5px;
 }
 
+.fixed-language-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.language-flag {
+  font-size: 18px;
+}
+
+.language-name {
+  font-weight: 700;
+}
+
 .swap-container {
   display: flex;
   align-items: center;
