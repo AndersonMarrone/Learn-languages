@@ -61,9 +61,9 @@ function AppContent() {
       // 1. Buscar na base de dados local
       const localResults = spanishWords.filter(word => 
         searchTerms.some(term => 
-          word.spanish.toLowerCase().includes(term.toLowerCase()) ||
-          word.portuguese.toLowerCase().includes(term.toLowerCase()) ||
-          word.english.toLowerCase().includes(term.toLowerCase())
+          word.spanish.toLowerCase() === term.toLowerCase() ||
+          word.portuguese.toLowerCase() === term.toLowerCase() ||
+          word.english.toLowerCase() === term.toLowerCase()
         )
       );
       
@@ -72,9 +72,9 @@ function AppContent() {
       // 2. Buscar no histórico (para termos não encontrados na base)
       const termsNotFoundLocally = searchTerms.filter(term => 
         !localResults.some(word => 
-          word.spanish.toLowerCase().includes(term.toLowerCase()) ||
-          word.portuguese.toLowerCase().includes(term.toLowerCase()) ||
-          word.english.toLowerCase().includes(term.toLowerCase())
+          word.spanish.toLowerCase() === term.toLowerCase() ||
+          word.portuguese.toLowerCase() === term.toLowerCase() ||
+          word.english.toLowerCase() === term.toLowerCase()
         )
       );
 
@@ -85,9 +85,9 @@ function AppContent() {
         const fullHistory = historyService.getHistory();
         historyResults = fullHistory.filter(word => 
           termsNotFoundLocally.some(term => 
-            word.spanish.toLowerCase().includes(term.toLowerCase()) ||
-            word.portuguese?.toLowerCase().includes(term.toLowerCase()) ||
-            word.english?.toLowerCase().includes(term.toLowerCase())
+            word.spanish.toLowerCase() === term.toLowerCase() ||
+            word.portuguese?.toLowerCase() === term.toLowerCase() ||
+            word.english?.toLowerCase() === term.toLowerCase()
           )
         );
         
@@ -114,9 +114,9 @@ function AppContent() {
       // 3. Buscar termos ainda não encontrados no Gemini
       const termsNotFoundAnywhere = searchTerms.filter(term => 
         !allFoundResults.some(word => 
-          word.spanish.toLowerCase().includes(term.toLowerCase()) ||
-          word.portuguese?.toLowerCase().includes(term.toLowerCase()) ||
-          word.english?.toLowerCase().includes(term.toLowerCase())
+          word.spanish.toLowerCase() === term.toLowerCase() ||
+          word.portuguese?.toLowerCase() === term.toLowerCase() ||
+          word.english?.toLowerCase() === term.toLowerCase()
         )
       );
 
