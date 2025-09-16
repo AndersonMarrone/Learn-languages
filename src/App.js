@@ -21,7 +21,10 @@ function AppContent() {
   const [isLoading, setIsLoading] = useState(false);
   const [geminiResults, setGeminiResults] = useState([]);
   // const [lastValidHistory, setLastValidHistory] = useState([]);
-  const [fromLanguage, setFromLanguage] = useState('es');
+  const [fromLanguage, setFromLanguage] = useState(() => {
+    // Sempre usar espanhol como padrão para o seletor "De"
+    return 'es';
+  });
   const [toLanguage, setToLanguage] = useState('pt');
   const [globalVoice, setGlobalVoice] = useState(null);
   const apiConfigRef = useRef();
