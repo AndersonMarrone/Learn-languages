@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './LearningPage.css';
 import LearningWordCard from './LearningWordCard';
 import LearningHistory from './LearningHistory';
-import { spanishWords } from '../data/spanishWords';
 import { useTranslation } from '../hooks/useTranslation';
 import learningHistoryService from '../services/learningHistoryService';
 
@@ -14,33 +13,41 @@ const LearningPage = () => {
   const [notes, setNotes] = useState({}); // Para armazenar anotações de cada palavra
 
   // Função para gerar palavras aleatórias
-  const generateRandomWords = () => {
+  const generateRandomWords = async () => {
     setIsGenerating(true);
     
-    // Simular um pequeno delay para melhor UX
-    setTimeout(() => {
-      // Filtrar palavras que têm todas as informações necessárias
-      const validWords = spanishWords.filter(word => 
-        word.spanish && 
-        word.portuguese && 
-        word.phonetic && 
-        word.example && 
-        word.exampleTranslation
-      );
+    try {
+      // Carregar palavras de forma assíncrona
+      const { spanishWords } = await import('../data/spanishWords');
       
-      // Embaralhar e pegar a quantidade solicitada
-      const shuffled = [...validWords].sort(() => Math.random() - 0.5);
-      const selectedWords = shuffled.slice(0, wordCount);
-      
-      // Ordenar por tamanho da palavra em espanhol (maior para menor)
-      selectedWords.sort((a, b) => b.spanish.length - a.spanish.length);
-      
-      setGeneratedWords(selectedWords);
+      // Simular um pequeno delay para melhor UX
+      setTimeout(() => {
+        // Filtrar palavras que têm todas as informações necessárias
+        const validWords = spanishWords.filter(word => 
+          word.spanish && 
+          word.portuguese && 
+          word.phonetic && 
+          word.example && 
+          word.exampleTranslation
+        );
+        
+        // Embaralhar e pegar a quantidade solicitada
+        const shuffled = [...validWords].sort(() => Math.random() - 0.5);
+        const selectedWords = shuffled.slice(0, wordCount);
+        
+        // Ordenar por tamanho da palavra em espanhol (maior para menor)
+        selectedWords.sort((a, b) => b.spanish.length - a.spanish.length);
+        
+        setGeneratedWords(selectedWords);
+        setIsGenerating(false);
+        
+        // Salvar no histórico de aprendizado
+        learningHistoryService.saveLearningSession(selectedWords, wordCount);
+      }, 500);
+    } catch (error) {
+      console.error('Erro ao carregar palavras:', error);
       setIsGenerating(false);
-      
-      // Salvar no histórico de aprendizado
-      learningHistoryService.saveLearningSession(selectedWords, wordCount);
-    }, 500);
+    }
   };
 
   // Função para salvar anotações
