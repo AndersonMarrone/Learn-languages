@@ -1,9 +1,9 @@
 /* Learning Word Card Styles */
 .learning-word-card {
   background: white;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid #e2e8f0;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -13,8 +13,8 @@
 }
 
 .learning-word-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   border-color: #4f46e5;
 }
 

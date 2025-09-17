@@ -1,7 +1,7 @@
 /* Learning Page Styles */
 .learning-page {
   min-height: 100vh;
-  background: #f8fafc;
+  background: transparent;
   padding: 0;
 }
 
@@ -9,9 +9,11 @@
 .learning-header {
   background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
   color: white;
-  padding: 30px 20px;
+  padding: 40px 0;
   text-align: center;
-  border-bottom: 1px solid #e2e8f0;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px rgba(79, 70, 229, 0.3);
 }
 
 .learning-title-section {
@@ -42,9 +44,11 @@
 
 /* Controls */
 .learning-controls {
-  padding: 20px;
-  background: white;
-  border-bottom: 1px solid #e2e8f0;
+  padding: 30px;
+  background: #f8fafc;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid #e2e8f0;
 }
 
 .word-count-control {
@@ -208,8 +212,8 @@
 
 /* Results */
 .learning-results {
-  padding: 20px;
-  background: white;
+  padding: 0;
+  background: transparent;
 }
 
 .results-header {
@@ -247,9 +251,11 @@
 
 /* Welcome Screen */
 .learning-welcome {
-  padding: 40px 20px;
+  padding: 60px 40px;
   text-align: center;
-  background: white;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
 }
 
 .welcome-content {
