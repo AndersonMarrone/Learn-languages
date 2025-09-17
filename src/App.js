@@ -222,21 +222,21 @@ function SearchPage() {
   return (
     <div className="App">
       <div className="container">
-        <header className="header">
-          <div className="header-content">
-            <div className="logo-section">
-              <div className="logo">
-                <span className="logo-icon">🌍</span>
-                <h1>{t('app.title')}</h1>
-              </div>
-              <p className="tagline">{t('app.subtitle')}</p>
+        <div className="search-controls">
+          <div className="search-controls-content">
+            <div className="search-info">
+              <h1 className="search-title">
+                <span className="search-icon">🔍</span>
+                {t('app.title')}
+              </h1>
+              <p className="search-subtitle">{t('app.subtitle')}</p>
             </div>
-            <div className="header-controls">
+            <div className="search-controls-buttons">
               <LanguageSelector />
               <ApiKeyConfig ref={apiConfigRef} onApiKeySet={handleApiKeySet} />
             </div>
           </div>
-        </header>
+        </div>
 
         <div className="search-section">
           <SearchBar 
