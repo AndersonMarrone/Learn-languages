@@ -2,10 +2,12 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import LanguageSelector from './LanguageSelector';
 import ApiKeyConfig from './ApiKeyConfig';
+import { useTranslation } from '../hooks/useTranslation';
 import './Navigation.css';
 
 const Navigation = ({ apiConfigRef, onApiKeySet }) => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <nav className="navigation">
@@ -18,18 +20,18 @@ const Navigation = ({ apiConfigRef, onApiKeySet }) => {
         <div className="nav-links">
           <Link 
             to="/" 
-            className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+            className={`nav-link main-button ${location.pathname === '/' ? 'active' : ''}`}
           >
             <span className="nav-icon">🔍</span>
-            <span className="nav-text">Buscar</span>
+            <span className="nav-text">{t('nav.search')}</span>
           </Link>
           
           <Link 
             to="/aprender" 
-            className={`nav-link ${location.pathname === '/aprender' ? 'active' : ''}`}
+            className={`nav-link main-button ${location.pathname === '/aprender' ? 'active' : ''}`}
           >
             <span className="nav-icon">📚</span>
-            <span className="nav-text">Aprender</span>
+            <span className="nav-text">{t('nav.learn')}</span>
           </Link>
         </div>
 

@@ -1,3 +1,21 @@
+// ARCHIVO DE TRADUCCIONES - ESPAÑOL (ESPAÑA)
+// Traducciones completas de la interfaz de la aplicación Idiomas
+// Organizadas por secciones funcionales para facilitar el mantenimiento
+// 
+// Estructura:
+// - Interfaz general (títulos, botones, navegación)
+// - Mensajes del sistema (éxito, error, advertencias)
+// - Idiomas soportados
+// - Categorías gramaticales
+// - Guía de uso de la aplicación
+// - Textos específicos de la interfaz
+//
+// Para agregar nuevas traducciones:
+// 1. Mantén la estructura jerárquica existente
+// 2. Usa claves descriptivas en español
+// 3. Mantén consistencia con los otros idiomas
+// 4. Prueba la interfaz después de agregar nuevas claves
+
 export const es = {
   // Interface geral
   app: {
@@ -8,6 +26,8 @@ export const es = {
   // Navegação
   nav: {
     home: "Inicio",
+    search: "Traducir",
+    learn: "Aprender",
     history: "Historial",
     settings: "Configuración"
   },

@@ -37,6 +37,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
     setShowConfig(false); // Fechar modal de configuração
   };
 
+
   const handleSaveApiKey = async () => {
     if (!apiKey.trim()) {
       showError(t('settings.apiKeyRequired') || 'Por favor, insira uma API key válida');
@@ -63,7 +64,20 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
       } else {
         // Verificar console para erro específico
         console.log('🔍 Verificando logs do console para detalhes do erro...');
-        showError(t('settings.apiKeyError') || 'Erro ao configurar API key. Verifique se a chave está correta.');
+        const detailedErrorMessage = `❌ Erro ao configurar API key
+
+🔍 Possíveis causas:
+• Quota excedida (limite de 50 requisições/dia)
+• API key incorreta ou expirada
+• Sem permissão para acessar o Gemini AI
+• Problemas de conectividade
+
+💡 Soluções:
+1. Aguarde 24h se excedeu a quota
+2. Verifique se a chave começa com "AIza"
+3. Confirme acesso no Google AI Studio
+4. Tente gerar uma nova API key`;
+        showError(detailedErrorMessage, 0);
       }
     } catch (error) {
       console.error('❌ Erro ao configurar API key:', error);
@@ -198,7 +212,7 @@ const ApiKeyConfig = forwardRef(({ onApiKeySet }, ref) => {
   return (
     <div style={{
       position: 'fixed',
-      top: '50%',
+      top: '650%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
       backgroundColor: 'white',

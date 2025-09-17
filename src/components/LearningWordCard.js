@@ -378,6 +378,15 @@ const LearningWordCard = ({ word, wordId, note = '', onSaveNote, globalVoice = n
             </span>
           </div>
         )}
+
+        {/* Botão indicativo para clicar */}
+        <div className="learning-click-hint">
+          <button className="learning-details-btn">
+            <span className="details-icon">👁️</span>
+            <span className="details-text">Ver detalhes e fazer anotações</span>
+            <span className="details-arrow">→</span>
+          </button>
+        </div>
       </div>
 
       <Modal 

@@ -215,9 +215,7 @@ function SearchPage({ apiConfigRef }) {
   };
 
   return (
-    <div className="App">
-      <div className="container">
-        <div className="page-content">
+    <div className="page-content">
           <div className="search-section">
           <SearchBar 
             onSearch={handleSearch} 
@@ -458,13 +456,10 @@ function SearchPage({ apiConfigRef }) {
           />
         )}
 
-        </div>
-        
         {/* Área de controles organizados */}
         <div className="controls-area">
           <VoiceInfo />
         </div>
-      </div>
     </div>
   );
 }
@@ -477,13 +472,17 @@ function AppContent() {
   };
 
   return (
-    <Router>
-      <Navigation apiConfigRef={apiConfigRef} onApiKeySet={handleApiKeySet} />
-      <Routes>
-        <Route path="/" element={<SearchPage apiConfigRef={apiConfigRef} />} />
-        <Route path="/aprender" element={<LearningPage />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <Router>
+        <Navigation apiConfigRef={apiConfigRef} onApiKeySet={handleApiKeySet} />
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<SearchPage apiConfigRef={apiConfigRef} />} />
+            <Route path="/aprender" element={<LearningPage />} />
+          </Routes>
+        </div>
+      </Router>
+    </div>
   );
 }
 

@@ -1,3 +1,21 @@
+// ARQUIVO DE TRADUÇÕES - PORTUGUÊS (BRASIL)
+// Traduções completas da interface do aplicativo Idiomas
+// Organizadas por seções funcionais para facilitar manutenção
+// 
+// Estrutura:
+// - Interface geral (títulos, botões, navegação)
+// - Mensagens do sistema (sucesso, erro, avisos)
+// - Idiomas suportados
+// - Categorias gramaticais
+// - Guia de uso da aplicação
+// - Textos específicos da interface
+//
+// Para adicionar novas traduções:
+// 1. Mantenha a estrutura hierárquica existente
+// 2. Use chaves descritivas em português
+// 3. Mantenha consistência com os outros idiomas
+// 4. Teste a interface após adicionar novas chaves
+
 export const pt = {
   // Interface geral
   app: {
@@ -8,6 +26,8 @@ export const pt = {
   // Navegação
   nav: {
     home: "Início",
+    search: "Traduzir",
+    learn: "Aprender",
     history: "Histórico",
     settings: "Configurações"
   },

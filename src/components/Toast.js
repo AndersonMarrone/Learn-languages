@@ -7,6 +7,11 @@ const Toast = ({ message, type = 'info', duration = 3000, onClose }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    // Se duration for 0, não fechar automaticamente
+    if (duration === 0) {
+      return;
+    }
+    
     const timer = setTimeout(() => {
       setIsVisible(false);
       setTimeout(() => {

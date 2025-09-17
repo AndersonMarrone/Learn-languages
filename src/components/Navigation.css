@@ -3,9 +3,11 @@
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   border-bottom: 1px solid rgba(226, 232, 240, 0.3);
 }
 
@@ -73,6 +75,93 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+}
+
+/* Estilos especiais para botões principais */
+.nav-link.main-button {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: white;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link.main-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.nav-link.main-button:hover::after {
+  left: 100%;
+}
+
+.nav-link.main-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
+  background: linear-gradient(135deg, #5b52f0 0%, #8b4af0 100%);
+}
+
+.nav-link.main-button.active {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.4);
+  transform: translateY(-2px) scale(1.02);
+  color: white;
+  border: 3px solid #34d399;
+  position: relative;
+}
+
+.nav-link.main-button.active::before {
+  content: '✓';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #10b981;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link.main-button.active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.2) 50%, transparent 70%);
+  animation: activeShine 1.5s ease-in-out infinite;
+  border-radius: 16px;
+}
+
+@keyframes activeShine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.nav-link.main-button::before {
+  display: none;
 }
 
 .nav-link::before {
@@ -150,6 +239,19 @@
   .nav-link {
     padding: 8px 12px;
     font-size: 0.9rem;
+  }
+  
+  .nav-link.main-button {
+    padding: 10px 16px;
+    border-radius: 12px;
+  }
+  
+  .nav-link.main-button.active::before {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    top: -6px;
+    right: -6px;
   }
   
   .nav-text {

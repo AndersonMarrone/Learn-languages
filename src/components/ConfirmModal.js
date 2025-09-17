@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './ConfirmModal.css';
 
 const ConfirmModal = ({ 
@@ -7,83 +7,48 @@ const ConfirmModal = ({
   onConfirm, 
   title, 
   message, 
-  confirmText = 'Confirmar', 
-  cancelText = 'Cancelar',
-  type = 'warning' // 'warning', 'danger', 'info'
+  confirmText = "Confirmar", 
+  cancelText = "Cancelar",
+  type = "warning" // warning, danger, info
 }) => {
-  // Fechar modal com ESC
-  useEffect(() => {
-    const handleEscKey = (event) => {
-      if (event.key === 'Escape') {
-        onClose();
-      }
-    };
-
-    if (isOpen) {
-      document.addEventListener('keydown', handleEscKey);
-    }
-
-    return () => {
-      document.removeEventListener('keydown', handleEscKey);
-    };
-  }, [isOpen, onClose]);
-
   if (!isOpen) return null;
 
-  const getTypeIcon = () => {
+  const handleBackdropClick = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
+  const getIcon = () => {
     switch (type) {
       case 'danger':
         return '⚠️';
-      case 'warning':
-        return '❓';
       case 'info':
         return 'ℹ️';
       default:
-        return '❓';
+        return '⚠️';
     }
   };
 
-  const getTypeColor = () => {
+  const getButtonClass = () => {
     switch (type) {
       case 'danger':
-        return {
-          primary: '#ef4444',
-          secondary: '#fecaca',
-          light: '#fef2f2'
-        };
-      case 'warning':
-        return {
-          primary: '#f59e0b',
-          secondary: '#fed7aa',
-          light: '#fffbeb'
-        };
+        return 'confirm-btn-danger';
       case 'info':
-        return {
-          primary: '#3b82f6',
-          secondary: '#bfdbfe',
-          light: '#eff6ff'
-        };
+        return 'confirm-btn-info';
       default:
-        return {
-          primary: '#f59e0b',
-          secondary: '#fed7aa',
-          light: '#fffbeb'
-        };
+        return 'confirm-btn-warning';
     }
   };
 
-  const colors = getTypeColor();
-
   return (
-    <div className="confirm-modal-overlay" onClick={onClose}>
-      <div className="confirm-modal-content" onClick={(e) => e.stopPropagation()}>
-        <div className="confirm-modal-header" style={{ backgroundColor: colors.light }}>
-          <div className="confirm-modal-icon" style={{ color: colors.primary }}>
-            {getTypeIcon()}
+    <div className="confirm-modal-overlay" onClick={handleBackdropClick}>
+      <div className="confirm-modal">
+        <div className="confirm-modal-header">
+          <div className="confirm-modal-icon">
+            {getIcon()}
           </div>
-          <h3 className="confirm-modal-title" style={{ color: colors.primary }}>
-            {title}
-          </h3>
+          <h3 className="confirm-modal-title">{title}</h3>
         </div>
         
         <div className="confirm-modal-body">
@@ -92,21 +57,14 @@ const ConfirmModal = ({
         
         <div className="confirm-modal-footer">
           <button 
-            className="confirm-modal-btn cancel-btn"
+            className="confirm-btn-cancel"
             onClick={onClose}
           >
             {cancelText}
           </button>
           <button 
-            className="confirm-modal-btn confirm-btn"
-            onClick={() => {
-              onConfirm();
-              onClose();
-            }}
-            style={{ 
-              backgroundColor: colors.primary,
-              borderColor: colors.primary 
-            }}
+            className={`confirm-btn-confirm ${getButtonClass()}`}
+            onClick={onConfirm}
           >
             {confirmText}
           </button>

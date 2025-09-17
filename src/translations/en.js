@@ -1,3 +1,21 @@
+// TRANSLATION FILE - ENGLISH (US)
+// Complete interface translations for the Idiomas language learning app
+// Organized by functional sections for easy maintenance
+// 
+// Structure:
+// - General interface (titles, buttons, navigation)
+// - System messages (success, error, warnings)
+// - Supported languages
+// - Grammatical categories
+// - Application usage guide
+// - Interface-specific texts
+//
+// To add new translations:
+// 1. Maintain the existing hierarchical structure
+// 2. Use descriptive keys in English
+// 3. Keep consistency with other languages
+// 4. Test the interface after adding new keys
+
 export const en = {
   // Interface geral
   app: {
@@ -8,6 +26,8 @@ export const en = {
   // Navegação
   nav: {
     home: "Home",
+    search: "Translate",
+    learn: "Learn",
     history: "History",
     settings: "Settings"
   },

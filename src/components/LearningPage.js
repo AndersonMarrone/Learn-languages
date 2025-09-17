@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './LearningPage.css';
 import LearningWordCard from './LearningWordCard';
+import LearningHistory from './LearningHistory';
 import { spanishWords } from '../data/spanishWords';
 import { useTranslation } from '../hooks/useTranslation';
+import learningHistoryService from '../services/learningHistoryService';
 
 const LearningPage = () => {
   const { t } = useTranslation();
@@ -30,8 +32,14 @@ const LearningPage = () => {
       const shuffled = [...validWords].sort(() => Math.random() - 0.5);
       const selectedWords = shuffled.slice(0, wordCount);
       
+      // Ordenar por tamanho da palavra em espanhol (maior para menor)
+      selectedWords.sort((a, b) => b.spanish.length - a.spanish.length);
+      
       setGeneratedWords(selectedWords);
       setIsGenerating(false);
+      
+      // Salvar no histórico de aprendizado
+      learningHistoryService.saveLearningSession(selectedWords, wordCount);
     }, 500);
   };
 
@@ -73,6 +81,9 @@ const LearningPage = () => {
             </p>
           </div>
         </header>
+
+        {/* Seção de Histórico */}
+        <LearningHistory />
 
         <div className="learning-controls">
           <div className="word-count-control">
