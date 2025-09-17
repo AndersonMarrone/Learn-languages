@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import WordCard from './components/WordCard';
@@ -7,6 +8,8 @@ import SearchHistory from './components/SearchHistory';
 import VoiceInfo from './components/VoiceInfo';
 import ApiKeyConfig from './components/ApiKeyConfig';
 import LanguageSelector from './components/LanguageSelector';
+import LearningPage from './components/LearningPage';
+import Navigation from './components/Navigation';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ToastProvider } from './contexts/ToastContext';
 import { useTranslation } from './hooks/useTranslation';
@@ -14,7 +17,7 @@ import translationService from './services/translationService';
 import historyService from './services/historyService';
 import { spanishWords } from './data/spanishWords';
 
-function AppContent() {
+function SearchPage() {
   const { t } = useTranslation();
   const [searchTerms, setSearchTerms] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
@@ -482,6 +485,18 @@ function AppContent() {
         <VoiceInfo />
       </div>
     </div>
+  );
+}
+
+function AppContent() {
+  return (
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<SearchPage />} />
+        <Route path="/aprender" element={<LearningPage />} />
+      </Routes>
+    </Router>
   );
 }
 
