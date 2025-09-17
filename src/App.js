@@ -17,7 +17,7 @@ import translationService from './services/translationService';
 import historyService from './services/historyService';
 import { spanishWords } from './data/spanishWords';
 
-function SearchPage() {
+function SearchPage({ apiConfigRef }) {
   const { t } = useTranslation();
   const [searchTerms, setSearchTerms] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
@@ -30,7 +30,6 @@ function SearchPage() {
   });
   const [toLanguage, setToLanguage] = useState('pt');
   const [globalVoice, setGlobalVoice] = useState(null);
-  const apiConfigRef = useRef();
 
   const handleVoiceChange = useCallback((voice) => {
     console.log('🎤 App.js recebeu mudança de voz:', voice ? voice.name : 'null');
@@ -180,10 +179,6 @@ function SearchPage() {
     setGeminiResults([]);
   };
 
-  const handleApiKeySet = (hasKey) => {
-    console.log('🔧 API key configurada:', hasKey);
-  };
-
   const handleWordFromHistory = (word) => {
     // Quando uma palavra é selecionada do histórico, fazer nova busca
     setSearchTerms([word.spanish]);
@@ -222,23 +217,8 @@ function SearchPage() {
   return (
     <div className="App">
       <div className="container">
-        <div className="search-controls">
-          <div className="search-controls-content">
-            <div className="search-info">
-              <h1 className="search-title">
-                <span className="search-icon">🔍</span>
-                {t('app.title')}
-              </h1>
-              <p className="search-subtitle">{t('app.subtitle')}</p>
-            </div>
-            <div className="search-controls-buttons">
-              <LanguageSelector />
-              <ApiKeyConfig ref={apiConfigRef} onApiKeySet={handleApiKeySet} />
-            </div>
-          </div>
-        </div>
-
-        <div className="search-section">
+        <div className="page-content">
+          <div className="search-section">
           <SearchBar 
             onSearch={handleSearch} 
             onClear={clearSearch}
@@ -478,22 +458,29 @@ function SearchPage() {
           />
         )}
 
-      </div>
-      
-      {/* Área de controles organizados */}
-      <div className="controls-area">
-        <VoiceInfo />
+        </div>
+        
+        {/* Área de controles organizados */}
+        <div className="controls-area">
+          <VoiceInfo />
+        </div>
       </div>
     </div>
   );
 }
 
 function AppContent() {
+  const apiConfigRef = useRef();
+
+  const handleApiKeySet = (hasKey) => {
+    console.log('🔧 API key configurada:', hasKey);
+  };
+
   return (
     <Router>
-      <Navigation />
+      <Navigation apiConfigRef={apiConfigRef} onApiKeySet={handleApiKeySet} />
       <Routes>
-        <Route path="/" element={<SearchPage />} />
+        <Route path="/" element={<SearchPage apiConfigRef={apiConfigRef} />} />
         <Route path="/aprender" element={<LearningPage />} />
       </Routes>
     </Router>

@@ -61,7 +61,7 @@ const LearningPage = () => {
 
   return (
     <div className="learning-page">
-      <div className="learning-container">
+      <div className="page-content">
         <header className="learning-header">
           <div className="learning-title-section">
             <h1 className="learning-title">

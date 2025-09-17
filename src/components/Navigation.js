@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import LanguageSelector from './LanguageSelector';
+import ApiKeyConfig from './ApiKeyConfig';
 import './Navigation.css';
 
-const Navigation = () => {
+const Navigation = ({ apiConfigRef, onApiKeySet }) => {
   const location = useLocation();
 
   return (
@@ -29,6 +31,11 @@ const Navigation = () => {
             <span className="nav-icon">📚</span>
             <span className="nav-text">Aprender</span>
           </Link>
+        </div>
+
+        <div className="nav-controls">
+          <LanguageSelector />
+          <ApiKeyConfig ref={apiConfigRef} onApiKeySet={onApiKeySet} />
         </div>
       </div>
     </nav>

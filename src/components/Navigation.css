@@ -15,7 +15,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  height: 70px;
+  height: 80px;
+  gap: 20px;
 }
 
 .nav-logo {
@@ -49,6 +50,14 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .nav-link {
@@ -110,11 +119,14 @@
 @media (max-width: 768px) {
   .nav-container {
     padding: 0 15px;
-    height: 60px;
+    height: 70px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   
   .nav-logo {
     font-size: 1.3rem;
+    order: 1;
   }
   
   .logo-icon {
@@ -123,10 +135,19 @@
   
   .nav-links {
     gap: 10px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .nav-controls {
+    order: 2;
+    gap: 10px;
   }
   
   .nav-link {
-    padding: 10px 15px;
+    padding: 8px 12px;
     font-size: 0.9rem;
   }
   
