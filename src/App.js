@@ -477,7 +477,8 @@ function AppContent() {
         <Navigation apiConfigRef={apiConfigRef} onApiKeySet={handleApiKeySet} />
         <div className="container">
           <Routes>
-            <Route path="/" element={<SearchPage apiConfigRef={apiConfigRef} />} />
+            <Route path="/" element={<LearningPage />} />
+            <Route path="/traduzir" element={<SearchPage apiConfigRef={apiConfigRef} />} />
             <Route path="/aprender" element={<LearningPage />} />
           </Routes>
         </div>
