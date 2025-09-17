@@ -1,18 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './WelcomePage.css';
 
 const WelcomePage = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    // Simular carregamento inicial
-    const timer = setTimeout(() => {
-      setIsLoaded(true);
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className="welcome-page">
@@ -71,12 +60,6 @@ const WelcomePage = () => {
           </div>
         </div>
 
-        {!isLoaded && (
-          <div className="loading-overlay">
-            <div className="loading-spinner"></div>
-            <p>Carregando...</p>
-          </div>
-        )}
       </div>
     </div>
   );
