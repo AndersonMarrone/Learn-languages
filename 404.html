@@ -25,6 +25,14 @@
       var pathSegmentsToKeep = 1;
 
       var l = window.location;
+      
+      // Don't redirect if we're already at the root or if there's no additional path
+      var pathSegments = l.pathname.split('/').slice(1 + pathSegmentsToKeep);
+      if (pathSegments.length === 0 || (pathSegments.length === 1 && pathSegments[0] === '')) {
+        // We're at the root, don't redirect
+        return;
+      }
+      
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
