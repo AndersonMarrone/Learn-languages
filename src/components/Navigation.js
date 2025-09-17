@@ -27,8 +27,8 @@ const Navigation = ({ apiConfigRef, onApiKeySet }) => {
           </Link>
           
           <Link 
-            to="/" 
-            className={`nav-link main-button ${location.pathname === '/' || location.pathname === '/aprender' ? 'active' : ''}`}
+            to="/aprender" 
+            className={`nav-link main-button ${location.pathname === '/aprender' ? 'active' : ''}`}
           >
             <span className="nav-icon">📚</span>
             <span className="nav-text">{t('nav.learn')}</span>

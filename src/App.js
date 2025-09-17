@@ -9,6 +9,7 @@ import VoiceInfo from './components/VoiceInfo';
 import ApiKeyConfig from './components/ApiKeyConfig';
 import LanguageSelector from './components/LanguageSelector';
 import LearningPage from './components/LearningPage';
+import WelcomePage from './components/WelcomePage';
 import Navigation from './components/Navigation';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ToastProvider } from './contexts/ToastContext';
@@ -477,7 +478,7 @@ function AppContent() {
         <Navigation apiConfigRef={apiConfigRef} onApiKeySet={handleApiKeySet} />
         <div className="container">
           <Routes>
-            <Route path="/" element={<LearningPage />} />
+            <Route path="/" element={<WelcomePage />} />
             <Route path="/traduzir" element={<SearchPage apiConfigRef={apiConfigRef} />} />
             <Route path="/aprender" element={<LearningPage />} />
           </Routes>
